@@ -4,9 +4,9 @@
 
 ==================================================================================
 
-* **Creator Name:** 	josh_clue
-* **Creator Email:** 	josh_clue@hotmail.com
-* **Mod Page:** 	www.angelfire.com
+* **Creator Name:**   josh_clue
+* **Creator Email:**  josh_clue@hotmail.com
+* **Mod Page:**       www.angelfire.com
 
 > What began as a small interest to "contribute" to an already fantastic CRPG set in
 > the most diverse and truly astounding of realms has become a substantial project,
