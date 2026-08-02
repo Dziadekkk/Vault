@@ -129,7 +129,8 @@ This component tweaks the Holy Cloak from the Isle of Balduran quest, ensuring i
 
 ==================================================================================
 
-This component tweaks the Shandalars Cloak from the Ulgoth's Beard quest, ensuring it is no longer treated only as a quest item.
+This component tweaks the Shandalars Cloak from the Ulgoth's Beard quest, ensuring it is no longer treated only as a quest item.  
+The Mod Tweaks & Tricks also adds the same option — decide which one to choose (the cloak itself isn't the same in both mods).
 
 ==================================================================================
 
