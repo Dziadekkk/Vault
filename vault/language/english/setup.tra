@@ -1,6 +1,6 @@
 // Vault .tp2 translation file
 
-@0   = ~The Vault (erebusant's rework for BGT compatibility)~
+@0   = ~The Vault~
 @1   = ~Stone Golem~
 @2   = ~Josh~
 @3   = ~Ranthis~
@@ -1155,3 +1155,5 @@ Only usable by:
 Mage (single, dual, & multi-class)~
 @203 = ~Requires the main component~
 @204 = ~Your drow items have disintegrated.~
+@500 = ~Modified Holy Cloak (clck21.itm)~
+@501 = ~Modified Shandalars Cloak (clck22.itm)~

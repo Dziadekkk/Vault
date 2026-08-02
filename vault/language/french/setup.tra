@@ -1,6 +1,6 @@
 // Vault .tp2 translation file
 
-@0  = ~The Vault (refonte d'Erebusant pour compatibilite avec BGT)~
+@0  = ~The Vault~
 @1  = ~Golem de Pierre~
 @2  = ~Josh~
 @3  = ~Ranthis~
@@ -1180,6 +1180,8 @@ Utilisable uniquement par :
  Mage (monoclassé, à classes jumelées ou multiclassé)~
 @203 = ~Requiert le composant principal~
 @204 = ~Vos objets drows se sont brisés au contact de la lumière.~
+@500 = ~Holy Cloak modifie (clck21.itm)~
+@501 = ~Shandalars Cloak modifie (clck22.itm)~
 
 
 // WeiDU prompts

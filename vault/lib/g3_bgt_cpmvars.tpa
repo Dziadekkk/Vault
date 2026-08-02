@@ -1284,4 +1284,7 @@ ACTION_IF GAME_IS ~bgt~ THEN BEGIN
 	OUTER_SPRINT "WyrmsCross_BCS" "AR7900"
 	OUTER_SPRINT "XvartVillageCave_BCS" "AR3497"
 	//OUTER_SPRINT "Undercity_BCS" "AR7223"
+	
+	/* Vault.d Vault-ee.d */
+	OUTER_SPRINT ~vault_dialog~ ~vault~
 END

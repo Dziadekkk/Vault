@@ -1,6 +1,4 @@
-
 APPEND ~THALAN~ 
-
 
 IF ~~ THEN BEGIN VLT1
   SAY @0
@@ -16,12 +14,10 @@ IF ~~ THEN BEGIN VLT3
   IF ~Global("ThalanVampRevenge","GLOBAL",0)~ THEN REPLY @5 DO ~SetGlobal("ThalanVampRevenge","GLOBAL",1)~ JOURNAL @6 EXIT END
 END
 
-REPLACE_SAY THALAN 35 @7
-ALTER_TRANS THALAN BEGIN 35 END BEGIN 1 2 END BEGIN ~TRIGGER~ ~NumTimesTalkedToLT(3)~ END
-EXTEND_BOTTOM THALAN 35
-IF ~GlobalLT("ThalanDrowArtifact","GLOBAL",1) PartyHasItem("MISCDRW2") Global("TransformedChicken","GLOBAL",2) !Dead("Melicamp")~ THEN REPLY @8 GOTO VLT1
-IF ~PartyHasItem("SW1HVAM") Global("ThalanVampRevenge","GLOBAL",0)~ THEN REPLY @9 GOTO VLT2
-END
+EXTEND_BOTTOM THALAN 1
+  IF ~GlobalLT("ThalanDrowArtifact","GLOBAL",1) PartyHasItem("MISCDRW2") Global("TransformedChicken","GLOBAL",2) !Dead("Melicamp")~ THEN REPLY @8 GOTO VLT1
+  IF ~PartyHasItem("SW1HVAM") Global("ThalanVampRevenge","GLOBAL",0)~ THEN REPLY @9 GOTO VLT2 
+  END
 
 ADD_STATE_TRIGGER AMNIS3 0 ~GlobalLT("ReturnNashQuest","GLOBAL",7)~
 
@@ -169,7 +165,15 @@ IF ~~ THEN BEGIN VLT28
 
 IF ~Dead("JC_OGR01") Global("GullyOgre","GLOBAL",4) Global("GullyOgreReward","GLOBAL",0)~ THEN BEGIN VLT29
   SAY @56
-  IF ~~ THEN DO ~GiveGoldForce(1500) GiveItemCreate("POTN52",LastTalkedToBy,2,0,0) GiveItemCreate("POTN52",LastTalkedToBy,3,0,0) SetGlobal("GullyOgreReward","GLOBAL",1) EscapeAreaDestroy(90)~ JOURNAL @57 EXIT END
+  IF ~~ THEN DO ~
+  EraseJournalEntry(@41) //additional journal entry erase, addad by Vault
+  EraseJournalEntry(@55) //additional journal entry erase, addad by Vault
+  GiveGoldForce(1500)
+  GiveItemCreate("POTN52",LastTalkedToBy,3,0,0)
+  SetGlobal("GullyOgreReward","GLOBAL",1)
+  EscapeAreaDestroy(90)~
+  JOURNAL @57 EXIT
+END
 
 IF WEIGHT #4 ~Global("GullyOgreReward","GLOBAL",1) Global("GullyKoboldReward","GLOBAL",1)~ THEN BEGIN VLT30
   SAY @58

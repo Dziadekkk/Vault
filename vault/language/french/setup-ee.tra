@@ -1,1145 +1,973 @@
 @31 = ~Amulette~
-@32 = ~Talisman du Ravagé~
-@33 = ~Un collier est un bijou décoratif généralement fabriqué en argent, en or, en platine ou tout autre métal précieux, et orné de gemmes. Un collier se porte toujours autour du cou et peut être de n'importe quelle longueur.~
-@34 = ~Ce mystérieux talisman a été fabriqué par les Voleurs de l'Ombre d'Amn pour l'un de leurs chefs, Alatos "Le Ravagé". Ce bijou améliore la dextérité de son porteur ainsi que ses talents de voleur, en plus de lui conférer l'infravision. Le simple fait qu'il se trouve en votre possession prouve que chez les voleurs, l'honneur n'existe pas.
+@32 = ~Talisman du RavagÃ©~
+@33 = ~Un collier est un bijou dÃ©coratif gÃ©nÃ©ralement fabriquÃ© en argent, en or, en platine ou tout autre mÃ©tal prÃ©cieux, et ornÃ© de gemmes. Un collier se porte toujours autour du cou et peut Ãªtre de n'importe quelle longueur.~
+@34 = ~Ce mystÃ©rieux talisman a Ã©tÃ© fabriquÃ© par les Voleurs de l'Ombre d'Amn pour l'un de leurs chefs, Alatos "Le RavagÃ©". Ce bijou amÃ©liore la dextÃ©ritÃ© de son porteur ainsi que ses talents de voleur, en plus de lui confÃ©rer l'infravision. Le simple fait qu'il se trouve en votre possession prouve que chez les voleurs, l'honneur n'existe pas.
 
 PARAMETRES :
 
-Spécial :
- +1 en Dextérité si équipé
- Infravision si équipé
- Invisibilité pendant 10 tours (nombre limité de charges)
+SpÃ©cial :
+ +1 en DextÃ©ritÃ© si Ã©quipÃ©
+ Infravision si Ã©quipÃ©
+ InvisibilitÃ© pendant 10 tours (nombre limitÃ© de charges)
 
-Détecter / désamorcer les pièges : +5 %
-Vol à la tire : +5 %
+DÃ©tecter / dÃ©samorcer les piÃ¨ges : +5 %
+Vol Ã  la tire : +5 %
 Crochetage : +5 %
 Se cacher dans l'ombre : +5 %
-Utilisable par :
- Voleur (monoclassé, à classes jumelées ou multiclassé)~
+~
 @35 = ~Ceinturon~
-@36 = ~Ceinturon de Force du Géant des Collines~
-@37 = ~Les ceinturons ressemblent généralement aux ceintures. Mais à la différence de ces dernières, ils ne servent pas à retenir les pantalons ou les salopettes, mais à porter bourses, fourreaux et choses de ce genre. 
+@36 = ~Ceinturon de Force du GÃ©ant des Collines~
+@37 = ~Les ceinturons ressemblent gÃ©nÃ©ralement aux ceintures. Mais Ã  la diffÃ©rence de ces derniÃ¨res, ils ne servent pas Ã  retenir les pantalons ou les salopettes, mais Ã  porter bourses, fourreaux et choses de ce genre. 
 
 PARAMETRES :
 
 Poids : 2
-Non Utilisable par :~
-@38 = ~Cette ceinture d'aspect ordinaire rend son porteur aussi fort qu'un géant des collines, sans modifier sa taille. Nombreux sont les guerriers arrogants qui ont été surpris par un adversaire bien plus petit doué d'une force surprenante. Le plus souvent, la raison en est un ceinturon de ce type.
+~
+@38 = ~Cette ceinture d'aspect ordinaire rend son porteur aussi fort qu'un gÃ©ant des collines, sans modifier sa taille. Nombreux sont les guerriers arrogants qui ont Ã©tÃ© surpris par un adversaire bien plus petit douÃ© d'une force surprenante. Le plus souvent, la raison en est un ceinturon de ce type.
 
 PARAMETRES :
 
-Force : mise à 19
-Non Utilisable par :
- Mage~
+Force : mise Ã  19
+~
 @39 = ~Gourdin~
 @40 = ~Ire de Dageid~
-@41 = ~La plupart des gourdins sont de gros bâtons résistants, étroits à une extrémité et plus large à l'autre. Cette arme simple est utilisée depuis que l'homme a découvert les outils. N'importe qui peut trouver un gros morceau de bois et le brandir, d'où l'utilisation très répandue du gourdin.
+@41 = ~La plupart des gourdins sont de gros bÃ¢tons rÃ©sistants, Ã©troits Ã  une extrÃ©mitÃ© et plus large Ã  l'autre. Cette arme simple est utilisÃ©e depuis que l'homme a dÃ©couvert les outils. N'importe qui peut trouver un gros morceau de bois et le brandir, d'oÃ¹ l'utilisation trÃ¨s rÃ©pandue du gourdin.
 
 PARAMETRES :
 
-Dégâts : 1D6
-Type de dégâts : contondant
+DÃ©gÃ¢ts : 1D6
+Type de dÃ©gÃ¢ts : contondant
 Poids : 3
 Facteur de vitesse : 4
-Type de compétence : gourdin
-Type : arme à une main
-Non Utilisable par :
- Mage~
+Type de compÃ©tence : gourdin
+Type : arme Ã  une main
+~
 @42 = ~Gourdin +1 : Ire de Dageid
-Dageid était un guerrier originaire des tribus barbares Uthgardtes. C'était aussi un personnage cruel et sauvage qui, au cours de ses voyages de par les Royaumes, semait la mort et le chaos. Son règne de terreur prit fin au cours d'une sanglante embuscade menée par les nobles de Lunargent. Il est dit que ce gourdin continue de répandre sa rage lors de certaines occasions en combat, massacrant l'infortunée victime en à peine quelques coups critiques.
+Dageid Ã©tait un guerrier originaire des tribus barbares Uthgardtes. C'Ã©tait aussi un personnage cruel et sauvage qui, au cours de ses voyages de par les Royaumes, semait la mort et le chaos. Son rÃ¨gne de terreur prit fin au cours d'une sanglante embuscade menÃ©e par les nobles de Lunargent. Il est dit que ce gourdin continue de rÃ©pandre sa rage lors de certaines occasions en combat, massacrant l'infortunÃ©e victime en Ã  peine quelques coups critiques.
 
 PARAMETRES :
 
-Spécial :
- +1 en Force si équipé
- 50 % de chances qu'une cible touchée par l'Ire de Dageid doive réussir un jet de sauvegarde contre la Mort ou recevoir 10 points de dégâts contondants supplémentaires
+SpÃ©cial :
+ +1 en Force si Ã©quipÃ©
+ 50 % de chances qu'une cible touchÃ©e par l'Ire de Dageid doive rÃ©ussir un jet de sauvegarde contre la Mort ou recevoir 10 points de dÃ©gÃ¢ts contondants supplÃ©mentaires
 
 TAC0 : +1
-Dégâts : 1D6 +1 
-Type de dégâts : contondant
+DÃ©gÃ¢ts : 1D6 +1 
+Type de dÃ©gÃ¢ts : contondant
 Poids : 2
 Facteur de vitesse : 3
-Type de compétence : gourdin
-Type : arme à une main
-Non Utilisable par :
- Mage~
+Type de compÃ©tence : gourdin
+Type : arme Ã  une main
+~
 @43 = ~Masse~
 @44 = ~Faucheuse~
-@45 = ~La masse descend directement du simple gourdin ; elle n'est rien de plus qu'une hampe de bois avec une tête en pierre ou en fer fixée à l'extrémité. La forme de la tête varie ; certaines sont pointues, d'autres à rebord, et d'autres encore ont un pommeau pyramidal.
+@45 = ~La masse descend directement du simple gourdin ; elle n'est rien de plus qu'une hampe de bois avec une tÃªte en pierre ou en fer fixÃ©e Ã  l'extrÃ©mitÃ©. La forme de la tÃªte varie ; certaines sont pointues, d'autres Ã  rebord, et d'autres encore ont un pommeau pyramidal.
 
 PARAMETRES :
 
-Dégâts : 1D6 +1
-Type de dégâts : contondant
+DÃ©gÃ¢ts : 1D6 +1
+Type de dÃ©gÃ¢ts : contondant
 Poids : 8
 Facteur de vitesse : 7
-Type de compétence : masse
-Type : arme à une main
-Non Utilisable par :
- Druide
- Mage
- Voleur~
+Type de compÃ©tence : masse
+Type : arme Ã  une main
+~
 @46 = ~Masse +1 : Faucheuse
-De la Faucheuse émane une aura de Chaos pur, ce qui la rend inutilisable par ceux qui dédient leur vie à la Loi. Cette arme paraît être chargée d'une énergie qu'elle semble drainer directement des éclairs des orages les plus puissants. A ce jour, nul ne sait quand cette masse a été créée, par qui, et à quel dessein. Il est toutefois certain qu'elle a été fabriquée dans le but de tuer sa victime d'un choc électrique instantané, et qui pourtant paraîtrait sans fin. Cela étant, bien qu'il ait enchanté l'arme de telle manière qu'elle offre à son porteur une protection contre l'élément qu'elle utilise, son créateur a été incapable de contenir ce pouvoir. En effet, la Faucheuse envoit d'intenses chocs électriques dans la main de son propriétaire, le tuant instantanément. Apparement, le nom de l'arme semble approprié à son pouvoir.
+De la Faucheuse Ã©mane une aura de Chaos pur, ce qui la rend inutilisable par ceux qui dÃ©dient leur vie Ã  la Loi. Cette arme paraÃ®t Ãªtre chargÃ©e d'une Ã©nergie qu'elle semble drainer directement des Ã©clairs des orages les plus puissants. A ce jour, nul ne sait quand cette masse a Ã©tÃ© crÃ©Ã©e, par qui, et Ã  quel dessein. Il est toutefois certain qu'elle a Ã©tÃ© fabriquÃ©e dans le but de tuer sa victime d'un choc Ã©lectrique instantanÃ©, et qui pourtant paraÃ®trait sans fin. Cela Ã©tant, bien qu'il ait enchantÃ© l'arme de telle maniÃ¨re qu'elle offre Ã  son porteur une protection contre l'Ã©lÃ©ment qu'elle utilise, son crÃ©ateur a Ã©tÃ© incapable de contenir ce pouvoir. En effet, la Faucheuse envoit d'intenses chocs Ã©lectriques dans la main de son propriÃ©taire, le tuant instantanÃ©ment. Apparement, le nom de l'arme semble appropriÃ© Ã  son pouvoir.
 
 PARAMETRES :
 
-Spécial : 
- 5 % de chances qu'une cible touchée par la Faucheuse soit instantanément tuée et que son porteur reçoive 6D6 points de dégâts électriques (jet de sauvegarde contre la Mort pour moitié)
- +10 % de résistance à l'électricité
+SpÃ©cial : 
+ 5 % de chances qu'une cible touchÃ©e par la Faucheuse soit instantanÃ©ment tuÃ©e et que son porteur reÃ§oive 6D6 points de dÃ©gÃ¢ts Ã©lectriques (jet de sauvegarde contre la Mort pour moitiÃ©)
+ +10 % de rÃ©sistance Ã  l'Ã©lectricitÃ©
 
 TAC0 : +1
-Dégâts : 1D6 +2
-Type de dégâts : contondant
+DÃ©gÃ¢ts : 1D6 +2
+Type de dÃ©gÃ¢ts : contondant
 Poids : 4
 Facteur de vitesse : 4
-Type de compétence : masse
-Type : arme à une main
-Non Utilisable par :
- Personnages Loyaux
- Druide
- Mage
- Voleur~
+Type de compÃ©tence : masse
+Type : arme Ã  une main
+~
 @47 = ~Ronces Venimeuses~
 @48 = ~Gourdin +1 : Ronces Venimeuses
-Les Ronces Venimeuses sont une arme mortelle créée par les Druides de l'Ombre dans le but de les aider à protéger la forêt et ses créatures, mais aussi pour les aider à punir ceux qui oseraient lui faire du mal. A chaque coup au but, la cible se fait piquer par quelques épines venimeuses provenant de la plante à partir de laquelle cette arme enchantée a été fabriquée, ce qui rajoute des dégâts de poison à l'arme.
+Les Ronces Venimeuses sont une arme mortelle crÃ©Ã©e par les Druides de l'Ombre dans le but de les aider Ã  protÃ©ger la forÃªt et ses crÃ©atures, mais aussi pour les aider Ã  punir ceux qui oseraient lui faire du mal. A chaque coup au but, la cible se fait piquer par quelques Ã©pines venimeuses provenant de la plante Ã  partir de laquelle cette arme enchantÃ©e a Ã©tÃ© fabriquÃ©e, ce qui rajoute des dÃ©gÃ¢ts de poison Ã  l'arme.
 
 PARAMETRES :
 
-Spécial : 
- Toute cible touchée par les Ronces Venimeuses doit réussir un jet de sauvegarde contre le Poison (avec un bonus de +2) sous peine de recevoir 1 point de dégâts de poison par seconde, pendant 8 secondes
+SpÃ©cial : 
+ Toute cible touchÃ©e par les Ronces Venimeuses doit rÃ©ussir un jet de sauvegarde contre le Poison (avec un bonus de +2) sous peine de recevoir 1 point de dÃ©gÃ¢ts de poison par seconde, pendant 8 secondes
 
 TAC0 : +2 
-Dégâts : 1D6 +1 
-Type de dégâts : contondant
+DÃ©gÃ¢ts : 1D6 +1 
+Type de dÃ©gÃ¢ts : contondant
 Poids : 3
 Facteur de vitesse : 3
-Type de compétence : gourdin
-Type : arme à une main
-Non Utilisable par :
- Mage~
-@49 = ~Fléau~
+Type de compÃ©tence : gourdin
+Type : arme Ã  une main
+~
+@49 = ~FlÃ©au~
 @50 = ~Rage du Chaos~
-@51 = ~Le fléau est une solide poignée en bois attachée à une tringle en fer, une baguette de bois comportant des pointes, ou une balle en fer pointue. La poignée et l'équipement qui l'accompagne sont reliés par une charnière ou une chaîne. Cette arme servait à l'origine à battre le grain. 
+@51 = ~Le flÃ©au est une solide poignÃ©e en bois attachÃ©e Ã  une tringle en fer, une baguette de bois comportant des pointes, ou une balle en fer pointue. La poignÃ©e et l'Ã©quipement qui l'accompagne sont reliÃ©s par une charniÃ¨re ou une chaÃ®ne. Cette arme servait Ã  l'origine Ã  battre le grain. 
 
 PARAMETRES :
 
-Dégâts : 1D6 +1
-Type de dégâts : contondant
+DÃ©gÃ¢ts : 1D6 +1
+Type de dÃ©gÃ¢ts : contondant
 Poids : 15
 Facteur de vitesse : 7
-Type de compétence : fléau/étoile du matin
-Type : arme à une main
-Non Utilisable par :
- Druide
- Mage 
- Voleur~
-@52 = ~Fléau +2 : Rage du Chaos
-Créée par les Duergars pour les aider dans leurs guerres, la Rage du Chaos a une longue histoire de sanglantes batailles et de terribles affrontements entre les nains gris et leurs nombreus ennemis. Ce fléau a vu son pommeau de bois renforcé et sa boule métallique enchantée dans le but d'infliger des dégâts supplémentaires à chaque coup au but.
+Type de compÃ©tence : flÃ©au/Ã©toile du matin
+Type : arme Ã  une main
+~
+@52 = ~FlÃ©au +2 : Rage du Chaos
+CrÃ©Ã©e par les Duergars pour les aider dans leurs guerres, la Rage du Chaos a une longue histoire de sanglantes batailles et de terribles affrontements entre les nains gris et leurs nombreus ennemis. Ce flÃ©au a vu son pommeau de bois renforcÃ© et sa boule mÃ©tallique enchantÃ©e dans le but d'infliger des dÃ©gÃ¢ts supplÃ©mentaires Ã  chaque coup au but.
 
 PARAMETRES :
 
 TAC0 : +2
-Dégâts : 1D6 +3
-Spécial : +3 points de dégâts perforants
-Type de dégâts : contondant
+DÃ©gÃ¢ts : 1D6 +3
+SpÃ©cial : +3 points de dÃ©gÃ¢ts perforants
+Type de dÃ©gÃ¢ts : contondant
 Poids : 11
 Facteur de vitesse : 5
-Type de compétence : fléau/étoile du matin
-Type : arme à une main
-Non Utilisable par :
- Druide
- Mage 
- Voleur~
+Type de compÃ©tence : flÃ©au/Ã©toile du matin
+Type : arme Ã  une main
+~
 @53 = ~Dormeuse~
 @54 = ~Masse +2 : Dormeuse
-Cette arme appartenait à Ssitalc, un elfe étrangement maléfique connu sous le nom de l'Esclavagiste de la Côte des Epées. Avant de mourir brutalement il y a quelques années, Ssitalc commandait une large compagnie de brigands humains, nains et gnomes, utilisant la Dormeuse pour les tenir obéissants. Cette arme a une chance de neutraliser toute créature qu'elle frappe en l'endormant.
+Cette arme appartenait Ã  Ssitalc, un elfe Ã©trangement malÃ©fique connu sous le nom de l'Esclavagiste de la CÃ´te des EpÃ©es. Avant de mourir brutalement il y a quelques annÃ©es, Ssitalc commandait une large compagnie de brigands humains, nains et gnomes, utilisant la Dormeuse pour les tenir obÃ©issants. Cette arme a une chance de neutraliser toute crÃ©ature qu'elle frappe en l'endormant.
 
 PARAMETRES :
 
-Spécial : toute cible touchée par la Dormeuse doit réussir un jet de sauvegarde contre le Poison (avec un bonus de +2) sous peine de s'endormir pendant 12 secondes
+SpÃ©cial : toute cible touchÃ©e par la Dormeuse doit rÃ©ussir un jet de sauvegarde contre le Poison (avec un bonus de +2) sous peine de s'endormir pendant 12 secondes
 
 TAC0 : +2
-Dégâts : 1D6 +3
-Type de dégâts : contondant
+DÃ©gÃ¢ts : 1D6 +3
+Type de dÃ©gÃ¢ts : contondant
 Poids : 6
 Facteur de vitesse : 4
-Type de compétence : masse
-Type : arme à une main
-Non Utilisable par :
- Druide
- Mage
- Voleur~
+Type de compÃ©tence : masse
+Type : arme Ã  une main
+~
 @55 = ~Livre du Savoir Ancien~
-@56 = ~Ce livre a été échangé à <CHARNAME> par un érudit contre un exemplaire des Histoires des Parchemins Néthères.
+@56 = ~Ce livre a Ã©tÃ© Ã©changÃ© Ã  <CHARNAME> par un Ã©rudit contre un exemplaire des Histoires des Parchemins NÃ©thÃ¨res.
 
-Ce texte, complètement indéchiffrable, résiste à toutes les tentatives de lecture par la magie ou par d'autres moyens.~
-@57 = ~Ce livre a été échangé à <CHARNAME> par un érudit contre un exemplaire des Histoires des Parchemins Néthères. Sa valeur est estimée à 10 000 pièces d'or au moins.
+Ce texte, complÃ¨tement indÃ©chiffrable, rÃ©siste Ã  toutes les tentatives de lecture par la magie ou par d'autres moyens.~
+@57 = ~Ce livre a Ã©tÃ© Ã©changÃ© Ã  <CHARNAME> par un Ã©rudit contre un exemplaire des Histoires des Parchemins NÃ©thÃ¨res. Sa valeur est estimÃ©e Ã  10 000 piÃ¨ces d'or au moins.
 
-Ce texte, complètement indéchiffrable, résiste à toutes les tentatives de lecture par la magie ou par d'autres moyens.~
-@58 = ~Bottes usées~
+Ce texte, complÃ¨tement indÃ©chiffrable, rÃ©siste Ã  toutes les tentatives de lecture par la magie ou par d'autres moyens.~
+@58 = ~Bottes usÃ©es~
 @59 = ~Bottes du Renard~
-@60 = ~Les bottes sont généralement fabriquées artisanalement par des cordonniers. Les bottes ordinaires sont fabriquées à l'aide d'un moule, mais les bottes de qualité supérieure sont faites sur mesure. 
+@60 = ~Les bottes sont gÃ©nÃ©ralement fabriquÃ©es artisanalement par des cordonniers. Les bottes ordinaires sont fabriquÃ©es Ã  l'aide d'un moule, mais les bottes de qualitÃ© supÃ©rieure sont faites sur mesure. 
 
 PARAMETRES :
 
-Poids : 4~
-@61 = ~On ne sait pas grand-chose sur ces bottes enchantées, si ce n'est qu'elles viennent de la région au nord de Féérune connue sous le nom de l'Epine Dorsale du Monde. L'on raconte qu'elles ont été trouvées par un groupe d'aventuriers courageux qui voyagea au travers de ces montagnes glaciales et dangereuses pour détruire un grand Mal.
+Poids : 4
+~
+@61 = ~On ne sait pas grand-chose sur ces bottes enchantÃ©es, si ce n'est qu'elles viennent de la rÃ©gion au nord de FÃ©Ã©rune connue sous le nom de l'Epine Dorsale du Monde. L'on raconte qu'elles ont Ã©tÃ© trouvÃ©es par un groupe d'aventuriers courageux qui voyagea au travers de ces montagnes glaciales et dangereuses pour dÃ©truire un grand Mal.
 
 PARAMETRES :
 
 Classe d'Armure : +1
-Spécial : +40 % à la vitesse de déplacement
-Poids : 3~
+SpÃ©cial : +40 % Ã  la vitesse de dÃ©placement
+Poids : 3
+~
 @62 = ~Arc court~
-@63 = ~Arc Fantôme~
-@64 = ~Les arcs courts ont été fabriqués avant les autres, même s'ils ne s'appelaient pas encore ainsi. Ce terme est utilisé par défaut pour désigner tout ce qui n'est pas un arc long. Les branches d'arc court mesurent 1,50 m en moyenne. Avec les années, on s'est efforcé d'améliorer la portée de l'arc. Tantôt on augmentait la longueur des branches, tantôt on améliorait leur flexibilité sans modifier leur longueur. La première expérience a engendré ce qui s'appelle aujourd'hui l'arc long. 
+@63 = ~Arc FantÃ´me~
+@64 = ~Les arcs courts ont Ã©tÃ© fabriquÃ©s avant les autres, mÃªme s'ils ne s'appelaient pas encore ainsi. Ce terme est utilisÃ© par dÃ©faut pour dÃ©signer tout ce qui n'est pas un arc long. Les branches d'arc court mesurent 1,50 m en moyenne. Avec les annÃ©es, on s'est efforcÃ© d'amÃ©liorer la portÃ©e de l'arc. TantÃ´t on augmentait la longueur des branches, tantÃ´t on amÃ©liorait leur flexibilitÃ© sans modifier leur longueur. La premiÃ¨re expÃ©rience a engendrÃ© ce qui s'appelle aujourd'hui l'arc long. 
 
 PARAMETRES :
 
 Poids : 2
 Facteur de vitesse : 6
-Type de compétence : arc court
-Type : arme à deux mains
-Non Utilisable par :
- Druide
- Clerc
- Mage~
-@65 = ~Arc court +1 : Fantôme
-On a longtemps cru que cet objet n'existait que dans les mythes ou dans les histoires amusantes mais largement exagérées que racontent les aventuriers à la retraite. Pourtant, le Fantôme a bel et bien été fabriqué dans les forges d'un royaume mystique, très éloigné du nôtre, pour être ensuite confié aux soldats chargés de garder les portes qui séparent les Plans. C'est ainsi que l'on empêchait les arrivées indésirables de créatures malveillantes et mal intentionnées voulant briser l'équilibre fragile entre l'ordre et le chaos.
+Type de compÃ©tence : arc court
+Type : arme Ã  deux mains
+~
+@65 = ~Arc court +1 : FantÃ´me
+On a longtemps cru que cet objet n'existait que dans les mythes ou dans les histoires amusantes mais largement exagÃ©rÃ©es que racontent les aventuriers Ã  la retraite. Pourtant, le FantÃ´me a bel et bien Ã©tÃ© fabriquÃ© dans les forges d'un royaume mystique, trÃ¨s Ã©loignÃ© du nÃ´tre, pour Ãªtre ensuite confiÃ© aux soldats chargÃ©s de garder les portes qui sÃ©parent les Plans. C'est ainsi que l'on empÃªchait les arrivÃ©es indÃ©sirables de crÃ©atures malveillantes et mal intentionnÃ©es voulant briser l'Ã©quilibre fragile entre l'ordre et le chaos.
 
-Il semblerait que cet arc soit capable de créer un portail entre les Plans pour y tirer une flèche élémentaire chaque fois que sa corde éthérée est bandée, ce qui confère à cette arme une source illimitée de munitions pour qui l'utilise. Elle octroie aussi à son propriétaire une plus grande maîtrise des armes, ce qui augmente momentanément sa précision au combat. Par contre, comme les énergies de son porteur sont drainées vers le plan utilisé par l'arc, celui-ci diminue aussi la force physique de son propriétaire chaque fois que son mystérieux pouvoir est utilisé.
+Il semblerait que cet arc soit capable de crÃ©er un portail entre les Plans pour y tirer une flÃ¨che Ã©lÃ©mentaire chaque fois que sa corde Ã©thÃ©rÃ©e est bandÃ©e, ce qui confÃ¨re Ã  cette arme une source illimitÃ©e de munitions pour qui l'utilise. Elle octroie aussi Ã  son propriÃ©taire une plus grande maÃ®trise des armes, ce qui augmente momentanÃ©ment sa prÃ©cision au combat. Par contre, comme les Ã©nergies de son porteur sont drainÃ©es vers le plan utilisÃ© par l'arc, celui-ci diminue aussi la force physique de son propriÃ©taire chaque fois que son mystÃ©rieux pouvoir est utilisÃ©.
 
 PARAMETRES :
 
-Spécial : -1 en Force et +1 en Dexterité si équipé
-	  N'a pas besoin de flèches
+SpÃ©cial : -1 en Force et +1 en DexteritÃ© si Ã©quipÃ©
+	  N'a pas besoin de flÃ¨ches
 
 TAC0 : +1
-Dégâts : 1D3 +1
-Type de dégâts : perforant
+DÃ©gÃ¢ts : 1D3 +1
+Type de dÃ©gÃ¢ts : perforant
 Poids : 3
 Facteur de vitesse : 4
-Type de compétence : arc court
-Type : arme à deux mains
-Non Utilisable par :
- Druide
- Clerc
- Mage~
+Type de compÃ©tence : arc court
+Type : arme Ã  deux mains
+~
 @66 = ~Bille~
 @67 = ~Bille de Feu~
-@68 = ~Une bille est une pierre ronde et calibrée.  
+@68 = ~Une bille est une pierre ronde et calibrÃ©e.  
 
 PARAMETRES :
 
-Dégâts : 1D4 +1
-Type de dégâts : projectile (perforant)
+DÃ©gÃ¢ts : 1D4 +1
+Type de dÃ©gÃ¢ts : projectile (perforant)
 Poids : 0
-Arme de jet : fronde~
-@69 = ~Cette pierre aussi rare que bien équilibrée possède des propriétés magiques qui la rendent plus précise et mortelle. Elle a été aussi enchantée de telle sorte qu'elle explosera en une petite flamme lors de l'impact. Cette bille est un projectile potentiellement dangereux entre des mains expertes.
+Arme de jet : fronde
+~
+@69 = ~Cette pierre aussi rare que bien Ã©quilibrÃ©e possÃ¨de des propriÃ©tÃ©s magiques qui la rendent plus prÃ©cise et mortelle. Elle a Ã©tÃ© aussi enchantÃ©e de telle sorte qu'elle explosera en une petite flamme lors de l'impact. Cette bille est un projectile potentiellement dangereux entre des mains expertes.
 
 PARAMETRES :
 
 TAC0 : +2
-Dégâts : 1D4 +3
-Spécial : 1D4 points de dégâts de feu (jet de sauvegarde contre les Sorts pour annuler) 
-Type de dégâts : projectile (perforant)
+DÃ©gÃ¢ts : 1D4 +3
+SpÃ©cial : 1D4 points de dÃ©gÃ¢ts de feu (jet de sauvegarde contre les Sorts pour annuler) 
+Type de dÃ©gÃ¢ts : projectile (perforant)
 Poids : 0
-Arme de jet : fronde~
+Arme de jet : fronde
+~
 @70 = ~Cotte de Mailles~
 @71 = ~Cotte de Mailles Drow +2~
-@72 = ~L'armure en cottes de mailles est constituée d'anneaux métalliques imbriqués les uns dans les autres. Elle est toujours portée par-dessus une couche de tissu matelassé ou de cuir souple pour empêcher le frottement et réduire l'impact des chocs. 
+@72 = ~L'armure en cottes de mailles est constituÃ©e d'anneaux mÃ©talliques imbriquÃ©s les uns dans les autres. Elle est toujours portÃ©e par-dessus une couche de tissu matelassÃ© ou de cuir souple pour empÃªcher le frottement et rÃ©duire l'impact des chocs. 
 
 PARAMETRES :
 
 Classe d'Armure : 5
 Poids : 40
-Non Utilisable par :
- Druide 
- Mage 
- Voleur~
+~
 @73 = ~Cotte de mailles elfe noire +2
-Cette cotte de mailles elfe noire est une cotte de mailles elfique créée à partir des métaux uniques trouvés dans les Tréfonds Obscurs. 
+Cette cotte de mailles elfe noire est une cotte de mailles elfique crÃ©Ã©e Ã  partir des mÃ©taux uniques trouvÃ©s dans les TrÃ©fonds Obscurs. 
 
 PARAMETRES :
 
 Classe d'Armure : 3
 Poids : 10
-Non Utilisable par :
- Druide~
+~
 @74 = ~Robe de Magicien~
 @75 = ~La Robe d'Acier~
-@76 = ~Depuis l'ère de Nethéril, les mages ont appris à conférer aux objets quotidiens qui les entouraient une grande variété de propriétés magiques. L'un des plus usités de ces objets est la robe courante. Elle est légère, peu onéreuse et conserve bien ses enchantements. Cela en fait une parure de mage idéale. Cependant, en raison de leur héritage magique, ces robes enchantées ne peuvent être portées que par des mages mono classés, à classes jumelées ou multiclassés.
+@76 = ~Depuis l'Ã¨re de NethÃ©ril, les mages ont appris Ã  confÃ©rer aux objets quotidiens qui les entouraient une grande variÃ©tÃ© de propriÃ©tÃ©s magiques. L'un des plus usitÃ©s de ces objets est la robe courante. Elle est lÃ©gÃ¨re, peu onÃ©reuse et conserve bien ses enchantements. Cela en fait une parure de mage idÃ©ale. Cependant, en raison de leur hÃ©ritage magique, ces robes enchantÃ©es ne peuvent Ãªtre portÃ©es que par des mages mono classÃ©s, Ã  classes jumelÃ©es ou multiclassÃ©s.
 
 PARAMETRES :
 
 Poids : 9
-Utilisable uniquement par :
- Mage (monoclassé, à classes jumelées ou multiclassé)~
+~
 @77 = ~La Robe d'Acier
-La Robe d'Acier a été créée par Mélicamp, l'apprenti magicien de Bérégost, spécialement pour remercier <CHARNAME> de l'avoir sauvé des crocs d'un loup sauvage après s'être accidentellement changé en poulet. Les recherches approfondies qu'a menées le jeune mage sur les diverses robes qu'on lui a données ont montré que, combinées ensemble, elles pouvaient donner un vêtement extraordinairement puissant.
+La Robe d'Acier a Ã©tÃ© crÃ©Ã©e par MÃ©licamp, l'apprenti magicien de BÃ©rÃ©gost, spÃ©cialement pour remercier <CHARNAME> de l'avoir sauvÃ© des crocs d'un loup sauvage aprÃ¨s s'Ãªtre accidentellement changÃ© en poulet. Les recherches approfondies qu'a menÃ©es le jeune mage sur les diverses robes qu'on lui a donnÃ©es ont montrÃ© que, combinÃ©es ensemble, elles pouvaient donner un vÃªtement extraordinairement puissant.
 
-Ces lourds vêtements possèdent la résistance et la durabilité du métal elfe noir sans sa propriété de tomber en poussière à la lumière du soleil. Ils accordent aussi à leur propriétaire une résistance contre plusieurs des magies élémentaires utilisées de par les Royaumes, ce qui en fait un objet formidable recherché par les magiciens les plus puissants.
+Ces lourds vÃªtements possÃ¨dent la rÃ©sistance et la durabilitÃ© du mÃ©tal elfe noir sans sa propriÃ©tÃ© de tomber en poussiÃ¨re Ã  la lumiÃ¨re du soleil. Ils accordent aussi Ã  leur propriÃ©taire une rÃ©sistance contre plusieurs des magies Ã©lÃ©mentaires utilisÃ©es de par les Royaumes, ce qui en fait un objet formidable recherchÃ© par les magiciens les plus puissants.
 
 PARAMETRES :
 
 Classe d'Armure : 6
 Jets de Sauvegarde : +1
-Résistance à la magie : 20 %
-Résistance au feu : 20 % 
-Résistance au froid : 20 % 
-Résistance à l'électricité : 20 % 
+RÃ©sistance Ã  la magie : 20 %
+RÃ©sistance au feu : 20 % 
+RÃ©sistance au froid : 20 % 
+RÃ©sistance Ã  l'Ã©lectricitÃ© : 20 % 
 Poids : 9
-Utilisable uniquement par :
- Mage (monoclassé, à classes jumelées ou multiclassé)~
-@78 = ~Robe Mineure de Résistance~
-@79 = ~La Robe Mineure de Résistance
-La Robe Mineure de Résistance a été créée par Mélicamp, l'apprenti magicien de Bérégost, spécialement pour remercier <CHARNAME> de l'avoir sauvé des crocs d'un loup sauvage après s'être accidentellement changé en poulet. Les recherches approfondies qu'a menées le jeune mage sur les diverses robes qu'on lui a données ont montré que, combinées ensemble, elles pouvaient donner un vêtement extraordinairement puissant.
+~
+@78 = ~Robe Mineure de RÃ©sistance~
+@79 = ~La Robe Mineure de RÃ©sistance
+La Robe Mineure de RÃ©sistance a Ã©tÃ© crÃ©Ã©e par MÃ©licamp, l'apprenti magicien de BÃ©rÃ©gost, spÃ©cialement pour remercier <CHARNAME> de l'avoir sauvÃ© des crocs d'un loup sauvage aprÃ¨s s'Ãªtre accidentellement changÃ© en poulet. Les recherches approfondies qu'a menÃ©es le jeune mage sur les diverses robes qu'on lui a donnÃ©es ont montrÃ© que, combinÃ©es ensemble, elles pouvaient donner un vÃªtement extraordinairement puissant.
 
-Ces lourds vêtements possèdent la résistance et la durabilité du métal elfe noir sans sa propriété de tomber en poussière à la lumière du soleil. Ils accordent aussi à leur propriétaire une résistance contre certaines magies élémentaires utilisées de par les Royaumes.
+Ces lourds vÃªtements possÃ¨dent la rÃ©sistance et la durabilitÃ© du mÃ©tal elfe noir sans sa propriÃ©tÃ© de tomber en poussiÃ¨re Ã  la lumiÃ¨re du soleil. Ils accordent aussi Ã  leur propriÃ©taire une rÃ©sistance contre certaines magies Ã©lÃ©mentaires utilisÃ©es de par les Royaumes.
 
 PARAMETRES :
 
 Classe d'Armure : 7
-Résistance à la magie : 5 %
-Résistance au feu : 20 % 
-Résistance au froid : 20 % 
-Résistance à l'électricité : 20 % 
+RÃ©sistance Ã  la magie : 5 %
+RÃ©sistance au feu : 20 % 
+RÃ©sistance au froid : 20 % 
+RÃ©sistance Ã  l'Ã©lectricitÃ© : 20 % 
 Poids : 9
-Utilisable uniquement par :
- Mage (monoclassé, à classes jumelées ou multiclassé)~
+~
 @80 = ~Robe de l'Erudit~
 @81 = ~La Robe de l'Erudit
-La Robe de l'Erudit a été créée par Mélicamp, l'apprenti magicien de Bérégost, spécialement pour remercier <CHARNAME> de l'avoir sauvé des crocs d'un loup sauvage après s'être accidentellement changé en poulet. Les recherches approfondies qu'a menées le jeune mage sur les diverses robes qu'on lui a données ont montré que, combinées ensemble, elles pouvaient donner un vêtement extraordinairement puissant.
+La Robe de l'Erudit a Ã©tÃ© crÃ©Ã©e par MÃ©licamp, l'apprenti magicien de BÃ©rÃ©gost, spÃ©cialement pour remercier <CHARNAME> de l'avoir sauvÃ© des crocs d'un loup sauvage aprÃ¨s s'Ãªtre accidentellement changÃ© en poulet. Les recherches approfondies qu'a menÃ©es le jeune mage sur les diverses robes qu'on lui a donnÃ©es ont montrÃ© que, combinÃ©es ensemble, elles pouvaient donner un vÃªtement extraordinairement puissant.
 
-Ces lourds vêtements possèdent la résistance et la durabilité du métal elfe noir sans sa propriété de tomber en poussière à la lumière du soleil. Ils accordent aussi à leur propriétaire une résistance contre certaines magies élémentaires utilisées de par les Royaumes.
+Ces lourds vÃªtements possÃ¨dent la rÃ©sistance et la durabilitÃ© du mÃ©tal elfe noir sans sa propriÃ©tÃ© de tomber en poussiÃ¨re Ã  la lumiÃ¨re du soleil. Ils accordent aussi Ã  leur propriÃ©taire une rÃ©sistance contre certaines magies Ã©lÃ©mentaires utilisÃ©es de par les Royaumes.
 
 PARAMETRES :
 
 Classe d'Armure : 7
 Jets de Sauvegarde : +1
-Résistance à la magie : 5 %
+RÃ©sistance Ã  la magie : 5 %
 Poids : 9
-Utilisable uniquement par :
- Mage (monoclassé, à classes jumelées ou multiclassé)~
+~
 @82 = ~Casque~
-@83 = ~Couronne des Rois Déchus~
-@84 = ~Ce type de casque d'apparat, fait de cuir ou de métal renforcé, couvre tout le visage et le crâne sauf le nez et les yeux. Ce heaume semble être un casque décoratif, et peut se vendre à un bon prix.
+@83 = ~Couronne des Rois DÃ©chus~
+@84 = ~Ce type de casque d'apparat, fait de cuir ou de mÃ©tal renforcÃ©, couvre tout le visage et le crÃ¢ne sauf le nez et les yeux. Ce heaume semble Ãªtre un casque dÃ©coratif, et peut se vendre Ã  un bon prix.
 
 PARAMETRES :
 
-Bonus à la Classe d'Armure : aucun
-Spécial : Protège contre les coups critiques
+Bonus Ã  la Classe d'Armure : aucun
+SpÃ©cial : ProtÃ¨ge contre les coups critiques
 Poids : 2
-Non Utilisable par :
- Mage
- Barde
- Voleur~
-@85 = ~Découverte dans d'anciennes ruines au sud d'Amn, cette couronne a vu la gloire et la décadence d'innombrables empires. Elle fut révérée comme étant le symbole qu'un dirigeant pouvait utiliser pour garder la paix, ou pour déclarer et mener la guerre. L'Histoire indique que cette couronne a dernièrement été vue en la possession d'un tyran fuyant son royaume déchu vers la mer des Epées, pour ensuite se perdre dans ces eaux impitoyables.
+~
+@85 = ~DÃ©couverte dans d'anciennes ruines au sud d'Amn, cette couronne a vu la gloire et la dÃ©cadence d'innombrables empires. Elle fut rÃ©vÃ©rÃ©e comme Ã©tant le symbole qu'un dirigeant pouvait utiliser pour garder la paix, ou pour dÃ©clarer et mener la guerre. L'Histoire indique que cette couronne a derniÃ¨rement Ã©tÃ© vue en la possession d'un tyran fuyant son royaume dÃ©chu vers la mer des EpÃ©es, pour ensuite se perdre dans ces eaux impitoyables.
 
 PARAMETRES :
 
 TAC0 : +1
 Classe d'Armure : +2
-Spécial : 
- Protège contre les coups critiques
- +20 % de Résistance à la magie
+SpÃ©cial : 
+ ProtÃ¨ge contre les coups critiques
+ +20 % de RÃ©sistance Ã  la magie
 Poids : 2
-Non Utilisable par :
- Voleur~
-@86 = ~Note mystérieuse~
-@87 = ~z... c'est Ainsi que nos employeurs nous l'ont décrit... retrouvez-moi près du carNaval, au nord de la colline, et nous pourrons DIscuter d'une compensatioN appropriée.
-N~
+~
+@86 = ~Note mystÃ©rieuse~
+@87 = ~z... c'est Ainsi que nos employeurs nous l'ont dÃ©crit... retrouvez-moi prÃ¨s du carNaval, au nord de la colline, et nous pourrons DIscuter d'une compensatioN appropriÃ©e.
+N
+~
 @88 = ~Cotte de Mailles Elfique +2~
 @89 = ~Cotte de Mailles Elfique +2
-Durant l'âge d'or au cours duquel les elfes de la Main de la Seldarine et les nains de Profondorn vécurent unis, on construisit des versions spécifiques de la célèbre cotte de mailles elfique, protégeant également des terribles conditions climatiques du Nord.
-Faite de fins anneaux métalliques imbriqués, cette cotte de mailles elfique légère n'impose pas de malus aux mouvements de son porteur et lui accorde une certaine protection contre la magie mineure.
+Durant l'Ã¢ge d'or au cours duquel les elfes de la Main de la Seldarine et les nains de Profondorn vÃ©curent unis, on construisit des versions spÃ©cifiques de la cÃ©lÃ¨bre cotte de mailles elfique, protÃ©geant Ã©galement des terribles conditions climatiques du Nord.
+Faite de fins anneaux mÃ©talliques imbriquÃ©s, cette cotte de mailles elfique lÃ©gÃ¨re n'impose pas de malus aux mouvements de son porteur et lui accorde une certaine protection contre la magie mineure.
 
 PARAMETRES :
 
 Classe d'Armure : 3
-Résistance à la magie : 10 %
+RÃ©sistance Ã  la magie : 10 %
 Poids : 25
-Non Utilisable par :
- Mage
- Moine
- Druide~
-@90 = ~Cotte de Mailles des Tréfonds Obscurs +1~
-@91 = ~Cotte de Mailles des Tréfonds Obscurs +1
-Cette cotte de mailles elfique fabriquée par un artisan de talent est faite d'illithium, un minerai rare que l'on ne trouve que dans les plus profondes caves de Féérune. C'est pourquoi l'on peut sentir une forte aura irradier de l'armure. Les gravures et les runes gravées à la surface de la cotte de mailles indiquent qu'elle a été fabriquée spécialement pour une prêtresse elfe noire. En effet, elle confère à son porteur une plus grande compréhension des divinités et demi-divinités des Royaumes, et bien qu'une telle armure aurait été des plus appréciées dans les Tréfonds Obscurs, les êtres de la surface semblent la trouver repoussante, et ceux qui voudraient la porter en subiraient les conséquences.
+~
+@90 = ~Cotte de Mailles des TrÃ©fonds Obscurs +1~
+@91 = ~Cotte de Mailles des TrÃ©fonds Obscurs +1
+Cette cotte de mailles elfique fabriquÃ©e par un artisan de talent est faite d'illithium, un minerai rare que l'on ne trouve que dans les plus profondes caves de FÃ©Ã©rune. C'est pourquoi l'on peut sentir une forte aura irradier de l'armure. Les gravures et les runes gravÃ©es Ã  la surface de la cotte de mailles indiquent qu'elle a Ã©tÃ© fabriquÃ©e spÃ©cialement pour une prÃªtresse elfe noire. En effet, elle confÃ¨re Ã  son porteur une plus grande comprÃ©hension des divinitÃ©s et demi-divinitÃ©s des Royaumes, et bien qu'une telle armure aurait Ã©tÃ© des plus apprÃ©ciÃ©es dans les TrÃ©fonds Obscurs, les Ãªtres de la surface semblent la trouver repoussante, et ceux qui voudraient la porter en subiraient les consÃ©quences.
 
 PARAMETRES :
 
 Classe d'Armure : 4
-Résistance à la magie : 33 %
-Spécial :
- Sagesse : mise à 18
+RÃ©sistance Ã  la magie : 33 %
+SpÃ©cial :
+ Sagesse : mise Ã  18
  Charisme : -2
 Poids : 25
-Non Utilisable par :
- Mage
- Voleur
- Moine
- Druide~
+~
 @92 = ~Marteau de Guerre~
 @93 = ~Rayonnement de Lathandre~
-@94 = ~Les cavaliers peuvent difficilement manier les armes longues. C'est pourquoi de nombreuses armes ont été munies de manches plus courts pouvant être portées d'une seule main. La masse et le fléau sont deux exemples d'armes longues qui ont suivi cette évolution ; le marteau de guerre en est un autre. Le marteau de guerre du cavalier est le descendant du marteau de Lucerne. Il est entièrement fabriqué en acier, avec des rondelles pour protéger et renforcer la prise. Les rondelles sont de petits disques métalliques, souvent en forme de motifs décoratifs. Le manche mesure environ 45 cm de long.
+@94 = ~Les cavaliers peuvent difficilement manier les armes longues. C'est pourquoi de nombreuses armes ont Ã©tÃ© munies de manches plus courts pouvant Ãªtre portÃ©es d'une seule main. La masse et le flÃ©au sont deux exemples d'armes longues qui ont suivi cette Ã©volution ; le marteau de guerre en est un autre. Le marteau de guerre du cavalier est le descendant du marteau de Lucerne. Il est entiÃ¨rement fabriquÃ© en acier, avec des rondelles pour protÃ©ger et renforcer la prise. Les rondelles sont de petits disques mÃ©talliques, souvent en forme de motifs dÃ©coratifs. Le manche mesure environ 45 cm de long.
 
 PARAMETRES :
 
-Dégâts : 1D4 +1
-Type de dégâts : contondant
+DÃ©gÃ¢ts : 1D4 +1
+Type de dÃ©gÃ¢ts : contondant
 Poids : 6
 Facteur de vitesse : 4
-Type de compétence : marteau de guerre
-Type : arme à une main
-Non Utilisable par :
- Druide
- Mage 
- Voleur~
-@95 = ~Autrefois un simple marteau doté d'une enchantement mineur, cette arme sacrée a reçu la bénédiction de Lathandre, qui fut accordée par le prêtre Bran à <CHARNAME> pour avoir héroïquement empêché la libération sur la Côte des Epées du démon mineur Lestraubimat. Ce marteau améliore la force de son porteur, et lui confère même une certaine immunité contre la magie mineure. Seuls les êtres au coeur pur et à la foi inébranlable pourront brandir cette arme.
+Type de compÃ©tence : marteau de guerre
+Type : arme Ã  une main
+~
+@95 = ~Autrefois un simple marteau dotÃ© d'une enchantement mineur, cette arme sacrÃ©e a reÃ§u la bÃ©nÃ©diction de Lathandre, qui fut accordÃ©e par le prÃªtre Bran Ã  <CHARNAME> pour avoir hÃ©roÃ¯quement empÃªchÃ© la libÃ©ration sur la CÃ´te des EpÃ©es du dÃ©mon mineur Lestraubimat. Ce marteau amÃ©liore la force de son porteur, et lui confÃ¨re mÃªme une certaine immunitÃ© contre la magie mineure. Seuls les Ãªtres au coeur pur et Ã  la foi inÃ©branlable pourront brandir cette arme.
 
 PARAMETRES :
 
-Spécial : +1 en Force si équipé
-	  +20 % en résistance à la magie si équipé
+SpÃ©cial : +1 en Force si Ã©quipÃ©
+	  +20 % en rÃ©sistance Ã  la magie si Ã©quipÃ©
 
 TAC0 : +2
-Dégâts : 1D4 +3
-Type de dégâts : contondant
+DÃ©gÃ¢ts : 1D4 +3
+Type de dÃ©gÃ¢ts : contondant
 Poids : 5
 Facteur de vitesse : 3
-Type de compétence : marteau de guerre
-Type : arme à une main
-Non Utilisable par : 
- Personnages mauvais
- Druide 
- Mage 
- Voleur~
+Type de compÃ©tence : marteau de guerre
+Type : arme Ã  une main
+~
 @96 = ~Cagoule~
 @97 = ~Cagoule du Voleur~
-@98 = ~La cagoule, malgré le peu de protection qu'elle offre, est le couvre-chef favori des voleurs et des bardes de tout poil.
+@98 = ~La cagoule, malgrÃ© le peu de protection qu'elle offre, est le couvre-chef favori des voleurs et des bardes de tout poil.
 
 PARAMETRES :
 
 Poids : 2
-Utilisable par :
- Barde
- Voleur~
-@99 = ~La cagoule, malgré le peu de protection qu'elle offre, est le couvre-chef favori des voleurs et des bardes de tout poil. Toutefois, celle-ci en particulier a été enchantée. Ainsi, même si elle apparait tout aussi fragile qu'un vêtement ou qu'une cagoule basique, elle offre suffisamment de résistance pour contrer un coup puissant sur la tête.
+~
+@99 = ~La cagoule, malgrÃ© le peu de protection qu'elle offre, est le couvre-chef favori des voleurs et des bardes de tout poil. Toutefois, celle-ci en particulier a Ã©tÃ© enchantÃ©e. Ainsi, mÃªme si elle apparait tout aussi fragile qu'un vÃªtement ou qu'une cagoule basique, elle offre suffisamment de rÃ©sistance pour contrer un coup puissant sur la tÃªte.
 
 PARAMETRES :
 
-Bonus à la Classe d'Armure : aucun
-Spécial : 
- Protège contre les coups critiques
+Bonus Ã  la Classe d'Armure : aucun
+SpÃ©cial : 
+ ProtÃ¨ge contre les coups critiques
  +1 aux Jets de Sauvegarde
 Poids : 2
-Utilisable par :
- Barde
- Voleur~
-@100 = ~Heaume de Défense~
-@101 = ~Heaume de Défense : "Don de la Paix"
-Prisé pour ses origines nobles autant que pour les avantages qu'il procure à celui qui le porte, ce heaume a été initialement conçu comme un simple cadeau. Il n'y avait aucune crise majeure, aucun démon à renverser. Il s'agissait simplement d'offrir un présent à un ami. Un bon livre ou une bonne bouteille auraient pu faire l'affaire, mais les aventuriers aiment faire des cadeaux utiles. Le heaume a pris part à de nombreuses batailles depuis sa création, mais on se souvient surtout de la vertu qui lui est associée.
-Ce casque, amélioré par Taërom "Grondemarteau" Fuiruim, offre une meilleure protection à son porteur.
+~
+@100 = ~Heaume de DÃ©fense~
+@101 = ~Heaume de DÃ©fense : "Don de la Paix"
+PrisÃ© pour ses origines nobles autant que pour les avantages qu'il procure Ã  celui qui le porte, ce heaume a Ã©tÃ© initialement conÃ§u comme un simple cadeau. Il n'y avait aucune crise majeure, aucun dÃ©mon Ã  renverser. Il s'agissait simplement d'offrir un prÃ©sent Ã  un ami. Un bon livre ou une bonne bouteille auraient pu faire l'affaire, mais les aventuriers aiment faire des cadeaux utiles. Le heaume a pris part Ã  de nombreuses batailles depuis sa crÃ©ation, mais on se souvient surtout de la vertu qui lui est associÃ©e.
+Ce casque, amÃ©liorÃ© par TaÃ«rom "Grondemarteau" Fuiruim, offre une meilleure protection Ã  son porteur.
 
 PARAMETRES :
 
-Bonus à la Classe d'Armure : 1
+Bonus Ã  la Classe d'Armure : 1
 Jets de Sauvegarde : +1 
-Résistance à l'électricité : +20 %
-Résistance au froid : +20 %
-Résistance au feu : +20 %
-Spécial : Protège contre les coups critiques
+RÃ©sistance Ã  l'Ã©lectricitÃ© : +20 %
+RÃ©sistance au froid : +20 %
+RÃ©sistance au feu : +20 %
+SpÃ©cial : ProtÃ¨ge contre les coups critiques
 Poids : 3
-Non Utilisable par :
- Mage
- Barde
- Voleur~
+~
 @102 = ~Heaume d'Infravision~
-@103 = ~Heaume d'Infravision : "Les Yeux de la Vérité"
-Comme elle faisait partie de la race des charognards, Babette Maelestrom fit créer ce heaume pour faciliter ses excursions à l'intérieur des donjons. Elle attribua plus tard sa richesse à son seul pouvoir, mais ses yeux pénétrants y sont certainement pour quelque chose.  
-Ce casque, amélioré par Taërom "Grondemarteau" Fuiruim, offre une meilleure protection à son porteur.
+@103 = ~Heaume d'Infravision : "Les Yeux de la VÃ©ritÃ©"
+Comme elle faisait partie de la race des charognards, Babette Maelestrom fit crÃ©er ce heaume pour faciliter ses excursions Ã  l'intÃ©rieur des donjons. Elle attribua plus tard sa richesse Ã  son seul pouvoir, mais ses yeux pÃ©nÃ©trants y sont certainement pour quelque chose.  
+Ce casque, amÃ©liorÃ© par TaÃ«rom "Grondemarteau" Fuiruim, offre une meilleure protection Ã  son porteur.
 
 PARAMETRES :
 
-Bonus à la Classe d'Armure : 1
-Spécial :
- Protège contre les coups critiques
- Confère au porteur l'infravision jusqu'à 36 m
+Bonus Ã  la Classe d'Armure : 1
+SpÃ©cial :
+ ProtÃ¨ge contre les coups critiques
+ ConfÃ¨re au porteur l'infravision jusqu'Ã  36 m
 Poids : 3
-Non Utilisable par :
- Mage
- Barde
- Voleur~
+~
 @104 = ~Casque Anti-Charmes~
 @105 = ~Casque Anti-Charmes : "L'Impartial"
-Comme son nom l'indique, le casque anti-charmes protège celui qui le porte de toute tentative de manipulation magique de ses émotions. Souvent, des groupes de mercenaires de haut vol équipent leurs membres de tels casques afin de les protéger de toute ingérence extérieure.
-Ce casque, amélioré par Taërom "Grondemarteau" Fuiruim, offre une meilleure protection à son porteur.
+Comme son nom l'indique, le casque anti-charmes protÃ¨ge celui qui le porte de toute tentative de manipulation magique de ses Ã©motions. Souvent, des groupes de mercenaires de haut vol Ã©quipent leurs membres de tels casques afin de les protÃ©ger de toute ingÃ©rence extÃ©rieure.
+Ce casque, amÃ©liorÃ© par TaÃ«rom "Grondemarteau" Fuiruim, offre une meilleure protection Ã  son porteur.
 
 PARAMETRES :
 
-Bonus à la Classe d'Armure : 1
-Spécial :
-  Protège contre les coups critiques
+Bonus Ã  la Classe d'Armure : 1
+SpÃ©cial :
+  ProtÃ¨ge contre les coups critiques
   Immunise contre les charmes
 Poids : 4
-Non Utilisable par :
- Mage
- Barde
- Voleur~
+~
 @106 = ~Armure de Peau~
 @107 = ~Cuir de Bala~
-@108 = ~L'Armure de Peau est faite d'un cuir épais de grands animaux (d'éléphants, par exemple) ou de plusieurs couches de cuirs plus fins. Elle est considérée comme trop encombrante par les cultures humaines développées, mais les humanoïdes barbares s'en servent souvent. Elle protège mieux que le cuir normal, mais elle est parfois difficile à entretenir, dégage souvent une odeur désagréable ou se montre d'apparence médiocre, ce qui la rend peu pratique. Des voleurs peuvent porter de telles armures, mais elle réduit leurs capacités.
+@108 = ~L'Armure de Peau est faite d'un cuir Ã©pais de grands animaux (d'Ã©lÃ©phants, par exemple) ou de plusieurs couches de cuirs plus fins. Elle est considÃ©rÃ©e comme trop encombrante par les cultures humaines dÃ©veloppÃ©es, mais les humanoÃ¯des barbares s'en servent souvent. Elle protÃ¨ge mieux que le cuir normal, mais elle est parfois difficile Ã  entretenir, dÃ©gage souvent une odeur dÃ©sagrÃ©able ou se montre d'apparence mÃ©diocre, ce qui la rend peu pratique. Des voleurs peuvent porter de telles armures, mais elle rÃ©duit leurs capacitÃ©s.
 
 PARAMETRES :
 
 Classe d'Armure : 6
-Déplacement silencieux : -20 %
+DÃ©placement silencieux : -20 %
 Crochetage : -10 %
-Détecter / désamorcer les pièges : -10 %
-Vol à la tire : -30 %
+DÃ©tecter / dÃ©samorcer les piÃ¨ges : -10 %
+Vol Ã  la tire : -30 %
 Poids : 40
-Non Utilisable par :
- Mage~
+~
 @109 = ~Cuir de Bala +4
-Le propriétaire d'origine de cette armure était l'infâme Bala, le prince d'un clan de nains des profondeurs connu pour son caractère insupportable. On pensait pourtant que cette cuirasse avait été fabriquée bien des années après le meurtre de Thesk, le cruel magicien elfe qui avait emprisonné Bala. Cette armure d'apparence grossière ressemble bien à l'artisanat de la hache légendaire de Bala. Cependant, la cuirasse possède une forte aura magique qui protège son propriétaire des sorts les plus puissants.
+Le propriÃ©taire d'origine de cette armure Ã©tait l'infÃ¢me Bala, le prince d'un clan de nains des profondeurs connu pour son caractÃ¨re insupportable. On pensait pourtant que cette cuirasse avait Ã©tÃ© fabriquÃ©e bien des annÃ©es aprÃ¨s le meurtre de Thesk, le cruel magicien elfe qui avait emprisonnÃ© Bala. Cette armure d'apparence grossiÃ¨re ressemble bien Ã  l'artisanat de la hache lÃ©gendaire de Bala. Cependant, la cuirasse possÃ¨de une forte aura magique qui protÃ¨ge son propriÃ©taire des sorts les plus puissants.
 
 PARAMETRES :
 
 Classe d'Armure : 2
-Résistance à la magie : 30 %
-Résistance aux dégâts magiques : 30 %
-Déplacement silencieux : -10 %
+RÃ©sistance Ã  la magie : 30 %
+RÃ©sistance aux dÃ©gÃ¢ts magiques : 30 %
+DÃ©placement silencieux : -10 %
 Crochetage : -5 %
-Détecter / désamorcer les pièges : -5 %
-Vol à la tire : -10 %
+DÃ©tecter / dÃ©samorcer les piÃ¨ges : -5 %
+Vol Ã  la tire : -10 %
 Poids : 30
-Non Utilisable par :
- Mage~
+~
 @110 = ~Cuirasse Barbare~
 @111 = ~Cuirasse Barbare +1
-Cette cuirasse particulière a été fabriquée à partir de cuir tanné et bouilli obtenu à partir des peaux d'ours des montagnes, conférant ainsi une plus grande protection à son propriétaire. Cependant, une armure faite d'un matériau aussi encombrant et peu flexible gênera les mouvements de son porteur.
-Bien que cette armure protège plus efficacement qu'une armure de cuir, il faut quand même être suffisamment habitué à son odeur agressive et son apparence sauvage pour la porter au mieux. Un voleur peut porter une telle armure, mais cela aura des conséquences négatives sur ses talents.
+Cette cuirasse particuliÃ¨re a Ã©tÃ© fabriquÃ©e Ã  partir de cuir tannÃ© et bouilli obtenu Ã  partir des peaux d'ours des montagnes, confÃ©rant ainsi une plus grande protection Ã  son propriÃ©taire. Cependant, une armure faite d'un matÃ©riau aussi encombrant et peu flexible gÃªnera les mouvements de son porteur.
+Bien que cette armure protÃ¨ge plus efficacement qu'une armure de cuir, il faut quand mÃªme Ãªtre suffisamment habituÃ© Ã  son odeur agressive et son apparence sauvage pour la porter au mieux. Un voleur peut porter une telle armure, mais cela aura des consÃ©quences nÃ©gatives sur ses talents.
 
 PARAMETRES :
 
 Classe d'Armure : 5
-Furtivité : -10 %
+FurtivitÃ© : -10 %
 Crochetage : -10 %
-Détecter / désamorcer les pièges : -10 %
-Vol à la tire : -20 %
+DÃ©tecter / dÃ©samorcer les piÃ¨ges : -10 %
+Vol Ã  la tire : -20 %
 Poids : 35
-Non Utilisable par :
- Mage~
+~
 @112 = ~Arme Drow~
-@113 = ~Il semblerait que ceci ait été une arme faite de métal elfe noir. Sans doute exposé aux rayons du soleil, l'objet est maintenant inutilisable.~
+@113 = ~Il semblerait que ceci ait Ã©tÃ© une arme faite de mÃ©tal elfe noir. Sans doute exposÃ© aux rayons du soleil, l'objet est maintenant inutilisable.~
 @114 = ~Armure Drow~
-@115 = ~Il semblerait que ceci ait été une armure faite de métal des Tréfonds Obscurs. Sans doute exposé aux rayons du soleil, l'objet est maintenant inutilisable, bien qu'il pourrait se révéler utile pour un mineur compétent ou un artisan expérimenté.~
+@115 = ~Il semblerait que ceci ait Ã©tÃ© une armure faite de mÃ©tal des TrÃ©fonds Obscurs. Sans doute exposÃ© aux rayons du soleil, l'objet est maintenant inutilisable, bien qu'il pourrait se rÃ©vÃ©ler utile pour un mineur compÃ©tent ou un artisan expÃ©rimentÃ©.~
 @116 = ~Robes Sanglantes~
-@117 = ~Robe de Résistance à l'Electricité de Zernan~
-@118 = ~Depuis l'ère de Nethéril, les mages ont appris à conférer aux objets quotidiens qui les entouraient une grande variété de propriétés magiques. L'un des plus usités de ces objets est la robe courante. Elle est légère, peu onéreuse et conserve bien ses enchantements. Cela en fait une parure de mage idéale. Cependant, en raison de leur héritage magique, ces robes enchantées ne peuvent être portées que par des mages mono classés, à classes jumelées ou multiclassés.
-Il semblerait que ceci soit le vêtement de l'érudit Zernan, même si l'on ne pourrait en être certain. En effet, cette robe tachée n'est plus qu'une loque. Les propriétés magiques de l'habit ont été miraculeusement préservées de la destuction.~
-@119 = ~Bien qu'on les rencontre moins fréquemment que d'autres robes de mage, les robes de résistance à l'électricité sont assez répandues. Certaines sont portées par des paranoïaques soucieux de se protéger contre les fortes tempêtes de montagne, mais la plupart sont portées par les mages afin de se protéger des intrigues de leurs semblables. Tout comme d'autres robes de ce type, les robes de résistance à l'électricité ne peuvent être portées que par les membres de la profession.
-Il semblerait que ceci soit le vêtement de l'érudit Zernan, même si l'on ne pourrait en être certain. En effet, cette robe tachée n'est plus qu'une loque. Les propriétés magiques de l'habit ont été miraculeusement préservées de la destuction.
+@117 = ~Robe de RÃ©sistance Ã  l'ElectricitÃ© de Zernan~
+@118 = ~Depuis l'Ã¨re de NethÃ©ril, les mages ont appris Ã  confÃ©rer aux objets quotidiens qui les entouraient une grande variÃ©tÃ© de propriÃ©tÃ©s magiques. L'un des plus usitÃ©s de ces objets est la robe courante. Elle est lÃ©gÃ¨re, peu onÃ©reuse et conserve bien ses enchantements. Cela en fait une parure de mage idÃ©ale. Cependant, en raison de leur hÃ©ritage magique, ces robes enchantÃ©es ne peuvent Ãªtre portÃ©es que par des mages mono classÃ©s, Ã  classes jumelÃ©es ou multiclassÃ©s.
+Il semblerait que ceci soit le vÃªtement de l'Ã©rudit Zernan, mÃªme si l'on ne pourrait en Ãªtre certain. En effet, cette robe tachÃ©e n'est plus qu'une loque. Les propriÃ©tÃ©s magiques de l'habit ont Ã©tÃ© miraculeusement prÃ©servÃ©es de la destuction.~
+@119 = ~Bien qu'on les rencontre moins frÃ©quemment que d'autres robes de mage, les robes de rÃ©sistance Ã  l'Ã©lectricitÃ© sont assez rÃ©pandues. Certaines sont portÃ©es par des paranoÃ¯aques soucieux de se protÃ©ger contre les fortes tempÃªtes de montagne, mais la plupart sont portÃ©es par les mages afin de se protÃ©ger des intrigues de leurs semblables. Tout comme d'autres robes de ce type, les robes de rÃ©sistance Ã  l'Ã©lectricitÃ© ne peuvent Ãªtre portÃ©es que par les membres de la profession.
+Il semblerait que ceci soit le vÃªtement de l'Ã©rudit Zernan, mÃªme si l'on ne pourrait en Ãªtre certain. En effet, cette robe tachÃ©e n'est plus qu'une loque. Les propriÃ©tÃ©s magiques de l'habit ont Ã©tÃ© miraculeusement prÃ©servÃ©es de la destuction.
 
 PARAMETRES :
 
-Résistance à l'électricité : +20 %
+RÃ©sistance Ã  l'Ã©lectricitÃ© : +20 %
 Poids : 3
-Utilisable uniquement par :
- Mage (monoclassé, à classes jumelées ou multiclassé)~
+~
 @120 = ~Armure de Plates~
 @121 = ~Ecailles de Wiverne~
-@122 = ~L'armure de plates est une combinaison de cottes de mailles et de plaques métalliques recouvrant les zones vitales telles que le torse, l'abdomen et l'aine. De fabrication semblable à l'armure de plates en bronze, la véritable armure de plates est constituée de mailles et de cuir.
+@122 = ~L'armure de plates est une combinaison de cottes de mailles et de plaques mÃ©talliques recouvrant les zones vitales telles que le torse, l'abdomen et l'aine. De fabrication semblable Ã  l'armure de plates en bronze, la vÃ©ritable armure de plates est constituÃ©e de mailles et de cuir.
 
 PARAMETRES :
 
 Classe d'Armure : 3
 Poids : 50
-Non Utilisable par :
- Barde 
- Druide
- Mage
- Voleur~
-@123 = ~Cette armure a été faite sur mesure pour <CHARNAME> par Taërom Fuiruim, le fameux forgeron de Bérégost. Moulée dans les écailles d'une wiverne morte, elle est aussi peu encombrante qu'une armure d'écailles habituelle, mais offre une protection égale à celle d'une armure de plates et accorde une résistance contre certains poisons à son porteur. 
+~
+@123 = ~Cette armure a Ã©tÃ© faite sur mesure pour <CHARNAME> par TaÃ«rom Fuiruim, le fameux forgeron de BÃ©rÃ©gost. MoulÃ©e dans les Ã©cailles d'une wiverne morte, elle est aussi peu encombrante qu'une armure d'Ã©cailles habituelle, mais offre une protection Ã©gale Ã  celle d'une armure de plates et accorde une rÃ©sistance contre certains poisons Ã  son porteur. 
 
 PARAMETRES :
 
 Classe d'Armure : 2
 Bonus de +5 aux jets de sauvegarde contre la mort
-Résistance au poison : +25 %
+RÃ©sistance au poison : +25 %
 Poids : 20
-Non Utilisable par :
- Barde
- Moine
- Druide
- Mage
- Voleur~
+~
 @124 = ~Potion~
 @125 = ~Potion de Grands Soins~
-@126 = ~Prise d'une traite, cette potion restitue 24 points de vie. L'effet est instantané et la potion est détruite dans le processus.~
+@126 = ~Prise d'une traite, cette potion restitue 24 points de vie. L'effet est instantanÃ© et la potion est dÃ©truite dans le processus.~
 @127 = ~Anneau~
 @128 = ~Anneau Mystique~
-@129 = ~Un anneau est une fine lanière de métal précieux. Il sert en général d'ornement. Plus rares, certains sont enchantés et permettent à quiconque les porte d'user de la magie qu'ils contiennent. Ils sont de ce fait très recherchés par les aventuriers.~
-@130 = ~Les origines exactes de cet anneau sont inconnues. Toutefois, il paraîtrait qu'il appartenait à un vieux magicien qui résidait dans un petit village, jouant le rôle de sage local avant de mourir.
+@129 = ~Un anneau est une fine laniÃ¨re de mÃ©tal prÃ©cieux. Il sert en gÃ©nÃ©ral d'ornement. Plus rares, certains sont enchantÃ©s et permettent Ã  quiconque les porte d'user de la magie qu'ils contiennent. Ils sont de ce fait trÃ¨s recherchÃ©s par les aventuriers.~
+@130 = ~Les origines exactes de cet anneau sont inconnues. Toutefois, il paraÃ®trait qu'il appartenait Ã  un vieux magicien qui rÃ©sidait dans un petit village, jouant le rÃ´le de sage local avant de mourir.
 
 PARAMETRES :
 
-Spécial : confère un sort supplémentaire de mage de deuxième et de troisième niveau
+SpÃ©cial : confÃ¨re un sort supplÃ©mentaire de mage de deuxiÃ¨me et de troisiÃ¨me niveau
 
-Utilisable par :
- Mage (monoclassé, à classes jumelées ou multiclassé)~
+~
 @131 = ~Anneau Mineur de Perception~
-@132 = ~Commandé par les dirigeants du monde souterrain de la Porte de Baldur pour leurs alliés, cet anneau améliore les sens de son propriétaire, ce qui le rend plus performant pour certaines tâches "délicates" et souvent peu honorables.
+@132 = ~CommandÃ© par les dirigeants du monde souterrain de la Porte de Baldur pour leurs alliÃ©s, cet anneau amÃ©liore les sens de son propriÃ©taire, ce qui le rend plus performant pour certaines tÃ¢ches "dÃ©licates" et souvent peu honorables.
 
 PARAMETRES :
 
-Détecter / désamorcer les pièges : +10 %
-Vol à la tire : +10 %
+DÃ©tecter / dÃ©samorcer les piÃ¨ges : +10 %
+Vol Ã  la tire : +10 %
 Crochetage : +10 %
 Se cacher dans l'ombre : +10 %
-Utilisable par :
- Voleur (monoclassé, à classes jumelées ou multiclassé)~
-@133 = ~Bâton~
-@134 = ~Bâton de Rahm +3~
-@135 = ~Réputé être l'arme contondante la moins sophistiquée, le bâton est un bout de bois d'une longueur de 1,80 m à 2,80 m. Les bâtons de qualité supérieure sont fabriqués en chêne robuste et sont ferrés de métal aux deux extrémités. Le bâton doit être manié des deux mains.
+~
+@133 = ~BÃ¢ton~
+@134 = ~BÃ¢ton de Rahm +3~
+@135 = ~RÃ©putÃ© Ãªtre l'arme contondante la moins sophistiquÃ©e, le bÃ¢ton est un bout de bois d'une longueur de 1,80 m Ã  2,80 m. Les bÃ¢tons de qualitÃ© supÃ©rieure sont fabriquÃ©s en chÃªne robuste et sont ferrÃ©s de mÃ©tal aux deux extrÃ©mitÃ©s. Le bÃ¢ton doit Ãªtre maniÃ© des deux mains.
 
 PARAMETRES :
 
-Dégâts : 1D6
-Type de dégâts : contondant
+DÃ©gÃ¢ts : 1D6
+Type de dÃ©gÃ¢ts : contondant
 Poids : 4
 Facteur de vitesse : 4
-Type de compétence : bâton
-Type : arme à deux mains
-Non Utilisable par :~
-@136 = ~Ce bâton est l'arme personnelle de Cadderly. Enchanté par son ami, le grand magicien Belisarius, dans sa petite propriété des faubourgs de Caradoon, le bâton a été d'une grande aide à l'érudit et prêtre de Dénéir dans son combat contre les forces de Château-Trinité. On dit que le bâton, qui est en la possession du clerc depuis très longtemps, a reçu les bénédictions de Dénéir et d'Oghma, conférant à son propriétaire une plus grande capacité de mémorisation de prières et de sorts.
+Type de compÃ©tence : bÃ¢ton
+Type : arme Ã  deux mains
+~
+@136 = ~Ce bÃ¢ton est l'arme personnelle de Cadderly. EnchantÃ© par son ami, le grand magicien Belisarius, dans sa petite propriÃ©tÃ© des faubourgs de Caradoon, le bÃ¢ton a Ã©tÃ© d'une grande aide Ã  l'Ã©rudit et prÃªtre de DÃ©nÃ©ir dans son combat contre les forces de ChÃ¢teau-TrinitÃ©. On dit que le bÃ¢ton, qui est en la possession du clerc depuis trÃ¨s longtemps, a reÃ§u les bÃ©nÃ©dictions de DÃ©nÃ©ir et d'Oghma, confÃ©rant Ã  son propriÃ©taire une plus grande capacitÃ© de mÃ©morisation de priÃ¨res et de sorts.
 
 PARAMETRES :
 
 Jets de Sauvegarde : +1
 TAC0 : +3
-Dégâts : 1D6 +3
-Spécial : accorde un sort supplémentaire de prêtre de deuxième et de troisième niveau
-Type de dégâts : contondant
+DÃ©gÃ¢ts : 1D6 +3
+SpÃ©cial : accorde un sort supplÃ©mentaire de prÃªtre de deuxiÃ¨me et de troisiÃ¨me niveau
+Type de dÃ©gÃ¢ts : contondant
 Poids : 3
 Facteur de vitesse : 2
-Type de compétence : bâton
-Type : arme à deux mains
-Utilisable par :
- Clerc (monoclassé, à classes jumelées ou multiclassé)
- Druide
- Paladin
- Personnages neutres ou bons~
-@137 = ~Bâton de Chêne Sombre +2~
-@138 = ~On dit que seuls les plus hauts dirigeants des Druides de l'Ombre possèdent ces bâtons légendaires qui rendent leur peau aussi dure que du chêne sombre et leur accordent une résistance contre le feu et contre les plus puissants des poisons.
+Type de compÃ©tence : bÃ¢ton
+Type : arme Ã  deux mains
+~
+@137 = ~BÃ¢ton de ChÃªne Sombre +2~
+@138 = ~On dit que seuls les plus hauts dirigeants des Druides de l'Ombre possÃ¨dent ces bÃ¢tons lÃ©gendaires qui rendent leur peau aussi dure que du chÃªne sombre et leur accordent une rÃ©sistance contre le feu et contre les plus puissants des poisons.
 
 PARAMETRES :
 
 TAC0 : +2
-Dégâts : 1D6 +2
-Spécial :
- +30 % de résistance au feu
+DÃ©gÃ¢ts : 1D6 +2
+SpÃ©cial :
+ +30 % de rÃ©sistance au feu
  +3 aux Jets de Sauvegarde contre le Poison et la Mort
- Peau d'Ecorce si équipé
-Type de dégâts : contondant
+ Peau d'Ecorce si Ã©quipÃ©
+Type de dÃ©gÃ¢ts : contondant
 Poids : 3
 Facteur de vitesse : 1 
-Type de compétence : bâton
-Type : arme à deux mains
-Utilisable par :
- Druide~
-@139 = ~Bâton de Résistance~
-@140 = ~Les marques laissées sur les bouts du bâton indiquent qu'il a été fabriqué il y a des années par une magie depuis longtemps oubliée, et que son pouvoir a provoqué de nombreuses luttes pour en avoir la propriété dans les Plans Primaires. Il paraît que son dernier possesseur connu était un sorcier-tyran cruel, et qu'il fut massacré en duel par un esclave, un magicien de moindre expérience qui ne cherchait qu'à s'enfuir des sombres geôles de son tourmenteur. Les légendes et les rumeurs indiquent que le prisonnier prit le bâton, s'échappa via un portail, et disparut dans la Côte des Epées.
+Type de compÃ©tence : bÃ¢ton
+Type : arme Ã  deux mains
+~
+@139 = ~BÃ¢ton de RÃ©sistance~
+@140 = ~Les marques laissÃ©es sur les bouts du bÃ¢ton indiquent qu'il a Ã©tÃ© fabriquÃ© il y a des annÃ©es par une magie depuis longtemps oubliÃ©e, et que son pouvoir a provoquÃ© de nombreuses luttes pour en avoir la propriÃ©tÃ© dans les Plans Primaires. Il paraÃ®t que son dernier possesseur connu Ã©tait un sorcier-tyran cruel, et qu'il fut massacrÃ© en duel par un esclave, un magicien de moindre expÃ©rience qui ne cherchait qu'Ã  s'enfuir des sombres geÃ´les de son tourmenteur. Les lÃ©gendes et les rumeurs indiquent que le prisonnier prit le bÃ¢ton, s'Ã©chappa via un portail, et disparut dans la CÃ´te des EpÃ©es.
 
 PARAMETRES :
 
 TAC0 : +1
 Classe d'Armure : +1
-Dégâts : 1D6 +1
+DÃ©gÃ¢ts : 1D6 +1
 Jets de Sauvegarde : +2
-Spécial : +10 % de résistance à la magie
-Type de dégâts : contondant
+SpÃ©cial : +10 % de rÃ©sistance Ã  la magie
+Type de dÃ©gÃ¢ts : contondant
 Poids : 2
 Facteur de vitesse : 1
-Type de compétence : bâton
-Type : arme à deux mains
-Utilisable par :
- Mage (monoclassé, à classes jumelées ou multiclassé)
- Barde~
-@141 = ~Epée bâtarde~
+Type de compÃ©tence : bÃ¢ton
+Type : arme Ã  deux mains
+~
+@141 = ~EpÃ©e bÃ¢tarde~
 @142 = ~Distance~
-@143 = ~Egalement connue sous le nom d'épée à une main et demie, l'épée bâtarde tire son nom de son aspect intermédiaire entre l'épée à deux mains et l'épée longue. Elle possède une lame à double tranchant et une longue poignée, qui peut éventuellement accueillir les deux mains. La longueur de l'épée bâtarde varie entre 1,20 m et 1,50 m. 
+@143 = ~Egalement connue sous le nom d'Ã©pÃ©e Ã  une main et demie, l'Ã©pÃ©e bÃ¢tarde tire son nom de son aspect intermÃ©diaire entre l'Ã©pÃ©e Ã  deux mains et l'Ã©pÃ©e longue. Elle possÃ¨de une lame Ã  double tranchant et une longue poignÃ©e, qui peut Ã©ventuellement accueillir les deux mains. La longueur de l'Ã©pÃ©e bÃ¢tarde varie entre 1,20 m et 1,50 m. 
 
 PARAMETRES :
 
-Dégâts : 2D4
-Type de dégâts : tranchant
+DÃ©gÃ¢ts : 2D4
+Type de dÃ©gÃ¢ts : tranchant
 Poids : 9
 Facteur de vitesse : 7
-Type de compétence : épée bâtarde
-Type : arme à une main
-Non Utilisable par :
- Druide
- Clerc
- Mage
- Voleur~
-@144 = ~Epée bâtarde +1 : Distance
-On dit que cette épée bâtarde d'apparence commune appartient au tristement célèbre gladiateur Abdel le Rat, dont la ruse et la fourberie ont été invaincues en trente-huit combats dans les arènes souterraines. Il semblerait que ce barbare pouvait littéralement frapper un adversaire et s'éloigner en un instant, évitant ainsi les éventuelles contre-attaques de ses ennemis.
+Type de compÃ©tence : Ã©pÃ©e bÃ¢tarde
+Type : arme Ã  une main
+~
+@144 = ~EpÃ©e bÃ¢tarde +1 : Distance
+On dit que cette Ã©pÃ©e bÃ¢tarde d'apparence commune appartient au tristement cÃ©lÃ¨bre gladiateur Abdel le Rat, dont la ruse et la fourberie ont Ã©tÃ© invaincues en trente-huit combats dans les arÃ¨nes souterraines. Il semblerait que ce barbare pouvait littÃ©ralement frapper un adversaire et s'Ã©loigner en un instant, Ã©vitant ainsi les Ã©ventuelles contre-attaques de ses ennemis.
 
-En fait, les légendes ne sont peut-être pas si éloignées de la vérité. En effet, la lame possède l'étrange pouvoir de rendre son propriétaire invisible après un coup au but, lui permettant de s'éloigner tranquillement de son adversaire, ou même de préparer un autre coup.
+En fait, les lÃ©gendes ne sont peut-Ãªtre pas si Ã©loignÃ©es de la vÃ©ritÃ©. En effet, la lame possÃ¨de l'Ã©trange pouvoir de rendre son propriÃ©taire invisible aprÃ¨s un coup au but, lui permettant de s'Ã©loigner tranquillement de son adversaire, ou mÃªme de prÃ©parer un autre coup.
 
 PARAMETRES :
 
 TAC0 : +1
-Dégâts : 2D4 +1
-Spécial : 50 % de chance que, sur un coup au but, le porteur devienne invisible pendant 12 secondes
-Type de dégâts : tranchant
+DÃ©gÃ¢ts : 2D4 +1
+SpÃ©cial : 50 % de chance que, sur un coup au but, le porteur devienne invisible pendant 12 secondes
+Type de dÃ©gÃ¢ts : tranchant
 Poids : 9
 Facteur de vitesse : 7
-Type de compétence : épée bâtarde
-Type : arme à une main
-Non Utilisable par :
- Druide
- Clerc
- Mage
- Voleur~
-@145 = ~Epée courte~
-@146 = ~Epée courte elfe noire d'Attaque Sournoise~
-@147 = ~L'épée courte est le premier type d'épée à être apparu. Grossièrement, on peut comparer une épée courte à une dague dont la lame serait si longue qu'on ne pourrait plus l'appeler dague. Le terme épée courte n'entre pas dans les catégories d'épées. Pourtant, il est utilisé pour décrire une lame à double tranchant longue d'environ 60 cm. L'estoc de l'épée est généralement pointu, et on la range donc parmi les armes perforantes.
+Type de compÃ©tence : Ã©pÃ©e bÃ¢tarde
+Type : arme Ã  une main
+~
+@145 = ~EpÃ©e courte~
+@146 = ~EpÃ©e courte elfe noire d'Attaque Sournoise~
+@147 = ~L'Ã©pÃ©e courte est le premier type d'Ã©pÃ©e Ã  Ãªtre apparu. GrossiÃ¨rement, on peut comparer une Ã©pÃ©e courte Ã  une dague dont la lame serait si longue qu'on ne pourrait plus l'appeler dague. Le terme Ã©pÃ©e courte n'entre pas dans les catÃ©gories d'Ã©pÃ©es. Pourtant, il est utilisÃ© pour dÃ©crire une lame Ã  double tranchant longue d'environ 60 cm. L'estoc de l'Ã©pÃ©e est gÃ©nÃ©ralement pointu, et on la range donc parmi les armes perforantes.
 
 PARAMETRES :
 
-Dégâts : 1D6
-Type de dégâts : perforant
+DÃ©gÃ¢ts : 1D6
+Type de dÃ©gÃ¢ts : perforant
 Poids : 3
 Facteur de vitesse : 3
-Type de compétence : épée courte
-Type : arme à une main
-Non Utilisable par :
- Druide
- Clerc 
- Mage~
-@148 = ~Epée courte elfe noire d'Attaque Sournoise
-Fabriquée par les elfes noires d'après la Lame de l'Ombre, mais faite de métal des Tréfonds Obscurs, cette épée courte a été créée pour être l'outil de l'assassin parfait.
+Type de compÃ©tence : Ã©pÃ©e courte
+Type : arme Ã  une main
+~
+@148 = ~EpÃ©e courte elfe noire d'Attaque Sournoise
+FabriquÃ©e par les elfes noires d'aprÃ¨s la Lame de l'Ombre, mais faite de mÃ©tal des TrÃ©fonds Obscurs, cette Ã©pÃ©e courte a Ã©tÃ© crÃ©Ã©e pour Ãªtre l'outil de l'assassin parfait.
 
 PARAMETRES :
 
-Spécial : +1 au multiplicateur d'attaque sournoise
+SpÃ©cial : +1 au multiplicateur d'attaque sournoise
 
 TAC0 : +3
-Dégâts : 1D6 +3
-Type de dégâts : perforant
+DÃ©gÃ¢ts : 1D6 +3
+Type de dÃ©gÃ¢ts : perforant
 Poids : 3 
 Facteur de vitesse : 0
-Type de compétence : épée courte
-Type : arme à une main
-Non Utilisable par :
- Druide
- Clerc 
- Mage ~
-@149 = ~Epée à deux mains~
-@150 = ~Dévastation~
-@151 = ~L'épée à deux mains est un dérivé de l'épée longue. Les forgerons d'armes ont toujours cherché à améliorer les armes de leur temps. Pour l'épée longue, ils ont allongé la lame. Après la lame, c'est la poignée qui s'est allongée. Il est alors devenu nécessaire d'utiliser les deux mains pour manier l'épée. La fonction première de l'épée à deux mains est de désarçonner les chevaliers montés et de désorganiser les haies de piques. 
+Type de compÃ©tence : Ã©pÃ©e courte
+Type : arme Ã  une main
+~
+@149 = ~EpÃ©e Ã  deux mains~
+@150 = ~DÃ©vastation~
+@151 = ~L'Ã©pÃ©e Ã  deux mains est un dÃ©rivÃ© de l'Ã©pÃ©e longue. Les forgerons d'armes ont toujours cherchÃ© Ã  amÃ©liorer les armes de leur temps. Pour l'Ã©pÃ©e longue, ils ont allongÃ© la lame. AprÃ¨s la lame, c'est la poignÃ©e qui s'est allongÃ©e. Il est alors devenu nÃ©cessaire d'utiliser les deux mains pour manier l'Ã©pÃ©e. La fonction premiÃ¨re de l'Ã©pÃ©e Ã  deux mains est de dÃ©sarÃ§onner les chevaliers montÃ©s et de dÃ©sorganiser les haies de piques. 
 
 PARAMETRES :
 
-Dégâts : 1D10
-Type de dégâts : tranchant
+DÃ©gÃ¢ts : 1D10
+Type de dÃ©gÃ¢ts : tranchant
 Poids : 15
 Facteur de vitesse : 10
-Type de compétence : épée à deux mains
-Type : arme à deux mains
-Non Utilisable par :
- Druide
- Clerc
- Mage 
- Voleur~
-@152 = ~Epée à deux mains +2 : Dévastation
-Arrachée des griffes de Ranthis, le démon-messager, par un groupe d'aventuriers mené par <CHARNAME>, cette épée à deux mains porte toujours la marque de son porteur d'origine, et emplit le coeur de celui qui la touche de haine et de rancoeur. Il s'agit d'une arme puissante, capable de paralyser n'importe qui en un seul coup, même les ennemis les plus résistants. Mais Dévastation ne peut être portée que par quelqu'un qui possède un coeur aussi sombre que celui de Ranthis.
+Type de compÃ©tence : Ã©pÃ©e Ã  deux mains
+Type : arme Ã  deux mains
+~
+@152 = ~EpÃ©e Ã  deux mains +2 : DÃ©vastation
+ArrachÃ©e des griffes de Ranthis, le dÃ©mon-messager, par un groupe d'aventuriers menÃ© par <CHARNAME>, cette Ã©pÃ©e Ã  deux mains porte toujours la marque de son porteur d'origine, et emplit le coeur de celui qui la touche de haine et de rancoeur. Il s'agit d'une arme puissante, capable de paralyser n'importe qui en un seul coup, mÃªme les ennemis les plus rÃ©sistants. Mais DÃ©vastation ne peut Ãªtre portÃ©e que par quelqu'un qui possÃ¨de un coeur aussi sombre que celui de Ranthis.
 
 PARAMETRES :
 
-Spécial : 25 % de chance qu'une cible touchée par Dévastation doive réussir un jet de sauvegarde contre la Paralysie (avec une pénalité de -1) ou être paralysée pendant 12 secondes
+SpÃ©cial : 25 % de chance qu'une cible touchÃ©e par DÃ©vastation doive rÃ©ussir un jet de sauvegarde contre la Paralysie (avec une pÃ©nalitÃ© de -1) ou Ãªtre paralysÃ©e pendant 12 secondes
           +20 points de vie 
 
 TAC0 : +2
-Dégâts : 1D10 +2
-Type de dégâts : tranchant
+DÃ©gÃ¢ts : 1D10 +2
+Type de dÃ©gÃ¢ts : tranchant
 Poids : 8
 Facteur de vitesse : 8
-Type de compétence : épée à deux mains
-Type : arme à deux mains
-Non Utilisable par :
- Personnages bons
- Druide
- Clerc
- Mage 
- Voleur~
+Type de compÃ©tence : Ã©pÃ©e Ã  deux mains
+Type : arme Ã  deux mains
+~
 @153 = ~Vaillante~
-@154 = ~Epée à deux mains +1 : Vaillante
-Prise sur le cadavre de Kahrk, l'auto-proclamé "Plus Puissant des Ogre-Mages", Vaillante appartenait à l'origine à Sir Grégoire du Pilier, chef d'une compagnie de chevaliers en quête de débarrasser la Côte des Epées d'une horde d'ogres sournois. Malheureusement, ils ont échoué, massacrés lors de la tristement célèbre Bataille de la Passe de Tyrad par une force massive de monstres. Les ogres ont pris Vaillante en tant que récompense pour la défaite humaine, et l'ont depuis brandie au combat pour que tous se souviennent du pouvoir terrifiant des ogres. Malgré cela, la lame a su conserver sa pureté depuis toutes ces décennies où elle était en la possession des ogres. Les légendes disent qu'un héros se lèvera et réclamera l'arme sacrée, ce qui marquera le commencement d'une série de changements à la surface de la Côte des Epées tels que Féérune n'en a jamais connus.
+@154 = ~EpÃ©e Ã  deux mains +1 : Vaillante
+Prise sur le cadavre de Kahrk, l'auto-proclamÃ© "Plus Puissant des Ogre-Mages", Vaillante appartenait Ã  l'origine Ã  Sir GrÃ©goire du Pilier, chef d'une compagnie de chevaliers en quÃªte de dÃ©barrasser la CÃ´te des EpÃ©es d'une horde d'ogres sournois. Malheureusement, ils ont Ã©chouÃ©, massacrÃ©s lors de la tristement cÃ©lÃ¨bre Bataille de la Passe de Tyrad par une force massive de monstres. Les ogres ont pris Vaillante en tant que rÃ©compense pour la dÃ©faite humaine, et l'ont depuis brandie au combat pour que tous se souviennent du pouvoir terrifiant des ogres. MalgrÃ© cela, la lame a su conserver sa puretÃ© depuis toutes ces dÃ©cennies oÃ¹ elle Ã©tait en la possession des ogres. Les lÃ©gendes disent qu'un hÃ©ros se lÃ¨vera et rÃ©clamera l'arme sacrÃ©e, ce qui marquera le commencement d'une sÃ©rie de changements Ã  la surface de la CÃ´te des EpÃ©es tels que FÃ©Ã©rune n'en a jamais connus.
 
 PARAMETRES :
 
-Spécial : +10 points de vie
+SpÃ©cial : +10 points de vie
 Classe d'Armure : bonus de +1
 
 TAC0 : +2
-Dégâts : 1D10 +1
-Type de dégâts : tranchant
+DÃ©gÃ¢ts : 1D10 +1
+Type de dÃ©gÃ¢ts : tranchant
 Poids : 10
 Facteur de vitesse : 4
-Type de compétence : épée à deux mains
-Type : arme à deux mains
-Non Utilisable par :
- Druide
- Clerc
- Mage 
- Voleur
- Barde
- Personnages mauvais~
-@155 = ~Arbalète légère~
-@156 = ~Arbalète légère elfe noire +1~
-@157 = ~Une arbalète est un arc monté en croix sur un manche en métal ou en bois, appelé alors un arbrier. L'arc est généralement fabriqué en bois de frêne ou d'if. L'arbalète décoche un carreau lourd (également appelé simplement carreau). 
+Type de compÃ©tence : Ã©pÃ©e Ã  deux mains
+Type : arme Ã  deux mains
+~
+@155 = ~ArbalÃ¨te lÃ©gÃ¨re~
+@156 = ~ArbalÃ¨te lÃ©gÃ¨re elfe noire +1~
+@157 = ~Une arbalÃ¨te est un arc montÃ© en croix sur un manche en mÃ©tal ou en bois, appelÃ© alors un arbrier. L'arc est gÃ©nÃ©ralement fabriquÃ© en bois de frÃªne ou d'if. L'arbalÃ¨te dÃ©coche un carreau lourd (Ã©galement appelÃ© simplement carreau). 
 
 PARAMETRES :
 
 Poids : 7
 Facteur de vitesse : 5
-Type de compétence : arbalète
-Type : arme à deux mains
-Non Utilisable par :
- Druide
- Clerc
- Mage~
-@158 = ~Arbalète légère elfe noire +1
-Cette arbalète est faite d'un métal des Tréfonds Obscurs aussi léger qu'inhabituel. L'arbalète décoche un carreau lourd (également appelé simplement carreau).
+Type de compÃ©tence : arbalÃ¨te
+Type : arme Ã  deux mains
+~
+@158 = ~ArbalÃ¨te lÃ©gÃ¨re elfe noire +1
+Cette arbalÃ¨te est faite d'un mÃ©tal des TrÃ©fonds Obscurs aussi lÃ©ger qu'inhabituel. L'arbalÃ¨te dÃ©coche un carreau lourd (Ã©galement appelÃ© simplement carreau).
 
 PARAMETRES :
 
 TAC0 : +1
-Dégâts : +1 (projectile)
+DÃ©gÃ¢ts : +1 (projectile)
 Poids : 6
 Facteur de vitesse : 4
-Type de compétence : arbalète
-Type : arme à deux mains
-Non Utilisable par :
- Druide
- Clerc
- Mage~
-@159 = ~Amulette d'influence métamagique : "L'Amplificateur"~
-@160 = ~Amulette d'influence métamagique : "L'Amplificateur"
-Célèbre pour son pouvoir d'améliorer les sorts, l'amulette d'influence métamagique est très recherchée de ceux qui pratiquent la magie. Elle a été créée par Elairdrin Mellwith, qui résidait dans les Montagnes des Etoiles. Il eut l'idée de fabriquer un tel objet parce qu'il était coureur de jupons. En ce sens l'Amplificateur lui fut d'une grande utilité. L'amulette lui fut ensuite ravie par un mage animé de plus mauvaises intentions, mais cette histoire est sujette à une grande variété d'interprétations. 
+Type de compÃ©tence : arbalÃ¨te
+Type : arme Ã  deux mains
+~
+@159 = ~Amulette d'influence mÃ©tamagique : "L'Amplificateur"~
+@160 = ~Amulette d'influence mÃ©tamagique : "L'Amplificateur"
+CÃ©lÃ¨bre pour son pouvoir d'amÃ©liorer les sorts, l'amulette d'influence mÃ©tamagique est trÃ¨s recherchÃ©e de ceux qui pratiquent la magie. Elle a Ã©tÃ© crÃ©Ã©e par Elairdrin Mellwith, qui rÃ©sidait dans les Montagnes des Etoiles. Il eut l'idÃ©e de fabriquer un tel objet parce qu'il Ã©tait coureur de jupons. En ce sens l'Amplificateur lui fut d'une grande utilitÃ©. L'amulette lui fut ensuite ravie par un mage animÃ© de plus mauvaises intentions, mais cette histoire est sujette Ã  une grande variÃ©tÃ© d'interprÃ©tations. 
 
 PARAMETRES :
 
-Spécial : Mémoriser un sort supplémentaire des premier et deuxième niveaux
-
-Utilisable par :
- Mage (monoclassé, à classes jumelées ou multiclassé)~
-@161 = ~Ce texte, complètement indéchiffrable, résiste à toutes les tentatives de lecture par la magie ou par d'autres moyens. Peut-être qu'un érudit, ou qu'une personne s'y connaissant dans les arts anciens pourrait traduire ce texte archaïque.~
-@162 = ~Les mots "Kozah", "Armure de Flammevin" et "Ulcaster" ont été traduits. Tout le reste du texte est complètement indéchiffrable, et résiste à toutes les tentatives de lecture par la magie ou par d'autres moyens~
-@163 = ~Cape Sacrée~
-@164 = ~Cette cape est un objet sacré pour les habitants du village de l'île. Vestige de leur arrivée sur l'île, elle a une grande valeur symbolique et possède plusieurs enchantements.
+SpÃ©cial : MÃ©moriser un sort supplÃ©mentaire des premier et deuxiÃ¨me niveaux
+~
+@161 = ~Ce texte, complÃ¨tement indÃ©chiffrable, rÃ©siste Ã  toutes les tentatives de lecture par la magie ou par d'autres moyens. Peut-Ãªtre qu'un Ã©rudit, ou qu'une personne s'y connaissant dans les arts anciens pourrait traduire ce texte archaÃ¯que.~
+@162 = ~Les mots "Kozah", "Armure de Flammevin" et "Ulcaster" ont Ã©tÃ© traduits. Tout le reste du texte est complÃ¨tement indÃ©chiffrable, et rÃ©siste Ã  toutes les tentatives de lecture par la magie ou par d'autres moyens~
+@163 = ~Cape SacrÃ©e~
+@164 = ~Cette cape est un objet sacrÃ© pour les habitants du village de l'Ã®le. Vestige de leur arrivÃ©e sur l'Ã®le, elle a une grande valeur symbolique et possÃ¨de plusieurs enchantements.
 
 PARAMETRES : 
  
  Inconnus
 
-Non Utilisable par :
- Voleur
- Barde~
-@165 = ~Cette cape est un objet sacré pour les habitants du village de l'île. Vestige de leur arrivée sur l'île, elle a une grande valeur symbolique et possède plusieurs enchantements.
+~
+@165 = ~Cette cape est un objet sacrÃ© pour les habitants du village de l'Ã®le. Vestige de leur arrivÃ©e sur l'Ã®le, elle a une grande valeur symbolique et possÃ¨de plusieurs enchantements.
 
 PARAMETRES : 
 
 Classe d'Armure : +1
-Spécial : Bénédiction si équipée
+SpÃ©cial : BÃ©nÃ©diction si Ã©quipÃ©e
 
-Non Utilisable par :
- Voleur
- Barde~
+~
 @166 = ~Cape~
 @167 = ~Cape de Shandalar~
-@168 = ~Cette cape a été volée à Shandalar par le puissant mage Semia, sans doute pour les pouvoirs magiques qu'elle renferme. Mais comment elle est arrivée entre vos mains et ce qu'il est advenu de Semia, cela reste un mystère absolu, et le demeurera sans doute à jamais... Tout comme les secrets de cette cape, qui échapperaient même à l'entendement d'un grand mage.
+@168 = ~Cette cape a Ã©tÃ© volÃ©e Ã  Shandalar par le puissant mage Semia, sans doute pour les pouvoirs magiques qu'elle renferme. Mais comment elle est arrivÃ©e entre vos mains et ce qu'il est advenu de Semia, cela reste un mystÃ¨re absolu, et le demeurera sans doute Ã  jamais... Tout comme les secrets de cette cape, qui Ã©chapperaient mÃªme Ã  l'entendement d'un grand mage.
 
 PARAMETRES :
  
  Inconnus
 
-Utilisable par :
- Mage (monoclassé, à classes jumelées ou multiclassé)~
-@169 = ~Cette cape a été volée à Shandalar par le puissant mage Semia, sans doute pour les pouvoirs magiques qu'elle renferme. Mais comment elle est arrivée entre vos mains et ce qu'il est advenu de Semia, cela reste un mystère absolu, et le demeurera sans doute à jamais... Tout comme les secrets de cette cape, qui échapperaient même à l'entendement d'un grand mage.
+~
+@169 = ~Cette cape a Ã©tÃ© volÃ©e Ã  Shandalar par le puissant mage Semia, sans doute pour les pouvoirs magiques qu'elle renferme. Mais comment elle est arrivÃ©e entre vos mains et ce qu'il est advenu de Semia, cela reste un mystÃ¨re absolu, et le demeurera sans doute Ã  jamais... Tout comme les secrets de cette cape, qui Ã©chapperaient mÃªme Ã  l'entendement d'un grand mage.
 
 PARAMETRES :
 
 Classe d'Armure : +1
-Spécial :
+SpÃ©cial :
  +2 en Intelligence
  +15 au score de Connaissances
- Accorde un sort supplémentaire du quatrième niveau
-
-Utilisable par :
- Mage (monoclassé, à classes jumelées ou multiclassé)~
-@170 = ~Epée Vampirique~
+ Accorde un sort supplÃ©mentaire du quatriÃ¨me niveau
+~
+@170 = ~EpÃ©e Vampirique~
 @171 = ~La Revanche du Vampire +1~
-@172 = ~Cette arme stylisée porte en gros caractères sur toute la longueur de la lame l'inscription « Epée vampirique ».
+@172 = ~Cette arme stylisÃ©e porte en gros caractÃ¨res sur toute la longueur de la lame l'inscription Â« EpÃ©e vampirique Â».
 
 PARAMETRES :
 
-Dégâts : 1D8
-Type de dégâts : tranchant
+DÃ©gÃ¢ts : 1D8
+Type de dÃ©gÃ¢ts : tranchant
 Poids : 4
 Facteur de vitesse : 5
-Type de compétence : grande épée
-Type : arme à une main
-Non Utilisable par :
- Druide
- Clerc
- Mage~
-@173 = ~Il semblerait que la simple évocation de cette arme ait réussi à la faire passer du rêve à la réalité. Mais, comme dans les rêves, son apparence est trompeuse. Certes, comme son nom l'indique, la lame est vampirique, mais d'une manière différente de ce qu'on pourrait attendre. Le bruit court que la lame, loin de se comporter en lame vampirique classique, a en fait été fabriquée par des vampires pour piéger leurs adversaires les plus coriaces. Il semble que ces créatures diaboliques aient au fil du temps fabriqué de nombreuses versions de cette lame de malheur, fléau de tout honnête aventurier. En fait, chaque coup porté amoindrit son auteur, qui perd son énergie vitale au profit de son adversaire. Pis encore, l'arme est maudite : impossible de s'en défaire, car l'utilisateur perd à ce point ses esprits qu'il ne songe même pas à essayer de s'en débarrasser. Bref, cette arme appartient sans doute aux quelques trésors magiques qui ne valent pas le détour ; autant aller boire un bon coup plutôt que de courir la campagne avec un tas de vilains fantômes accrochés à ses basques.. Pourtant, cette lame ébréchée possède un enchantement dont personne ne connaît vraiment la teneur.
+Type de compÃ©tence : grande Ã©pÃ©e
+Type : arme Ã  une main
+~
+@173 = ~Il semblerait que la simple Ã©vocation de cette arme ait rÃ©ussi Ã  la faire passer du rÃªve Ã  la rÃ©alitÃ©. Mais, comme dans les rÃªves, son apparence est trompeuse. Certes, comme son nom l'indique, la lame est vampirique, mais d'une maniÃ¨re diffÃ©rente de ce qu'on pourrait attendre. Le bruit court que la lame, loin de se comporter en lame vampirique classique, a en fait Ã©tÃ© fabriquÃ©e par des vampires pour piÃ©ger leurs adversaires les plus coriaces. Il semble que ces crÃ©atures diaboliques aient au fil du temps fabriquÃ© de nombreuses versions de cette lame de malheur, flÃ©au de tout honnÃªte aventurier. En fait, chaque coup portÃ© amoindrit son auteur, qui perd son Ã©nergie vitale au profit de son adversaire. Pis encore, l'arme est maudite : impossible de s'en dÃ©faire, car l'utilisateur perd Ã  ce point ses esprits qu'il ne songe mÃªme pas Ã  essayer de s'en dÃ©barrasser. Bref, cette arme appartient sans doute aux quelques trÃ©sors magiques qui ne valent pas le dÃ©tour ; autant aller boire un bon coup plutÃ´t que de courir la campagne avec un tas de vilains fantÃ´mes accrochÃ©s Ã  ses basques.. Pourtant, cette lame Ã©brÃ©chÃ©e possÃ¨de un enchantement dont personne ne connaÃ®t vraiment la teneur.
 
 PARAMETRES :
 
-Spécial : Inflige des dégâts au porteur et soigne la victime 
-Capacité inconnue
+SpÃ©cial : Inflige des dÃ©gÃ¢ts au porteur et soigne la victime 
+CapacitÃ© inconnue
 
 TAC0 : +1
-Dégâts : 1D8 +1
-Type de dégâts : tranchant
+DÃ©gÃ¢ts : 1D8 +1
+Type de dÃ©gÃ¢ts : tranchant
 Poids : 4
 Facteur de vitesse : 4
-Type de compétence : épée longue
-Type : arme à une main
-Non Utilisable par :
- Druide
- Clerc
- Mage~
-@176 = ~Heaume de Défense~
+Type de compÃ©tence : Ã©pÃ©e longue
+Type : arme Ã  une main
+~
+@176 = ~Heaume de DÃ©fense~
 @177 = ~"Don de Paix"
-Prisé pour sa noble origine autant que pour ses capacités, le premier de ces heaumes n'était à l'origine qu'un simple présent. Aucun malheur ne menaçait, aucun dangereux ennemi n'était à vaincre ; il s'agissait juste du cadeau d'un ami à un autre ami. Il aurait très bien pu prendre la forme d'un grimoire ou encore d'une bonne bouteille de vin, mais les aventuriers sont des gens au sens pratique très développé. Par la suite, de par son efficacité en toute situation, d'innombrables variantes de ce heaume furent fabriquées. Ces heaumes ont participé à de nombreuses et glorieuses batailles depuis leur création, mais seule la vertu du premier spécimen semble avoir marqué les esprits.
+PrisÃ© pour sa noble origine autant que pour ses capacitÃ©s, le premier de ces heaumes n'Ã©tait Ã  l'origine qu'un simple prÃ©sent. Aucun malheur ne menaÃ§ait, aucun dangereux ennemi n'Ã©tait Ã  vaincre ; il s'agissait juste du cadeau d'un ami Ã  un autre ami. Il aurait trÃ¨s bien pu prendre la forme d'un grimoire ou encore d'une bonne bouteille de vin, mais les aventuriers sont des gens au sens pratique trÃ¨s dÃ©veloppÃ©. Par la suite, de par son efficacitÃ© en toute situation, d'innombrables variantes de ce heaume furent fabriquÃ©es. Ces heaumes ont participÃ© Ã  de nombreuses et glorieuses batailles depuis leur crÃ©ation, mais seule la vertu du premier spÃ©cimen semble avoir marquÃ© les esprits.
 
-PARAMÈTRES :
+PARAMÃˆTRES :
 
-Capacités d'équipement :
+CapacitÃ©s d'Ã©quipement :
  Jets de Sauvegarde : bonus de +1
 
 Bonus de classe d'armure : 1
-Protège contre les coups critiques
+ProtÃ¨ge contre les coups critiques
 Poids : 3
-Inutilisable par :
- Barde
- Mage
- Moine
- Voleur
- Kensai~
+~
 @178 = ~Casque de Sentinelle~
-@179 = ~On ignore si ces casques magiques ont été créés par des prêtres de Heaum, dieu des gardiens, ou s'ils ont acquis ce nom pour une autre raison. Quoi qu'il en soit, ils sont très recherchés par les gardes et les sentinelles. Inutile de préciser que les bandits se sont aussi mis à en porter, confirmant ainsi le vieux proverbe "ce qui est bon pour l'un l'est aussi pour l'autre".
+@179 = ~On ignore si ces casques magiques ont Ã©tÃ© crÃ©Ã©s par des prÃªtres de Heaum, dieu des gardiens, ou s'ils ont acquis ce nom pour une autre raison. Quoi qu'il en soit, ils sont trÃ¨s recherchÃ©s par les gardes et les sentinelles. Inutile de prÃ©ciser que les bandits se sont aussi mis Ã  en porter, confirmant ainsi le vieux proverbe "ce qui est bon pour l'un l'est aussi pour l'autre".
 
-PARAMÈTRES :
+PARAMÃˆTRES :
 
-Capacités d'équipement :
- Immunité à la Cécité et à la Surdité
+CapacitÃ©s d'Ã©quipement :
+ ImmunitÃ© Ã  la CÃ©citÃ© et Ã  la SurditÃ©
 
 Bonus de classe d'armure : 1
-Protège contre les coups critiques
+ProtÃ¨ge contre les coups critiques
 Poids : 3
-Inutilisable par :
- Barde
- Mage
- Moine
- Voleur
- Kensai~
+~
 @180 = ~Casque Anti-Charmes~
-@181 = ~Comme son nom l'indique, le Casque Anti-Charmes protège celui qui le porte de toute tentative magique de manipulation de ses émotions. Souvent, des groupes de mercenaires de haut vol équipent leurs membres de tels casques afin de les protéger de toute ingérence extérieure lorsqu'ils exécutent leur devoir.
+@181 = ~Comme son nom l'indique, le Casque Anti-Charmes protÃ¨ge celui qui le porte de toute tentative magique de manipulation de ses Ã©motions. Souvent, des groupes de mercenaires de haut vol Ã©quipent leurs membres de tels casques afin de les protÃ©ger de toute ingÃ©rence extÃ©rieure lorsqu'ils exÃ©cutent leur devoir.
 
-PARAMÈTRES :
+PARAMÃˆTRES :
 
-Capacités d'équipement :
- Immunité aux effets des Charmes
+CapacitÃ©s d'Ã©quipement :
+ ImmunitÃ© aux effets des Charmes
 
 Bonus de classe d'armure : 1
-Protège contre les coups critiques
+ProtÃ¨ge contre les coups critiques
 Poids : 3
-Inutilisable par :
- Barde
- Mage
- Moine
- Voleur
- Kensai~
-@182 = ~Heaume de Défense~
+~
+@182 = ~Heaume de DÃ©fense~
 @183 = ~"Don de Paix"
-Prisé pour sa noble origine autant que pour ses capacités, le premier de ces heaumes n'était à l'origine qu'un simple présent. Aucun malheur ne menaçait, aucun dangereux ennemi n'était à vaincre ; il s'agissait juste du cadeau d'un ami à un autre ami. Il aurait très bien pu prendre la forme d'un grimoire ou encore d'une bonne bouteille de vin, mais les aventuriers sont des gens au sens pratique très développé. Par la suite, de par son efficacité en toute situation, d'innombrables variantes de ce heaume furent fabriquées. Ces heaumes ont participé à de nombreuses et glorieuses batailles depuis leur création, mais seule la vertu du premier spécimen semble avoir marqué les esprits.
+PrisÃ© pour sa noble origine autant que pour ses capacitÃ©s, le premier de ces heaumes n'Ã©tait Ã  l'origine qu'un simple prÃ©sent. Aucun malheur ne menaÃ§ait, aucun dangereux ennemi n'Ã©tait Ã  vaincre ; il s'agissait juste du cadeau d'un ami Ã  un autre ami. Il aurait trÃ¨s bien pu prendre la forme d'un grimoire ou encore d'une bonne bouteille de vin, mais les aventuriers sont des gens au sens pratique trÃ¨s dÃ©veloppÃ©. Par la suite, de par son efficacitÃ© en toute situation, d'innombrables variantes de ce heaume furent fabriquÃ©es. Ces heaumes ont participÃ© Ã  de nombreuses et glorieuses batailles depuis leur crÃ©ation, mais seule la vertu du premier spÃ©cimen semble avoir marquÃ© les esprits.
 
-Ce heaume a été amélioré par le forgeron de Bérégost, Taërom Grondemarteau.
+Ce heaume a Ã©tÃ© amÃ©liorÃ© par le forgeron de BÃ©rÃ©gost, TaÃ«rom Grondemarteau.
 
-PARAMÈTRES :
+PARAMÃˆTRES :
 
-Capacités d'équipement :
+CapacitÃ©s d'Ã©quipement :
  Jets de Sauvegarde : bonus de +1
- Résistance à la Magie : bonus de +10 %
+ RÃ©sistance Ã  la Magie : bonus de +10 %
 
 Bonus de classe d'armure : 1
-Protège contre les coups critiques
+ProtÃ¨ge contre les coups critiques
 Poids : 3
-Inutilisable par :
- Barde
- Mage
- Moine
- Voleur
- Kensai~
+~
 @184 = ~Casque de Sentinelle~
-@185 = ~On ignore si ces casques magiques ont été créés par des prêtres de Heaum, dieu des gardiens, ou s'ils ont acquis ce nom pour une autre raison. Quoi qu'il en soit, ils sont très recherchés par les gardes et les sentinelles. Inutile de préciser que les bandits se sont aussi mis à en porter, confirmant ainsi le vieux proverbe "ce qui est bon pour l'un l'est aussi pour l'autre".
+@185 = ~On ignore si ces casques magiques ont Ã©tÃ© crÃ©Ã©s par des prÃªtres de Heaum, dieu des gardiens, ou s'ils ont acquis ce nom pour une autre raison. Quoi qu'il en soit, ils sont trÃ¨s recherchÃ©s par les gardes et les sentinelles. Inutile de prÃ©ciser que les bandits se sont aussi mis Ã  en porter, confirmant ainsi le vieux proverbe "ce qui est bon pour l'un l'est aussi pour l'autre".
 
-Ce casque a été amélioré par le forgeron de Bérégost, Taërom Grondemarteau.
+Ce casque a Ã©tÃ© amÃ©liorÃ© par le forgeron de BÃ©rÃ©gost, TaÃ«rom Grondemarteau.
 
-PARAMÈTRES :
+PARAMÃˆTRES :
 
-Capacités d'équipement :
- Immunité à la Cécité et à la Surdité
+CapacitÃ©s d'Ã©quipement :
+ ImmunitÃ© Ã  la CÃ©citÃ© et Ã  la SurditÃ©
  TAC0 : bonus de +1
 
 Bonus de classe d'armure : 1
-Protège contre les coups critiques
+ProtÃ¨ge contre les coups critiques
 Poids : 3
-Inutilisable par :
- Barde
- Mage
- Moine
- Voleur
- Kensai~
+~
 @186 = ~Casque Anti-Charmes~
-@187 = ~Comme son nom l'indique, le Casque Anti-Charmes protège celui qui le porte de toute tentative magique de manipulation de ses émotions. Souvent, des groupes de mercenaires de haut vol équipent leurs membres de tels casques afin de les protéger de toute ingérence extérieure lorsqu'ils exécutent leur devoir.
+@187 = ~Comme son nom l'indique, le Casque Anti-Charmes protÃ¨ge celui qui le porte de toute tentative magique de manipulation de ses Ã©motions. Souvent, des groupes de mercenaires de haut vol Ã©quipent leurs membres de tels casques afin de les protÃ©ger de toute ingÃ©rence extÃ©rieure lorsqu'ils exÃ©cutent leur devoir.
 
-Ce casque a été amélioré par le forgeron de Bérégost, Taërom Grondemarteau.
+Ce casque a Ã©tÃ© amÃ©liorÃ© par le forgeron de BÃ©rÃ©gost, TaÃ«rom Grondemarteau.
 
-PARAMÈTRES :
+PARAMÃˆTRES :
 
-Capacités d'équipement :
- Immunité aux effets des Charmes
- +1à la Sagesse
+CapacitÃ©s d'Ã©quipement :
+ ImmunitÃ© aux effets des Charmes
+ +1Ã  la Sagesse
 
 Bonus de classe d'armure : 1
-Protège contre les coups critiques
+ProtÃ¨ge contre les coups critiques
 Poids : 3
-Inutilisable par :
- Barde
- Mage
- Moine
- Voleur
- Kensai~
-@188 = ~Robe de Résistance au Froid~
-@189 = ~Les Robes de Résistance au Froid sont courantes dans la région de la Côte des Épées, surtout lorsqu'on se dirige vers le nord, du côté de Padhiver ou du Val de Bise. De nombreux jeunes mages en reçoivent une en cadeau de leur instructeur lorsqu'ils ont réussi leurs cinq années d'études.
+~
+@188 = ~Robe de RÃ©sistance au Froid~
+@189 = ~Les Robes de RÃ©sistance au Froid sont courantes dans la rÃ©gion de la CÃ´te des Ã‰pÃ©es, surtout lorsqu'on se dirige vers le nord, du cÃ´tÃ© de Padhiver ou du Val de Bise. De nombreux jeunes mages en reÃ§oivent une en cadeau de leur instructeur lorsqu'ils ont rÃ©ussi leurs cinq annÃ©es d'Ã©tudes.
 
-PARAMÈTRES :
+PARAMÃˆTRES :
 
-Capacités d'équipement :
- Résistance au Froid : bonus de +40 %
+CapacitÃ©s d'Ã©quipement :
+ RÃ©sistance au Froid : bonus de +40 %
 
 Poids : 3
-Utilisable par :
- Mage~
-@190 = ~Robe de Résistance au Feu~
-@191 = ~En raison de la nature extrêmement instable de la plupart des types de magie, les Robes de Résistance au Feu ne sont pas rares chez les jeunes apprentis et leurs maîtres magiciens, particulièrement au sein des cercles et enclaves de Thay, où le culte de Kossuth, dieu élémentaire du feu, est très répandu.
+~
+@190 = ~Robe de RÃ©sistance au Feu~
+@191 = ~En raison de la nature extrÃªmement instable de la plupart des types de magie, les Robes de RÃ©sistance au Feu ne sont pas rares chez les jeunes apprentis et leurs maÃ®tres magiciens, particuliÃ¨rement au sein des cercles et enclaves de Thay, oÃ¹ le culte de Kossuth, dieu Ã©lÃ©mentaire du feu, est trÃ¨s rÃ©pandu.
 
-PARAMÈTRES :
+PARAMÃˆTRES :
 
-Capacités d'équipement :
- Résistance au Feu : bonus de +40 %
-
-Poids : 3
-Utilisable par :
- Mage~
-@192 = ~Robe de Résistance à l'Électricité~
-@193 = ~Bien qu'on les rencontre moins fréquemment que d'autres robes de mage, les Robes de Résistance à l'Électricité sont assez répandues. Certaines sont portées par des paranoïaques soucieux de se protéger contre les fortes tempêtes de montagne, mais la plupart sont portées par les mages afin de se protéger des attaques de leurs semblables.
-
-PARAMÈTRES :
-
-Capacités d'équipement :
- Résistance à l'Électricité : bonus de +40 %
+CapacitÃ©s d'Ã©quipement :
+ RÃ©sistance au Feu : bonus de +40 %
 
 Poids : 3
-Utilisable par :
- Mage~
+~
+@192 = ~Robe de RÃ©sistance Ã  l'Ã‰lectricitÃ©~
+@193 = ~Bien qu'on les rencontre moins frÃ©quemment que d'autres robes de mage, les Robes de RÃ©sistance Ã  l'Ã‰lectricitÃ© sont assez rÃ©pandues. Certaines sont portÃ©es par des paranoÃ¯aques soucieux de se protÃ©ger contre les fortes tempÃªtes de montagne, mais la plupart sont portÃ©es par les mages afin de se protÃ©ger des attaques de leurs semblables.
+
+PARAMÃˆTRES :
+
+CapacitÃ©s d'Ã©quipement :
+ RÃ©sistance Ã  l'Ã‰lectricitÃ© : bonus de +40 %
+
+Poids : 3
+~
 @194 = ~Robe de Filou~
-@195 = ~Cette robe a été spécialement enchantée pour satisfaire les besoins éclectiques du mage multiclassé. Très populaire chez les voleurs-mages, la Robe de Filou a été enchantée pour protéger son porteur des lames et des poisons des ruelles sombres. Néanmoins, comme d'autres robes de ce type, elle ne peut être portée que par des étudiants des arcanes magiques.
+@195 = ~Cette robe a Ã©tÃ© spÃ©cialement enchantÃ©e pour satisfaire les besoins Ã©clectiques du mage multiclassÃ©. TrÃ¨s populaire chez les voleurs-mages, la Robe de Filou a Ã©tÃ© enchantÃ©e pour protÃ©ger son porteur des lames et des poisons des ruelles sombres. NÃ©anmoins, comme d'autres robes de ce type, elle ne peut Ãªtre portÃ©e que par des Ã©tudiants des arcanes magiques.
 
-PARAMÈTRES :
+PARAMÃˆTRES :
 
-Capacités d'équipement :
- Immunité aux Attaques Sournoises
+CapacitÃ©s d'Ã©quipement :
+ ImmunitÃ© aux Attaques Sournoises
  Jets de Sauvegarde : bonus de +2 contre la Mort
 
 Poids : 4
-Utilisable par :
- Mage~
+~
 @196 = ~Robe de Voyageur~
-@197 = ~Cette robe de mage a été conçue pour les baroudeurs et les mages itinérants qui voyagent de ville en ville. Ses enchantements offrent non seulement une protection contre les flèches des bandits, mais permettent également au porteur de se déplacer, sans effort, à une vitesse exceptionnelle. Comme d'autres robes de ce type, la Robe de Voyageur ne peut être portée que par les mages.
+@197 = ~Cette robe de mage a Ã©tÃ© conÃ§ue pour les baroudeurs et les mages itinÃ©rants qui voyagent de ville en ville. Ses enchantements offrent non seulement une protection contre les flÃ¨ches des bandits, mais permettent Ã©galement au porteur de se dÃ©placer, sans effort, Ã  une vitesse exceptionnelle. Comme d'autres robes de ce type, la Robe de Voyageur ne peut Ãªtre portÃ©e que par les mages.
 
-PARAMÈTRES :
+PARAMÃˆTRES :
 
-Capacités d'équipement :
- Vitesse de Déplacement : bonus de +2
+CapacitÃ©s d'Ã©quipement :
+ Vitesse de DÃ©placement : bonus de +2
  Classe d'Armure : bonus de +2 contre les Projectiles
  Jets de Sauvegarde : bonus de +2 contre les Souffles
 
 Poids : 4
-Utilisable par :
- Mage~
+~
 @198 = ~Robe d'Aventurier~
-@199 = ~L'ancien Magicien Royal Vangerdahast, au service du Roi Azoun IV de Cormyr, était autrefois un aventurier accompli et très célèbre. La création de la Robe d'Aventurier est une des raisons qui expliquent sa notoriété dans les cercles de magiciens. Les mages ont toujours cherché un moyen de s'affranchir des limitations imposées par leur capacité à lancer des sorts profanes. Ces robes leur confèrent un avantage en cas de combat au corps à corps en absorbant une partie des dégâts subis.
+@199 = ~L'ancien Magicien Royal Vangerdahast, au service du Roi Azoun IV de Cormyr, Ã©tait autrefois un aventurier accompli et trÃ¨s cÃ©lÃ¨bre. La crÃ©ation de la Robe d'Aventurier est une des raisons qui expliquent sa notoriÃ©tÃ© dans les cercles de magiciens. Les mages ont toujours cherchÃ© un moyen de s'affranchir des limitations imposÃ©es par leur capacitÃ© Ã  lancer des sorts profanes. Ces robes leur confÃ¨rent un avantage en cas de combat au corps Ã  corps en absorbant une partie des dÃ©gÃ¢ts subis.
 
-PARAMÈTRES :
+PARAMÃˆTRES :
 
-Capacités d'équipement :
- Résistance aux Dégâts Physiques : bonus de +10 %
+CapacitÃ©s d'Ã©quipement :
+ RÃ©sistance aux DÃ©gÃ¢ts Physiques : bonus de +10 %
 
 Poids : 4
-Utilisable par :
- Mage~
+~
 @200 = ~La Robe d'Acier
-La Robe d'Acier a été créée par Mélicamp, l'apprenti magicien de Bérégost, spécialement pour remercier <CHARNAME> de l'avoir sauvé des crocs d'un loup sauvage après s'être accidentellement changé en poulet. Les recherches approfondies qu'a menées le jeune mage sur les diverses robes qu'on lui a données ont montré que, combinées ensemble, elles pouvaient donner un vêtement extraordinairement puissant.
+La Robe d'Acier a Ã©tÃ© crÃ©Ã©e par MÃ©licamp, l'apprenti magicien de BÃ©rÃ©gost, spÃ©cialement pour remercier <CHARNAME> de l'avoir sauvÃ© des crocs d'un loup sauvage aprÃ¨s s'Ãªtre accidentellement changÃ© en poulet. Les recherches approfondies qu'a menÃ©es le jeune mage sur les diverses robes qu'on lui a donnÃ©es ont montrÃ© que, combinÃ©es ensemble, elles pouvaient donner un vÃªtement extraordinairement puissant.
 
-Ces lourds vêtements possèdent la résistance et la durabilité du métal elfe noir sans sa propriété de tomber en poussière à la lumière du soleil. Ils accordent aussi à leur propriétaire une résistance contre plusieurs des magies élémentaires utilisées de par les Royaumes, ce qui en fait un objet formidable recherché par les magiciens les plus puissants.
+Ces lourds vÃªtements possÃ¨dent la rÃ©sistance et la durabilitÃ© du mÃ©tal elfe noir sans sa propriÃ©tÃ© de tomber en poussiÃ¨re Ã  la lumiÃ¨re du soleil. Ils accordent aussi Ã  leur propriÃ©taire une rÃ©sistance contre plusieurs des magies Ã©lÃ©mentaires utilisÃ©es de par les Royaumes, ce qui en fait un objet formidable recherchÃ© par les magiciens les plus puissants.
 
 PARAMETRES :
 
 Classe d'Armure : 6
 Jets de Sauvegarde : +1
-Résistance à la Magie : +20 %
-Résistance au Feu : +30 % 
-Résistance au Froid : +30 % 
-Résistance à l'Electricité : +30 % 
+RÃ©sistance Ã  la Magie : +20 %
+RÃ©sistance au Feu : +30 % 
+RÃ©sistance au Froid : +30 % 
+RÃ©sistance Ã  l'ElectricitÃ© : +30 % 
 Poids : 9
-Utilisable uniquement par :
- Mage (monoclassé, à classes jumelées ou multiclassé)~
-@201 = ~La Robe Mineure de Résistance
-La Robe Mineure de Résistance a été créée par Mélicamp, l'apprenti magicien de Bérégost, spécialement pour remercier <CHARNAME> de l'avoir sauvé des crocs d'un loup sauvage après s'être accidentellement changé en poulet. Les recherches approfondies qu'a menées le jeune mage sur les diverses robes qu'on lui a données ont montré que, combinées ensemble, elles pouvaient donner un vêtement extraordinairement puissant.
+~
+@201 = ~La Robe Mineure de RÃ©sistance
+La Robe Mineure de RÃ©sistance a Ã©tÃ© crÃ©Ã©e par MÃ©licamp, l'apprenti magicien de BÃ©rÃ©gost, spÃ©cialement pour remercier <CHARNAME> de l'avoir sauvÃ© des crocs d'un loup sauvage aprÃ¨s s'Ãªtre accidentellement changÃ© en poulet. Les recherches approfondies qu'a menÃ©es le jeune mage sur les diverses robes qu'on lui a donnÃ©es ont montrÃ© que, combinÃ©es ensemble, elles pouvaient donner un vÃªtement extraordinairement puissant.
 
-Ces lourds vêtements possèdent la résistance et la durabilité du métal elfe noir sans sa propriété de tomber en poussière à la lumière du soleil. Ils accordent aussi à leur propriétaire une résistance contre certaines magies élémentaires utilisées de par les Royaumes.
+Ces lourds vÃªtements possÃ¨dent la rÃ©sistance et la durabilitÃ© du mÃ©tal elfe noir sans sa propriÃ©tÃ© de tomber en poussiÃ¨re Ã  la lumiÃ¨re du soleil. Ils accordent aussi Ã  leur propriÃ©taire une rÃ©sistance contre certaines magies Ã©lÃ©mentaires utilisÃ©es de par les Royaumes.
 
 PARAMETRES :
 
 Classe d'Armure : 7
-Résistance au Feu : 30 % 
-Résistance au Froid : 30 % 
-Résistance à l'Electricité : 30 % 
+RÃ©sistance au Feu : 30 % 
+RÃ©sistance au Froid : 30 % 
+RÃ©sistance Ã  l'ElectricitÃ© : 30 % 
 Poids : 9
-Utilisable uniquement par :
- Mage (monoclassé, à classes jumelées ou multiclassé)~
+~
 @202 = ~La Robe de l'Erudit
-La Robe de l'Erudit a été créée par Mélicamp, l'apprenti magicien de Bérégost, spécialement pour remercier <CHARNAME> de l'avoir sauvé des crocs d'un loup sauvage après s'être accidentellement changé en poulet. Les recherches approfondies qu'a menées le jeune mage sur les diverses robes qu'on lui a données ont montré que, combinées ensemble, elles pouvaient donner un vêtement extraordinairement puissant.
+La Robe de l'Erudit a Ã©tÃ© crÃ©Ã©e par MÃ©licamp, l'apprenti magicien de BÃ©rÃ©gost, spÃ©cialement pour remercier <CHARNAME> de l'avoir sauvÃ© des crocs d'un loup sauvage aprÃ¨s s'Ãªtre accidentellement changÃ© en poulet. Les recherches approfondies qu'a menÃ©es le jeune mage sur les diverses robes qu'on lui a donnÃ©es ont montrÃ© que, combinÃ©es ensemble, elles pouvaient donner un vÃªtement extraordinairement puissant.
 
-Ces lourds vêtements possèdent la résistance et la durabilité du métal elfe noir sans sa propriété de tomber en poussière à la lumière du soleil. Ils accordent aussi à leur propriétaire une résistance contre certaines magies élémentaires utilisées de par les Royaumes.
+Ces lourds vÃªtements possÃ¨dent la rÃ©sistance et la durabilitÃ© du mÃ©tal elfe noir sans sa propriÃ©tÃ© de tomber en poussiÃ¨re Ã  la lumiÃ¨re du soleil. Ils accordent aussi Ã  leur propriÃ©taire une rÃ©sistance contre certaines magies Ã©lÃ©mentaires utilisÃ©es de par les Royaumes.
 
 PARAMETRES :
 
 Classe d'Armure : 7
 Jets de Sauvegarde : +1
-Résistance à la Magie : 10 %
-Vitesse de déplacement : bonus de +2
+RÃ©sistance Ã  la Magie : 10 %
+Vitesse de dÃ©placement : bonus de +2
 Poids : 9
-Utilisable uniquement par :
- Mage (monoclassé, à classes jumelées ou multiclassé)~
+~

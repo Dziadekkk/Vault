@@ -1,4 +1,4 @@
-@0   = ~The Vault v7 (modificado por erebusant para compatibilidad con BGT)~ 
+@0   = ~The Vault~ 
 @1   = ~Gólem de piedra~
 @2   = ~Josh~ 
 @3   = ~Ranthis~
@@ -1174,3 +1174,5 @@ Sólo lo puede usar:
 Mago (simple, dual, o multiclase)~
 @203 = ~Requiere el componente principal~
 @204 = ~Vuestros objetos drows se han resquebrajado~
+@500 = ~Holy Cloak modificado (clck21.itm)~
+@501 = ~Shandalars Cloak modificado (clck22.itm)~

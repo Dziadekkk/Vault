@@ -1,0 +1,383 @@
+v 9.0 (by Dziadek, The Vault "Back to Home" edition)
+----------------------------------------------------
+
+  - v7.3 (as a base) + v8.x (improvements, languages, bugfixes),
+  - XP modification was removed (mod still awards significant XP, but the amount has been reduced),
+  - removed unused folders (2da) and .cre files,
+  - created vault.d and vault-ee.d for separate game engines (BGT vs EE/EET) due to Thalantyr dialogue state differences,
+  - corrected .tp2 for better BGEE, EET, and BGT compatibility,
+  - improved quest items: Shandalar's Cloak (clck22.itm) and Holy Cloak (clck21.itm) are now available as separate installable components,
+  - corrected .tra file encoding,
+  - added labels to .tp2 for Project Infinity support,
+  - metadata for Project Infinity,
+  - changes.txt updated,
+  - readme-vault.html updated,
+  - created README.md,
+
+Notes:
+- BGT compatibility: I assumed the mod already had it in v7.3, so compatibility is maintained on a "left unchanged" basis.
+- Item Revisions component: I have not changed anything here. I am not familiar with this mod, so the component remains untouched.
+
+
+v 8.4 (by Dziadek, based on "Vaulteet")
+---------------------------------------
+
+  - fixed ocenteol-ee.baf (installation WARNING: cannot find block matching [vaulteet/snip/ocenteol-ee.baf]) - EE/EET installation,
+  - fixed vault.d, thalan (installation WARNING: internal label [35] not found in processed DLG [THALAN]) - EE/EET installation,
+  - fixed vault.d, gandol: erase all journal entries (Firewine Bridge ruins quest),
+  - corrected .tp2 for BGEE and EET compatibility,
+  - adapted setup-ee.tra to use the EE engine item description format,
+  - converted text files encoding to UTF-8,
+  - typo corrections (PL),
+
+### preparing Vault(eet) to "Back to Home" edition ###
+
+
+v8.x (by Roxanne, "Vauleet")
+--------------------------
+
+v8.3 
+
+  - Translation corrections
+
+v8.2 
+
+  - Add chinese option
+
+v8.1 
+
+  - Improved Gullykin ogre assault
+  - Improved FAI book quest
+
+v8.0 
+
+  - EET improvements
+  - XP balance
+  - AI script improve
+
+
+v7.3beta (by K4thos) v7.3 (Ikki)
+--------------------------------
+
+  - Compatibility with EET.
+  - Cross-platforms BGEE, EET.
+  - Polish translation by Aristo.
+
+
+v7.2a (by Beleg33)
+------------------
+25 August 2012
+
+Summary of changes:
+
+  - Added russian translation by Silent and Aldark from arcanecoast.ru
+
+  - Added a new component for compatibility with Item Revisions.
+It adds modified upgraded items so you don't waste money on downgrades.
+Also installs the base items so if you don't install IR but install this component you will have some items replaced by IR versions.
+
+  - Balanced some items effects. 
+
+  - Fixed all weapons as they weren't using any proficiency type or enchantment level.
+
+  - Replaced some of the custom items (that were just copied from BG2) with their BG2 counterpart.
+
+  - Replaced some creatures spawns with stock BG2 ones. (Stone Golems, Greater Basilisks, etc..)
+
+  - Fixed some creatures stats/immunities/weapon effects/animations. (1 vampire and 1 golem)
+
+  - Fixed some dialogues.
+
+  - Lowered some trap removal requirements so they can be disarmed
+
+  - Heavily modified drows override script to allow for other scripts to be read. Mainly for SCS/BP AI enhancements.
+
+  - Gandolar Luckyfoot (Mayor of Gullykin) shouldn't disappear anymore.
+
+  - Ghost Knights inside Firewine Ruins will not take the ancient armor from you anymore so it can be kept to obtain the Vampire's revenge and eventually access the vault.
+
+  - Vampire's revenge can now only be obtained after you have shown the History of the Nether Scrolls to Ulcaster
+
+  - Drow items (sword/crossbow/chainmail) can now be collected and used.
+They will decay in sunlight and turn into materials used for Melicamp robes upgrades.
+Those were previously looted already broken from the drows.
+
+  - Slightly lowered some XP gains. Increased some prices for item upgrades.
+
+  - Lowered potions of extra healing supplies.
+
+  - Deprecated messy lvl-50 ruleset that was previously installed with the mod.
+
+  - Deprecated area patching of ARA101 (Charleston digging site tomb)
+Replaced by a duplicate of that same area to avoid mod conflicts and makes it a truly buried/remote/unaccessible tomb
+
+  - Vestibule quest demon encounter in Wood of Sharp Teeth will happen even if you previously killed the Red Wizards.
+In a future update I will likely come back on that change and just add a new dialog option with Kelddath if you have already killed them.
+
+  - Various misc. enhancements/fixes
+
+
+v7.1 (by erebusant)
+-------------------
+07 September 2009:
+
+  - Traified the package.
+
+  - Fixed translation with the Spanish translation.
+
+  - Updated installer to WeiDU v211.
+
+
+v7.0 (by erebusant)
+-------------------
+16 February 2009:
+
+  - Traified the package.
+
+  - Added French, Italian, & Spanish translations.
+
+  - Updated installer to WeiDU v210.
+
+
+v6.4 (by erebusant)
+-------------------
+09 December 2008:
+
+  - More .cre code patches.
+
+  - Fixed AR7225.ARE CTD.
+
+
+v6.1 (by erebusant)
+-------------------
+22 August 2008:
+
+  - Recoded to fix .cre patching.
+
+  - Updated installer to WeiDU v208.
+
+
+v6.0 (by erebusant)
+-------------------
+01 July 2008:
+
+  - Converted to compatibility with BGT-WeiDU.
+
+  - Recoded to patch rather than overwrite game files.
+
+  - Repackaged with WeiDU v207.
+
+---------------------------------
+***JOSH CLUE*** The Vault CREATOR
+---------------------------------
+
+Version 5.01	29 April 2006
+* corrected typographical errors
+* DEATHK.CRE updated, now carries DAGG10.ITM (Soultaker Dagger)
+
+Version 5.0      24 April 2006
+* over 90 new and improved creatures
+* over 90 new and improved items
+* "The VAULT", "Return to Nashkel", and "Gullykin Ogre" MODs initial public release
+* WeiDU v185 used
+* BG1Tutu supported
+
+Version 4.0      1 January 2004
+* fixed bug that removed *.STO file signatures and thus caused games to crash
+without altering store names or misplacing dialogues seen in Version 3.01
+* "Ulcaster Hell" quest improvement included
+* WeiDU v144 used
+* BG1Tutu supported
+
+Version 3.01
+* fixed bug that removed *.STO file signatures and thus caused games to crash
+
+Version 3.0
+* added 3 new items
+* changed the rewards to some quests to yield more appropriate experience
+points/ rewards
+* "The Vestibule" MOD initial public release
+* WeiDU v124 used
+
+Version 2.01
+* got a bug that erased the names of the modified creatures after the MOD was
+installed
+
+Version 2.0
+* changed name to "The Vault"
+* WeiDU v95 used for easier distribution and solved most compatibility issues
+* changed ISTAFCAD.BAM because it kept producing errors
+* changed IECHAN01.BAM just for the fun of it
+* corrected the HP max bonus provided by VALIANT
+* changed the stack maximum of DART*.ITM which was previously only 20
+
+Version 1.01
+* forgot to include AMARAN.CRE to the pack, updated
+
+Version 1.0
+* initial public release
+* .TBG format
+* named NEW and IMPROVED BG:TotSC Items
+* found at Arundor's Abode BG1 Misc Section
+
+INTRODUCTION: "The VAULT V5.0"
+----------------------------------------------------------------------------------
+
+What began as a small interest to "contribute" to an already fantastic CRPG set in
+the most diverse and truly astounding of realms has become a substantial project,
+taking up more time than I had anticipated and encompassing a greater part of the
+Sword Coast than I had first conceived.
+
+The product is a MOD that has gained quite a following as I have surmised from the
+handful of e-mails I receive every week and the gradually increasing number of
+hits on my site. The topics are numerous, ranging from "pats on the back" for a
+nicely programmed MOD to the various bugs missed by my BETA testers to many
+brilliant suggestions on how to improve or better the encounters put forth and the
+horde of items that are distributed throughout the world. I would like to thank
+you all for this.
+
+On a final note, I would like to apologize for not having been able to reply to
+all your e-mails in the PAST YEAR. I have recently gotten, um, promoted to the
+prestigious position of medical intern, which is actually more of slave labor
+than prestige (watching Scrubs or Grey's Anatomy should give you a fair idea of
+how my average day goes by) if you ask me. That being the case, I have had to
+sacrifice this venture and spend more time within the confines of the hospital to
+care for those in need. It is unlikely that this will change in the coming months
+but I do hope that you will continue to send in your valuable and often insightful
+ideas. Thank you again for your unwavering support.
+
+
+##########################################################################
+##### Please treat the information below as a historical record only #####
+##########################################################################
+
+
+ABOUT:
+----------------------------------------------------------------------------------
+
+This MOD is a re-release of the NEW and IMPROVED BG:TotSC Items Pack. It has since
+evolved to include more difficult encounters and new quests to accomodate these
+new and enhanced magical items in the expansive world of Baldur's Gate and its
+add-on Tales of the Sword Coast, both outstanding products from Interplay, Black
+Isle and BioWare. The summary and technical changes that have been made are duly
+documented on the version history near the end of this document.
+
+As was stated earlier, the new and improved items are distributed in the various
+encounters in Baldur's Gate: Tales of the Sword Coast and, being in the possession
+of these enemies, makes the game significantly harder in its entirety.
+
+These items NEED NOT be ported in through CLUAConsole (although it is still very
+much possible), since they will be carried by the different monsters, stores, and
+treasure hordes throughout the game.
+
+Version 3.01 introduced "The Vestibule", a new subquest that humbly begins in the
+vestibule just north of the Song of the Morning Temple and invites the party to
+journey to a previously "unused" area of the Sword Coast. It is a short adventure
+designed for an experienced party, around levels 7-9. This version also
+included the "Ulcaster Hell" quest improvement which made the search for the
+wraith mage's coveted book slightly more challenging.
+
+Version 4.0 expanded MOD compatibility to allow its use with BG1TUTU, a project
+undertaken by Japheth and his associates to convert BG1 and make it playable
+using the streamlined and sophisticated BG2 engine. The BG1TUTU project has given
+new life to the BG1 and TotSC experience and this small modification shares in
+its hopes to bring a new perspective into the original game.
+
+Version 5.0 offers three new quests. The first is a minor quest entitled the
+"Gullykin Ogre" and is set in the quiet halfling village. A new threat arises and
+seeks to drive the inhabitants out of their homes. Can the party stand against
+this terror that lies in the hills of Gullykin? It is designed for characters of
+levels 5-7. The second one, entitled "Return to Nashkel", is a major quest as it
+spans over six main areas in the Sword Coast, involves a rather intriguing
+storyline, and an equally intriguing and unpredictable cast of friends and
+foes with varying outcomes depending on the choices made during its course. The
+quest is a long and tedious one and should be undertaken by characters of levels
+11 or higher. The last is a BONUS quest and is more of a mystery than a hack and
+slash adventure. It is aptly named "The Vault" and can be undertaken by
+characters of ANY level, since it requires more thinking than anything else.
+
+These quests blend seamlessly into the existing Baldur's Gate and Tales of the
+Sword Coast setup and should provide for an additional two hours of gameplay.
+
+INSTALLATION:
+----------------------------------------------------------------------------------
+
+TALES OF THE SWORD COAST Install
+
+BG: TotSC is REQUIRED. The VAULT v5.0 will install correctly over (or without) any
+other WeiDU mods. It is, however, advised that this be installed first.
+
+Unzip the main ZIP file into your BG main directory. This is normally:
+C:\Program Files\Black Isle\Baldur's Gate\
+
+Run (click on) "Setup-Vault.exe"
+
+It is unnecessary to start a new game to take advantage of The VAULT of new items
+although it is, HIGHLY RECOMMENDED, since some items may be missed because of
+this.
+
+----------------------------------------------------------------------------------
+
+BGTUTU Install
+
+BG: TotSC is REQUIRED. The VAULT v5.0 will install correctly over (or without) any
+other WeiDU mods. The VAULT must be installed BEFORE running bg1tutu.exe. This
+will allow all the mod's files to be converted along with the main BG files.
+
+Unzip the main ZIP file into your BG main directory. This is normally:
+C:\Program Files\Black Isle\Baldur's Gate\
+
+Run (click on) "Setup-Vault.exe"
+
+Go to your BG2 main directory. This is normally:
+C:\Program Files\Black Isle\BGII - SoA\
+
+Run (click on) "bg1tutu.exe" Conversion should take 3 to 6 minutes
+
+Go back to your BG main directory
+
+Go to Vault directory, and then the _Bam directory
+C:\Program Files\Black Isle\Baldur's Gate\Vault\_Bam
+
+Copy all the files in _Bam directory. 27 files total
+
+Paste them into your BG2 Override directory
+C:\Program Files\Black Isle\BGII - SoA\Override
+
+It is unnecessary to start a new game to take advantage of The VAULT of new items
+although it is, HIGHLY RECOMMENDED, since some items may be missed because of
+this.
+ 	 
+OTHER:
+----------------------------------------------------------------------------------
+
+Unfortunately, this MOD is not compatible with the Original TeamBG BG: ToTSC MOD
+entitled DARK SIDE of the SWORD COAST. Some of their items (marked with an "*")
+are utilized in this MOD and are marked with an "*", giving credit where it is
+due.
+
+Fortunately, this MOD IS compatible with the WeiDU-based BG: ToTSC MOD DARK SIDE
+of the SWORD COAST revamped by the Chosen of Mystra. Follow the link in the
+section below to download it.
+
+Also included are the following:
+James Schumacher's Level 50 Rules Pack
+Kai's Arrow, Bolt, and Bullet Pack (stack maximum=40)
+
+THE INFINITY ENGINE IS ON FIRE!
+ 	
+TOP
+
+THANKS:
+----------------------------------------------------------------------------------
+
+* TeamBG, inspired me to start this "item pack" venture
+* WeiDU, helped me make this item pack easier to distribute
+* Wes Weimer, maker of the WeiDU utility, for programming support
+* Japheth and Jcompton for programming support in the Forgotten Wars Studios
+* clanREO for the Spanish translation
+* FairyBlue for inspiration
+* Cristiano Messaad for suggestions
+* James Schumacher
+* Kai
+

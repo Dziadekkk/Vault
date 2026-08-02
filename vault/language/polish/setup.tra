@@ -1,4 +1,4 @@
-@0   = ~The Vault (wersja erebusanta kompatybilna z BGT)~ 
+@0   = ~The Vault~ 
 @1   = ~Kamienny golem~
 @2   = ~Josh~ 
 @3   = ~Ranthis~
@@ -44,6 +44,7 @@ Specjalne:
  +5% do Kradzie¿y kieszonkowej
  +5% do Otwierania zamków
  +5% do Krycia siê
+Waga:1
 
 Mo¿e u¿ywaæ:
  Z³odziej (jedno-, dwu- i wieloklasowiec)~
@@ -53,13 +54,14 @@ Mo¿e u¿ywaæ:
 
 PARAMETRY:
 
+Nieznane
 Waga: 2~
 @38  = ~Ten zwyczajnie wygl¹daj¹cy pas czyni nosz¹c¹ go osobê siln¹ jak olbrzym wzgórzowy, ale nie zwiêksza jej rozmiarów. Wielu aroganckich wojowników zosta³o zaskoczonych przez znacznie mniejszych przeciwników o powa¿nej sile. Doœæ czêsto przyczyn¹ tego jest pas podobny do tego.
 
 PARAMETRY:
 
 Si³a: 19
-
+Waga: 2
 Nie mo¿e u¿ywaæ:
  Mag
 ~
@@ -972,6 +974,7 @@ Mo¿e u¿ywaæ:
 PARAMETRY:
 
 Nieznane
+Waga: 3
 
 Nie mo¿e u¿ywaæ:
  Z³odziej
@@ -984,6 +987,8 @@ PARAMETRY:
 Klasa Pancerza: +1
 Specjalne:
  B³ogos³awieñstwo
+Waga: 3
+ 
 Nie mo¿e u¿ywaæ:
  Z³odziej
  Bard
@@ -995,6 +1000,7 @@ Nie mo¿e u¿ywaæ:
 PARAMETRY:
 
 Nieznane
+Waga: 3
 
 Mo¿e u¿ywaæ:
  Mag (jedno-, dwu- i wieloklasowiec)
@@ -1008,6 +1014,7 @@ Specjalne:
  +2 do Inteligencji
  +15 do Wiedzy
  Pozwala zapamiêtaæ 1 dodatkowy czar 4. poziomu
+Waga: 3
 
 Mo¿e u¿ywaæ:
  Mag (jedno-, dwu- i wieloklasowiec)
@@ -1287,3 +1294,5 @@ Mo¿e u¿ywaæ tylko:
 ~
 @203 = ~Wymaga glownego komponentu~
 @204 = ~Przedmioty drowów rozpad³y siê.~
+@500 = ~Zmodyfikowany Holy Cloak (clck21.itm)~
+@501 = ~Zmodyfikowany Shandalar's Cloak (clck22.itm)~

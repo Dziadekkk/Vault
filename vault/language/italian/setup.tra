@@ -1,6 +1,6 @@
 // Vault .tp2 translation file
 
-@0   = ~The Vault (rivisto da erebusant per farlo compatibile con BGT)~
+@0   = ~The Vault~
 @1   = ~Golem di Pietra~
 @2   = ~Josh~
 @3   = ~Ranthis~
@@ -1155,3 +1155,5 @@ Utilizzabile solamente da:
 Mago (singolo, duale, e multiclasse)~
 @203 = ~Richiede il componente principale~
 @204 = ~Non appena esci alla superficie i tuoi oggetti di adamantite drow si polverizzano.~
+@500 = ~Holy Cloak modificato (clck21.itm)~
+@501 = ~Shandalars Cloak modificato (clck22.itm)~

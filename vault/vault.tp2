@@ -1,23 +1,22 @@
 	/*************************************************************************
 	*
- 	* The Vault
+ 	* The Vault (Back to Home edition)
 	*
  	*************************************************************************/
 
-	// where should we put backup files?
 BACKUP ~vault/backup~  
 
-	// where should tell the user to send email if something goes wrong? 
-AUTHOR ~http://www.shsforums.net/user/29731-beleg33/~
+//AUTHOR ~http://www.shsforums.net/user/29731-beleg33/~
+SUPPORT ~https://github.com/Spellhold-Studios/Vault~
 
-VERSION	~v7.3~
+VERSION	~v9.0~
 
-README ~vault/ReadMe-Vault.html~
+README ~vault/docs/ReadMe-Vault.html~
 
-AUTO_TRA ~Vault/Language/%s/D~ //%~
+AUTO_TRA ~Vault/Language/%s/D~ 
 
 ALWAYS
-  ACTION_IF ENGINE_IS ~bgee bg2ee~ BEGIN
+  ACTION_IF ENGINE_IS ~bgee bg2ee eet~ BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY charsetsTable BEGIN
       "english" => "CP1252"
       "french" => "CP1252"
@@ -25,15 +24,18 @@ ALWAYS
       "russian" => "CP1251"
 	  "polish" => "CP1250"
       "spanish" => "CP1252"
+      "schinese" => "CP936"
     END
     ACTION_DEFINE_ARRAY charsetsReloadArray BEGIN Setup END
+    ACTION_DEFINE_ARRAY fl#noconvert BEGIN Setup-osx Setup-unix Setup-win32 Setup-ee END 
     LAF ~HANDLE_CHARSETS~
       INT_VAR
       infer_charsets = 0
       STR_VAR
       tra_path = "Vault/Language"
-      iconv_path = "Vault/Language/iconv" //available as part of the base system on OS X and GNU/Linux
+      iconv_path = "Vault/Language/iconv"
       charset_table = charsetsTable
+      noconvert_array = fl#noconvert
       reload_array = charsetsReloadArray
     END
     LOAD_TRA ~Vault/Language/%LANGUAGE%/Setup-ee.tra~
@@ -58,272 +60,29 @@ LANGUAGE ~Francais (Traduit par les d'Oghmatiques))~
 LANGUAGE ~Italian (translated by Ilot)~
 	~italian~
 	~Vault/Language/italian/setup.tra~
-LANGUAGE ~Espa¤ol (Traducido por Saemon de ClanDLAN.net, actualizado por Lisandro)~
+LANGUAGE ~Espanol (Traducido por Saemon de ClanDLAN.net, actualizado por Lisandro)~
 	~spanish~
 	~Vault/Language/spanish/setup.tra~
 LANGUAGE ~Russian (translated by Silent and Aldark of arcanecoast.ru)~
 	~russian~
 	~Vault/Language/russian/setup.tra~ 
-LANGUAGE ~Polski (Aristo)~
+LANGUAGE ~Polski (Aristo, baldur.cob-bg.pl)~
 	~polish~
 	~Vault/Language/polish/setup.tra~
+LANGUAGE ~Simplified Chinese (Lzw104522773, updated by MephistoSatanDevil)~
+	~schinese~
+	~Vault/Language/english/setup.tra~
+	~Vault/Language/schinese/setup-%WEIDU_OS%.tra~
 
 BEGIN @0 DESIGNATED 0
+LABEL ~JC_the_vault_0~
 REQUIRE_PREDICATE GAME_IS ~bgt bgee eet~ ~This mod is not compatible with your game~
 
+//Game engine recognize for Thalan script: %vault_dialog%
+COMPILE EVALUATE_BUFFER ~Vault/D/engine/%vault_dialog%.d~
+  USING ~Vault/Language/%LANGUAGE%/D/vault.tra~
 
-///////////////////////////////////////////////////////////////////////////////
-//	D folder 				// compile new dialogs and extensions
-///////////////////////////////////////////////////////////////////////////////
-
-		COMPILE EVAL ~vault/D~
-/* ACTION_IF FILE_EXISTS_IN_GAME ~X#BG1NPCCore.G3~
-	THEN BEGIN
-		COMPILE EVAL ~vault/D/BG1NPC~
-END */
-
-///////////////////////////////////////////////////////////////
-/////////////Level 50 Rulesets/////////////////////////////////
-///////////////////////////////////////////////////////////////
-/* // Deprecated broken ruleset
-
-ACTION_IF NOT FILE_EXISTS ~data/tdd-rule.bif~ THEN BEGIN 
-ACTION_IF NOT FILE_EXISTS ~data/rot-rule.bif~ THEN BEGIN
-COPY  ~vault/2da~		~override~					// 2DA folder, rules 50 pack (These are OK for BGT)
-  END
-END */
-
-///////////////////////////////////////////////////////////////
-////////////Area Patching//////////////////////////////////////
-///////////////////////////////////////////////////////////////
-/* 
-// Deprecated - Area replaced with a new one already patched
-
-//adding 2 new proximity triggers and 8 new vertices for them to %ArchaeologicalSite_Tomb%.ARE
-COPY_EXISTING ~%ArchaeologicalSite_Tomb%.ARE~  ~override~
- READ_LONG  0x54  "actors_offset"
- READ_SHORT 0x58  "actors_num"
- READ_SHORT 0x5a  "infotrig_num"
- READ_LONG  0x5c  "infotrig_offset"
- READ_LONG  0x60  "spawns_offset"
- READ_LONG  0x64  "spawns_num"
- READ_LONG  0x68  "entrances_offset"
- READ_LONG  0x6c  "entrances_num"
- READ_LONG  0x70  "cont_offset"
- READ_SHORT 0x74  "cont_num"
- READ_SHORT 0x76  "items_num"
- READ_LONG  0x78  "items_offset"
- READ_LONG  0x7c  "vert_offset"
- READ_SHORT 0x80  "vert_num"
- READ_SHORT 0x82  "amb_num"
- READ_LONG  0x84  "amb_offset"
- READ_LONG  0x88  "vars_offset"
- READ_LONG  0x8c  "vars_num"
- READ_LONG  0xa0  "expbmp_offset"
- READ_LONG  0xa4  "doors_num"
- READ_LONG  0xa8  "doors_offset"
- READ_LONG  0xac  "anim_num"
- READ_LONG  0xb0  "anim_offset"
- READ_LONG  0xb4  "tiled_num"
- READ_LONG  0xb8  "tiled_offset"
- READ_LONG  0xbc  "songs_offset"
- READ_LONG  0xc0  "rest_spawns_offset"
- READ_LONG  0xc4  "automap_offset"
- READ_LONG  0xc8  "automap_num"
-
-//adding 2 new proximity triggers ************************************************
-   SET offset = ("%infotrig_offset%"+0xc4*"%infotrig_num%")
-   INSERT_BYTES offset 0xc4
-   WRITE_ASCII offset ~VTrap1~
-   WRITE_SHORT (offset+0x20) 0              //proximity trigger
-   WRITE_SHORT (offset+0x22) 940            //bounding box
-   WRITE_SHORT (offset+0x24) 530            //bounding box
-   WRITE_SHORT (offset+0x26) 980            //bounding box
-   WRITE_SHORT (offset+0x28) 650            //bounding box
-   WRITE_SHORT (offset+0x2a) 4              //vertices number
-   WRITE_LONG  (offset+0x2c) "%vert_num%"   //first vertex index
-   WRITE_LONG  (offset+0x34) 0              //cursor frame number
-   WRITE_LONG  (offset+0x60) 10             //flags
-   WRITE_SHORT (offset+0x68) 80             //Trap Detection
-   WRITE_SHORT (offset+0x6a) 90             //Trap Removal
-   WRITE_SHORT (offset+0x6c) 1              //Yup, it's trapped alrighty
-   WRITE_SHORT (offset+0x6e) 0              //And not detected
-   WRITE_SHORT (offset+0x70) 1180           //Trap location X
-   WRITE_SHORT (offset+0x72) 520            //Trap location Y
-   WRITE_ASCII (offset+0x7c) ~JC_GT06~      //Trap script
-   SET offset = offset+0xc4
-   INSERT_BYTES offset 0xc4
-   WRITE_ASCII offset ~VTrap2~
-   WRITE_SHORT (offset+0x20) 0              //proximity trigger
-   WRITE_SHORT (offset+0x22) 1070           //bounding box
-   WRITE_SHORT (offset+0x24) 540            //bounding box
-   WRITE_SHORT (offset+0x26) 1190           //bounding box
-   WRITE_SHORT (offset+0x28) 560            //bounding box
-   WRITE_SHORT (offset+0x2a) 4              //vertices number
-   WRITE_LONG  (offset+0x2c) "%vert_num%"+4 //first vertex index
-   WRITE_LONG  (offset+0x34) 0              //cursor frame number
-   WRITE_LONG  (offset+0x60) 10             //flags
-   WRITE_SHORT (offset+0x68) 70             //Trap Detection
-   WRITE_SHORT (offset+0x6a) 85             //Trap Removal
-   WRITE_SHORT (offset+0x6c) 1              //Yup, it's trapped alrighty
-   WRITE_SHORT (offset+0x6e) 0              //And not detected
-   WRITE_SHORT (offset+0x70) 2615           //Trap location X
-   WRITE_SHORT (offset+0x72) 1515           //Trap location Y
-   WRITE_ASCII (offset+0x7c) ~JC_GT07~      //Trap script
-   SET offset = offset+0xc4
-   SET "infotrig_num"="%infotrig_num%"+2
-   WRITE_SHORT 0x5a  "%infotrig_num%"
-
-   SET "info_ext"=0xc4*2
-   PATCH_IF ("%actors_offset%">="%infotrig_offset%") BEGIN
-     "actors_offset"="%actors_offset%"+"%info_ext%"
-     WRITE_LONG  0x54 "%actors_offset%"
-   END
-   PATCH_IF ("%spawns_offset%">="%infotrig_offset%") BEGIN
-     "spawns_offset"="%spawns_offset%"+"%info_ext%"
-     WRITE_LONG  0x60  "%spawns_offset%"
-   END
-   PATCH_IF ("%entrances_offset%">="%infotrig_offset%") BEGIN
-     "entrances_offset"="%entrances_offset%"+"%info_ext%"
-     WRITE_LONG  0x68  "%entrances_offset%"
-   END
-   PATCH_IF ("%cont_offset%">="%infotrig_offset%") BEGIN
-     "cont_offset"="%cont_offset%"+"%info_ext%"
-     WRITE_LONG  0x70  "%cont_offset%"
-   END
-   PATCH_IF ("%items_offset%">="%infotrig_offset%") BEGIN
-     "items_offset"="%items_offset%"+"%info_ext%"
-     WRITE_LONG  0x78  "%items_offset%"
-   END
-   PATCH_IF ("%vert_offset%">="%infotrig_offset%") BEGIN
-     "vert_offset"="%vert_offset%"+"%info_ext%"
-     WRITE_LONG  0x7c  "%vert_offset%"
-   END
-   PATCH_IF ("%amb_offset%">="%infotrig_offset%") BEGIN
-     "amb_offset"="%amb_offset%"+"%info_ext%"
-     WRITE_LONG  0x84  "%amb_offset%"
-   END
-   PATCH_IF ("%vars_offset%">="%infotrig_offset%") BEGIN
-     "vars_offset"="%vars_offset%"+"%info_ext%"
-     WRITE_LONG  0x88  "%vars_offset%"
-   END
-   PATCH_IF ("%expbmp_offset%">="%infotrig_offset%") BEGIN
-     "expbmp_offset"="%expbmp_offset%"+"%info_ext%"
-     WRITE_LONG  0xa0  "%expbmp_offset%"
-   END
-   PATCH_IF ("%doors_offset%">="%infotrig_offset%") BEGIN
-     "doors_offset"="%doors_offset%"+"%info_ext%"
-     WRITE_LONG  0xa8  "%doors_offset%"
-   END
-   PATCH_IF ("%anim_offset%">="%infotrig_offset%") BEGIN
-     "anim_offset"="%anim_offset%"+"%info_ext%"
-     WRITE_LONG  0xb0  "%anim_offset%"
-   END
-   PATCH_IF ("%tiled_offset%">="%infotrig_offset%") BEGIN
-     "tiled_offset"="%tiled_offset%"+"%info_ext%"
-     WRITE_LONG  0xb8  "%tiled_offset%"
-   END
-   PATCH_IF ("%songs_offset%">="%infotrig_offset%") BEGIN
-     "songs_offset"="%songs_offset%"+"%info_ext%"
-     WRITE_LONG  0xbc  "%songs_offset%"
-   END
-   PATCH_IF ("%rest_spawns_offset%">="%infotrig_offset%") BEGIN
-     "rest_spawns_offset"="%rest_spawns_offset%"+"%info_ext%"
-     WRITE_LONG  0xc0  "%rest_spawns_offset%"
-   END
-   PATCH_IF ("%automap_offset%">="%infotrig_offset%") BEGIN
-     "automap_offset"="%automap_offset%"+"%info_ext%"
-     WRITE_LONG  0xc4  "%automap_offset%"
-   END
-
-  //adding 8 new vertices for triggers
-   SET offset = ("%vert_offset%"+0x04*"%vert_num%")
-   INSERT_BYTES offset (0x04*4)
-   WRITE_SHORT  offset      965
-   WRITE_SHORT  (offset+2)  530
-   WRITE_SHORT  (offset+4)  980
-   WRITE_SHORT  (offset+6)  640
-   WRITE_SHORT  (offset+8)  950
-   WRITE_SHORT  (offset+10) 650
-   WRITE_SHORT  (offset+12) 940
-   WRITE_SHORT  (offset+14) 540
-   SET offset = offset + 4*4
-   INSERT_BYTES offset (0x04*4)
-   WRITE_SHORT  offset      1190
-   WRITE_SHORT  (offset+2)  540
-   WRITE_SHORT  (offset+4)  1180
-   WRITE_SHORT  (offset+6)  550
-   WRITE_SHORT  (offset+8)  1080
-   WRITE_SHORT  (offset+10) 560
-   WRITE_SHORT  (offset+12) 1070
-   WRITE_SHORT  (offset+14) 545
-   SET offset = offset + 4*4
-   SET "vert_num"="%vert_num%"+8
-   WRITE_SHORT 0x80  "%vert_num%"
-
-   SET "info_ext"=0x04*8
-   PATCH_IF ("%actors_offset%">="%vert_offset%") BEGIN
-     "actors_offset"="%actors_offset%"+"%info_ext%"
-     WRITE_LONG  0x54 "%actors_offset%"
-   END
-   PATCH_IF ("%spawns_offset%">="%vert_offset%") BEGIN
-     "spawns_offset"="%spawns_offset%"+"%info_ext%"
-     WRITE_LONG  0x60  "%spawns_offset%"
-   END
-   PATCH_IF ("%entrances_offset%">="%vert_offset%") BEGIN
-     "entrances_offset"="%entrances_offset%"+"%info_ext%"
-     WRITE_LONG  0x68  "%entrances_offset%"
-   END
-   PATCH_IF ("%cont_offset%">="%vert_offset%") BEGIN
-     "cont_offset"="%cont_offset%"+"%info_ext%"
-     WRITE_LONG  0x70  "%cont_offset%"
-   END
-   PATCH_IF ("%items_offset%">="%vert_offset%") BEGIN
-     "items_offset"="%items_offset%"+"%info_ext%"
-     WRITE_LONG  0x78  "%items_offset%"
-   END
-   PATCH_IF ("%infotrig_offset%">="%vert_offset%") BEGIN
-     "infotrig_offset"="%infotrig_offset%"+"%info_ext%"
-     WRITE_LONG  0x5c  "%infotrig_offset%"
-   END
-   PATCH_IF ("%amb_offset%">="%vert_offset%") BEGIN
-     "amb_offset"="%amb_offset%"+"%info_ext%"
-     WRITE_LONG  0x84  "%amb_offset%"
-   END
-   PATCH_IF ("%vars_offset%">="%vert_offset%") BEGIN
-     "vars_offset"="%vars_offset%"+"%info_ext%"
-     WRITE_LONG  0x88  "%vars_offset%"
-   END
-   PATCH_IF ("%expbmp_offset%">="%vert_offset%") BEGIN
-     "expbmp_offset"="%expbmp_offset%"+"%info_ext%"
-     WRITE_LONG  0xa0  "%expbmp_offset%"
-   END
-   PATCH_IF ("%doors_offset%">="%vert_offset%") BEGIN
-     "doors_offset"="%doors_offset%"+"%info_ext%"
-     WRITE_LONG  0xa8  "%doors_offset%"
-   END
-   PATCH_IF ("%anim_offset%">="%vert_offset%") BEGIN
-     "anim_offset"="%anim_offset%"+"%info_ext%"
-     WRITE_LONG  0xb0  "%anim_offset%"
-   END
-   PATCH_IF ("%tiled_offset%">="%vert_offset%") BEGIN
-     "tiled_offset"="%tiled_offset%"+"%info_ext%"
-     WRITE_LONG  0xb8  "%tiled_offset%"
-   END
-   PATCH_IF ("%songs_offset%">="%vert_offset%") BEGIN
-     "songs_offset"="%songs_offset%"+"%info_ext%"
-     WRITE_LONG  0xbc  "%songs_offset%"
-   END
-   PATCH_IF ("%rest_spawns_offset%">="%vert_offset%") BEGIN
-     "rest_spawns_offset"="%rest_spawns_offset%"+"%info_ext%"
-     WRITE_LONG  0xc0  "%rest_spawns_offset%"
-   END
-   PATCH_IF ("%automap_offset%">="%vert_offset%") BEGIN
-     "automap_offset"="%automap_offset%"+"%info_ext%"
-     WRITE_LONG  0xc4  "%automap_offset%"
-   END
-
-BUT_ONLY_IF_IT_CHANGES  // ~%ArchaeologicalSite_Tomb%.are~ */
+COMPILE EVAL ~Vault/D~
 
 //Add 4 new proximity triggers and 16 new vertices for those triggers to %NashkelMines_L1%.ARE
 COPY_EXISTING ~%NashkelMines_L1%.ARE~  ~override~
@@ -1322,7 +1081,6 @@ COPY_EXISTING ~%NashkelMines_L3%.ARE~  ~override~
 
 BUT_ONLY_IF_IT_CHANGES  // ~%NashkelMines_L3%.are~
 
-
 //      BAM folder, bam files for custom items
 
 COPY	~vault/bam~		~override~			
@@ -1386,29 +1144,22 @@ COMPILE EVAL ~vault/BAF~
 
 //	Patching/adding creatures
 
-  COPY_EXISTING ~basilg.cre~  ~override~
-    PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-      WRITE_LONG 0x14 5000 // XP Value
-      WRITE_ASCII 0x0258 GBASILSK // Race Script
-      WRITE_BYTE 0x0273 103 // Class
-    END
-  BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~wyverba.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14 900 // XP Value
+    //WRITE_LONG 0x14 900 // XP Value 450
     WRITE_SHORT 0x0018 55 // XP
-    WRITE_SHORT 0x0028 4096 // Animation ID
+    // WRITE_SHORT 0x0028 4096 // Animation ID; why?
     WRITE_SHORT 0x0024 63 // Current HP
     WRITE_SHORT 0x0026 63 // Max HP
     WRITE_BYTE 0x0052 9 // THAC0
-    WRITE_BYTE 0x0273 1 // Class
+    // WRITE_BYTE 0x0273 1 // Class; Mage?
   END
-BUT_ONLY_IF_IT_CHANGES
+BUT_ONLY_IF_IT_CHANGES 
 
 COPY_EXISTING ~wyvern.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14 2200 // XP Value
+    //WRITE_LONG 0x14 2200 // XP Value
     WRITE_SHORT 0x0018 55 // XP
     WRITE_SHORT 0x0024 63 // Current HP
     WRITE_SHORT 0x0026 63 // Max HP
@@ -1424,7 +1175,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~aasim.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14    3600            // XP Value
+    //WRITE_LONG 0x14    3600            // XP Value
     WRITE_LONG 0x1c    195             // GP
     WRITE_SHORT 0x0024    144             // Current HP
     WRITE_SHORT 0x0026    144             // Max HP
@@ -1442,7 +1193,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~alai.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14    3600            // XP Value
+    //WRITE_LONG 0x14    3600            // XP Value
     WRITE_LONG 0x1c    166             // GP
     WRITE_SHORT 0x0024    112             // Current HP
     WRITE_SHORT 0x0026    112             // Max HP
@@ -1460,7 +1211,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~alatos.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14    10000           // XP Value
+    //WRITE_LONG 0x14    10000           // XP Value
     WRITE_LONG 0x1c    575             // GP
     WRITE_SHORT 0x0024    150             // Current HP
     WRITE_SHORT 0x0026    150             // Max HP
@@ -1528,7 +1279,7 @@ END
 
 COPY_EXISTING ~avaricem.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14    5000              // XP Value
+    //WRITE_LONG 0x14    5000              // XP Value
     WRITE_LONG 0x1c    33                // GP
     WRITE_SHORT 0x0024    110               // Current HP
     WRITE_SHORT 0x0026    110               // Max HP
@@ -1544,7 +1295,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~bently.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14    4000              // XP Value
+    //WRITE_LONG 0x14    4000              // XP Value
     WRITE_LONG 0x1c    120               // GP
     WRITE_SHORT 0x24    82                // Current HP
     WRITE_SHORT 0x26    82                // Max HP
@@ -1560,7 +1311,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~beyn.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14    3600               // XP Value
+    //WRITE_LONG 0x14    3600               // XP Value
     WRITE_LONG 0x1c    96                 // GP
     WRITE_SHORT 0x24    112                // Current HP
     WRITE_SHORT 0x26    112                // Max HP
@@ -1575,7 +1326,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~blane.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     3000              // XP Value
+    //WRITE_LONG 0x14     3000              // XP Value
     WRITE_SHORT 0x24     72                // Current HP
     WRITE_SHORT 0x26     72                // Max HP
     WRITE_BYTE 0x46      7                 // Natural AC
@@ -1593,7 +1344,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~bran.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     3000              // XP Value
+    //WRITE_LONG 0x14     3000              // XP Value
     WRITE_LONG 0x1c     128               // GP
     WRITE_SHORT 0x24     72                // Current HP
     WRITE_SHORT 0x26     72                // Max HP
@@ -1613,7 +1364,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~britik.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     1800              // XP Value
+    //WRITE_LONG 0x14     1800              // XP Value
     WRITE_SHORT 0x24     76                // Current HP
     WRITE_SHORT 0x26     76                // Max HP
     WRITE_BYTE 0x52      ~7~               // THAC0
@@ -1628,7 +1379,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~cadder.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     15000             // XP Value
+    //WRITE_LONG 0x14     15000             // XP Value
     WRITE_SHORT 0x24     160               // Current HP
     WRITE_SHORT 0x26     160               // Max HP
     WRITE_BYTE 0x52      ~6~               // THAC0
@@ -1649,7 +1400,7 @@ COPY_EXISTING	~cadder2.cre~  ~override~
 			~cadder5.cre~  ~override~
 			~cadderly.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     15000             // XP Value
+    //WRITE_LONG 0x14     15000             // XP Value
     WRITE_SHORT 0x24     160               // Current HP
     WRITE_SHORT 0x26     160               // Max HP
     WRITE_BYTE 0x52      ~6~               // THAC0
@@ -1666,7 +1417,7 @@ END
 
 COPY_EXISTING ~centeo.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     2000              // XP Value
+    //WRITE_LONG 0x14     2000              // XP Value
     WRITE_SHORT 0x24     72                // Current HP
     WRITE_SHORT 0x26     72                // Max HP
     WRITE_BYTE 0x48      9                 // Effective AC
@@ -1678,7 +1429,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~corsone.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     2000              // XP Value
+    //WRITE_LONG 0x14     2000              // XP Value
     WRITE_LONG 0x1c     112               // GP
     WRITE_SHORT 0x24     90                // Current HP
     WRITE_SHORT 0x26     90                // Max HP
@@ -1695,7 +1446,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~cythan.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     4000              // XP Value
+    //WRITE_LONG 0x14     4000              // XP Value
     WRITE_SHORT 0x24     112               // Current HP
     WRITE_SHORT 0x26     112               // Max HP
     WRITE_BYTE 0x52      ~10~              // THAC0
@@ -1710,7 +1461,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~deathk.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     20000             // XP Value
+    //WRITE_LONG 0x14     20000             // XP Value
     WRITE_SHORT 0x24     300               // Current HP
     WRITE_SHORT 0x26     300               // Max HP
     WRITE_BYTE 0x48      ~-3~              // Effective AC
@@ -1725,7 +1476,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~denak.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     7000              // XP Value
+    //WRITE_LONG 0x14     7000              // XP Value
     WRITE_LONG 0x1c     1021              // GP
     WRITE_SHORT 0x24     51                // Current HP
     WRITE_SHORT 0x26     51                // Max HP
@@ -1741,7 +1492,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~dezkie.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     7000              // XP Value
+    //WRITE_LONG 0x14     7000              // XP Value
     WRITE_SHORT 0x24     90                // Current HP
     WRITE_SHORT 0x26     90                // Max HP
     WRITE_BYTE 0x48      9                 // Effective AC
@@ -1758,7 +1509,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~diyab.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     3200              // XP Value
+    //WRITE_LONG 0x14     3200              // XP Value
     WRITE_LONG 0x1c     105               // GP
     WRITE_SHORT 0x24     120               // Current HP
     WRITE_SHORT 0x26     120               // Max HP
@@ -1774,7 +1525,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~fearm.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     4400              // XP Value
+    //WRITE_LONG 0x14     4400              // XP Value
     WRITE_LONG 0x1c     38                // GP
     WRITE_SHORT 0x24     118               // Current HP
     WRITE_SHORT 0x26     118               // Max HP
@@ -1790,7 +1541,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~gandol.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     2800              // XP Value
+    //WRITE_LONG 0x14     2800              // XP Value
     WRITE_LONG 0x1c     145               // GP
     WRITE_SHORT 0x24     88                // Current HP
     WRITE_SHORT 0x26     88                // Max HP
@@ -1807,7 +1558,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~gellan.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     4000              // XP Value
+    //WRITE_LONG 0x14     4000              // XP Value
     WRITE_SHORT 0x24     110               // Current HP
     WRITE_SHORT 0x26     110               // Max HP
     WRITE_BYTE 0x52      ~11~              // THAC0
@@ -1824,7 +1575,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~gentho.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     3200              // XP Value
+    //WRITE_LONG 0x14     3200              // XP Value
     WRITE_LONG 0x1c     156               // GP
     WRITE_SHORT 0x24     138               // Current HP
     WRITE_SHORT 0x26     138               // Max HP
@@ -1839,7 +1590,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~gerde.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     2400              // XP Value
+    //WRITE_LONG 0x14     2400              // XP Value
     WRITE_SHORT 0x24     74                // Current HP
     WRITE_SHORT 0x26     74                // Max HP
     WRITE_BYTE 0x48      9                 // Effective AC
@@ -1859,7 +1610,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~greywo.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     2800              // XP Value
+    //WRITE_LONG 0x14     2800              // XP Value
     WRITE_SHORT 0x24     77                // Current HP
     WRITE_SHORT 0x26     77                // Max HP
     WRITE_BYTE 0x48      7                 // Effective AC
@@ -1875,7 +1626,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~hakt.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     1500              // XP Value
+    //WRITE_LONG 0x14     1500              // XP Value
     WRITE_LONG 0x1c     62                // GP
     WRITE_SHORT 0x24     60                // Current HP
     WRITE_SHORT 0x26     60                // Max HP
@@ -1898,7 +1649,7 @@ BUT_ONLY_IF_IT_CHANGES
 COPY_EXISTING ~husam.cre~  ~override~
               ~husam2.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     4000              // XP Value
+    //WRITE_LONG 0x14     4000              // XP Value
     WRITE_SHORT 0x24     98                // Current HP
     WRITE_SHORT 0x26     98                // Max HP
     WRITE_BYTE 0x48      7                 // Effective AC
@@ -1912,7 +1663,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~ichary.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     2000              // XP Value
+    //WRITE_LONG 0x14     2000              // XP Value
     WRITE_SHORT 0x24     92                // Current HP
     WRITE_SHORT 0x26     92                // Max HP
     WRITE_BYTE 0x52      ~10~              // THAC0
@@ -1923,7 +1674,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~jalant.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     12000             // XP Value
+    //WRITE_LONG 0x14     12000             // XP Value
     WRITE_LONG 0x1c     300               // GP
     WRITE_SHORT 0x24     98                // Current HP
     WRITE_SHORT 0x26     98                // Max HP
@@ -1940,7 +1691,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~kahrk.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     7000              // XP Value
+    //WRITE_LONG 0x14     7000              // XP Value
     WRITE_SHORT 0x24     206               // Current HP
     WRITE_SHORT 0x26     206               // Max HP
     WRITE_BYTE 0x52      ~7~               // THAC0
@@ -1953,7 +1704,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~kirinh.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     6000              // XP Value
+    //WRITE_LONG 0x14     6000              // XP Value
     WRITE_SHORT 0x24     96                // Current HP
     WRITE_SHORT 0x26     96                // Max HP
     WRITE_BYTE 0x52      ~5~               // THAC0
@@ -1968,7 +1719,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~krysti.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     6000              // XP Value
+    //WRITE_LONG 0x14     6000              // XP Value
     WRITE_SHORT 0x24     108               // Current HP
     WRITE_SHORT 0x26     108               // Max HP
     WRITE_BYTE 0x52      ~9~               // THAC0
@@ -1982,7 +1733,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~lovem.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     6000              // XP Value
+    //WRITE_LONG 0x14     6000              // XP Value
     WRITE_SHORT 0x24     130               // Current HP
     WRITE_SHORT 0x26     130               // Max HP
     WRITE_BYTE 0x52      ~3~               // THAC0
@@ -1999,7 +1750,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~meilum.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     2400              // XP Value
+    //WRITE_LONG 0x14     2400              // XP Value
     WRITE_SHORT 0x24     110               // Current HP
     WRITE_SHORT 0x26     110               // Max HP
     WRITE_BYTE 0x52      ~9~               // THAC0
@@ -2011,7 +1762,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~mulahe.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     1300              // XP Value
+    //WRITE_LONG 0x14     1300              // XP Value
     WRITE_SHORT 0x24     72                // Current HP
     WRITE_SHORT 0x26     72                // Max HP
     WRITE_BYTE 0x48      8                 // Effective AC
@@ -2026,7 +1777,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~naaman.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     4000              // XP Value
+    //WRITE_LONG 0x14     4000              // XP Value
     WRITE_LONG 0x1c     166               // GP
     WRITE_SHORT 0x24     112               // Current HP
     WRITE_SHORT 0x26     112               // Max HP
@@ -2062,7 +1813,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~pridem.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     5000              // XP Value
+    //WRITE_LONG 0x14     5000              // XP Value
     WRITE_SHORT 0x24     130               // Current HP
     WRITE_SHORT 0x26     130               // Max HP
     WRITE_BYTE 0x52      ~6~               // THAC0
@@ -2075,7 +1826,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~raemon.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     2400              // XP Value
+    //WRITE_LONG 0x14     2400              // XP Value
     WRITE_SHORT 0x24     70                // Current HP
     WRITE_SHORT 0x26     70                // Max HP
     WRITE_BYTE 0x52      ~10~              // THAC0
@@ -2091,7 +1842,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~ragefa.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     8000              // XP Value
+    //WRITE_LONG 0x14     8000              // XP Value
     WRITE_SHORT 0x24     71                // Current HP
     WRITE_SHORT 0x26     71                // Max HP
     WRITE_BYTE 0x52      ~12~              // THAC0
@@ -2102,7 +1853,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~ramazi.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     8000              // XP Value
+    //WRITE_LONG 0x14     8000              // XP Value
     WRITE_SHORT 0x24     71                // Current HP
     WRITE_SHORT 0x26     71                // Max HP
     WRITE_BYTE 0x46      8                 // Natural AC
@@ -2116,7 +1867,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~rielta.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     2000              // XP Value
+    //WRITE_LONG 0x14     2000              // XP Value
     WRITE_SHORT 0x24     72                // Current HP
     WRITE_SHORT 0x26     72                // Max HP
     WRITE_BYTE 0x52      ~14~              // THAC0
@@ -2129,7 +1880,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~sarevo.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     15000             // XP Value
+    //WRITE_LONG 0x14     15000             // XP Value
     WRITE_SHORT 0x24     570               // Current HP
     WRITE_SHORT 0x26     570               // Max HP
     WRITE_BYTE 0x52      ~0~               // THAC0
@@ -2147,7 +1898,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~seniya.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     8000              // XP Value
+    //WRITE_LONG 0x14     8000              // XP Value
     WRITE_SHORT 0x24     122               // Current HP
     WRITE_SHORT 0x26     122               // Max HP
     WRITE_BYTE 0x48      9                 // Effective AC
@@ -2161,7 +1912,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~slythe.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     10000             // XP Value
+    //WRITE_LONG 0x14     10000             // XP Value
     WRITE_SHORT 0x24     142               // Current HP
     WRITE_SHORT 0x26     142               // Max HP
     WRITE_BYTE 0x52      ~7~               // THAC0
@@ -2171,7 +1922,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~taerom.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     2700              // XP Value
+    //WRITE_LONG 0x14     2700              // XP Value
     WRITE_SHORT 0x18     33800             // XP
     WRITE_SHORT 0x24     55                // Current HP
     WRITE_SHORT 0x26     55                // Max HP
@@ -2192,7 +1943,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~tamoko.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     10000             // XP Value
+    //WRITE_LONG 0x14     10000             // XP Value
     WRITE_LONG 0x1c     275               // GP
     WRITE_SHORT 0x24     140               // Current HP
     WRITE_SHORT 0x26     140               // Max HP
@@ -2209,7 +1960,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~taugos.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     4000              // XP Value
+    //WRITE_LONG 0x14     4000              // XP Value
     WRITE_SHORT 0x24     112               // Current HP
     WRITE_SHORT 0x26     112               // Max HP
     WRITE_BYTE 0x48      9                 // Effective AC
@@ -2226,7 +1977,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~thalan.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     6000              // XP Value
+    //WRITE_LONG 0x14     6000              // XP Value
     WRITE_LONG 0x1c     881               // GP
     WRITE_SHORT 0x24     74                // Current HP
     WRITE_SHORT 0x26     74                // Max HP
@@ -2241,7 +1992,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~tranzi.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     2000              // XP Value
+    //WRITE_LONG 0x14     2000              // XP Value
     WRITE_SHORT 0x24     64                // Current HP
     WRITE_SHORT 0x26     64                // Max HP
     WRITE_BYTE 0x48      9                 // Effective AC
@@ -2253,7 +2004,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~tuth.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     8000              // XP Value
+    //WRITE_LONG 0x14     8000              // XP Value
     WRITE_SHORT 0x24     166               // Current HP
     WRITE_SHORT 0x26     166               // Max HP
     WRITE_BYTE 0x52      ~7~               // THAC0
@@ -2266,7 +2017,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~venkt.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     1800              // XP Value
+    //WRITE_LONG 0x14     1800              // XP Value
     WRITE_SHORT 0x24     62                // Current HP
     WRITE_SHORT 0x26     62                // Max HP
     WRITE_BYTE 0x52      ~14~              // THAC0
@@ -2281,7 +2032,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~wilf.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     1600              // XP Value
+    //WRITE_LONG 0x14     1600              // XP Value
     WRITE_LONG 0x1c     62                // GP
     WRITE_SHORT 0x24     110               // Current HP
     WRITE_SHORT 0x26     110               // Max HP
@@ -2298,7 +2049,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~yago.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     6000              // XP Value
+    //WRITE_LONG 0x14     6000              // XP Value
     WRITE_LONG 0x1c     66                // GP
     WRITE_SHORT 0x24     77                // Current HP
     WRITE_SHORT 0x26     77                // Max HP
@@ -2322,7 +2073,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~zargal.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     1300              // XP Value
+    //WRITE_LONG 0x14     1300              // XP Value
     WRITE_LONG 0x1c     152               // GP
     WRITE_SHORT 0x24     64                // Current HP
     WRITE_SHORT 0x26     64                // Max HP
@@ -2334,7 +2085,7 @@ BUT_ONLY_IF_IT_CHANGES
 
 COPY_EXISTING ~zhalim.cre~  ~override~
   PATCH_IF (SOURCE_SIZE > 0x2d3) THEN BEGIN // protects against invalid files
-    WRITE_LONG 0x14     6000              // XP Value
+    //WRITE_LONG 0x14     6000              // XP Value
     WRITE_LONG 0x1c     168               // GP
     WRITE_SHORT 0x24     158               // Current HP
     WRITE_SHORT 0x26     158               // Max HP
@@ -2804,18 +2555,6 @@ COPY_EXISTING ~book68.itm~ ~override/book68.itm~
    SAY UNIDENTIFIED_DESC @161
    SAY DESC @162
 
-COPY ~vault/itm/clck21.itm~ ~override/clck21.itm~
-   SAY NAME1 @163
-   SAY NAME2 @163
-   SAY UNIDENTIFIED_DESC @164
-   SAY DESC @165
-
-COPY ~vault/itm/clck22.itm~ ~override/clck22.itm~
-   SAY NAME1 @166
-   SAY NAME2 @167
-   SAY UNIDENTIFIED_DESC @168
-   SAY DESC @169
-
 COPY ~vault/itm/sw1hvam.itm~ ~override/sw1hvam.itm~
    SAY NAME1 @170
    SAY NAME2 @171
@@ -2830,7 +2569,8 @@ COPY ~vault/itm/sw1hvam.itm~ ~override/sw1hvam.itm~
    
    
 BEGIN @175 DESIGNATED 1
-REQUIRE_COMPONENT ~setup-vault.tp2~ ~0~ @203
+LABEL ~JC_the_vault_1~
+REQUIRE_COMPONENT ~vault.tp2~ ~0~ @203
 
 COPY ~vault/bam/IR~ ~override~
 
@@ -2923,4 +2663,29 @@ COPY ~vault/itm/IR/clckst3.itm~ ~override/clckst3.itm~
    SAY NAME2 @80
    SAY UNIDENTIFIED_DESC @76
    SAY DESC @202
+   
+/////////////////////////////////////////////
+//        Quest item components            //
+/////////////////////////////////////////////
+   
+BEGIN @500 DESIGNATED 2
+LABEL ~JC_the_vault_2~
+REQUIRE_COMPONENT ~vault.tp2~ ~0~ @203
+
+COPY ~vault/itm/comp/clck21.itm~ ~override/clck21.itm~ // Holy Cloak
+   SAY NAME1 @163
+   SAY NAME2 @163
+   SAY UNIDENTIFIED_DESC @164
+   SAY DESC @165
+
+BEGIN @501 DESIGNATED 3
+LABEL ~JC_the_vault_3~
+REQUIRE_COMPONENT ~vault.tp2~ ~0~ @203
+
+COPY ~vault/itm/comp/clck22.itm~ ~override/clck22.itm~ // Shandalar's Cloak
+
+   SAY NAME1 @166
+   SAY NAME2 @167
+   SAY UNIDENTIFIED_DESC @168
+   SAY DESC @169
    

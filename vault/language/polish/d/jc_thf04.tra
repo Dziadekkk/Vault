@@ -4,7 +4,7 @@
 @3  = ~Przepraszam. Nie mam na to czasu. Muszê jak najszybciej wróciæ do Wrót Baldura.~
 @4  = ~To ty! Wygl¹dasz dok³adnie tak, jak opisa³ ciê Zernan! Och, Zernan!~ 
 @5  = ~Zernan? ...ten badacz?~
-@6  = ~Um, tak, ten badacz... Jestem Nandin, jego kolega... przytrafi³o mu siê coœ okropnego! Po tym, kiedy dosta³ od ciebie ksiêgê spotka³em go w gospodzie Pod Pomocn¹ D³oni¹.~
+@6  = ~Um, tak, ten badacz... Jestem Nandin, jego kolega... przytrafi³o mu siê coœ okropnego! Po tym, jak dosta³ od ciebie ksiêgê spotka³em go w gospodzie Pod Pomocn¹ D³oni¹.~
 @7  = ~I co siê wtedy sta³o?~ 
 @8  = ~Powiedzia³, ¿e ma siê spotkaæ z jakimœ ³otrzykiem w P³on¹cym Czarodzieju w Beregoœcie, by uzyskaæ informacje o pewnej grupie na po³udniu, która równie¿ by³a zainteresowana zbadaniem tej ksiêgi. Poleci³ mi, bym spotka³ siê z nim w Nashkel... to wszystko mia³o miejsce kilka dni temu. Nie widzia³em go od tego czasu ani nie mia³em od niego ¿adnej wiadomoœci. Mówi³ mi, ¿e gdyby sta³o siê coœ nadzwyczajnego, powinienem wyprawiæ siê do Candlekeep i odszukaæ ciebie.~
 @9  = ~Jesteœ tego pewien? Mo¿e tak da³ siê ponieœæ zapa³owi do pracy i poszukiwania wiedzy, ¿e zapomnia³ o spotkaniu?~ 
@@ -23,12 +23,12 @@
 @22 = ~Przykro mi. Nie mam czasu dla ciebie, Zernana czy Zhurlonga. Muszê natychmiast wracaæ do Wrót Baldura.~
 @23 = ~Och, dziêkujê ci! Dziêkujê, <CHARNAME>! Udam siê do gospody w Nashkel na wypadek, gdyby mój przyjaciel siê pojawi³. Bêdê równie¿ oczekiwa³ wieœci od ciebie o tym, co mu siê przytrafi³o.~ 
 @24 = ~Trzymaj siê, Nandin, i nie martw siê zbytnio. Na pewno znajdê go we w³aœciwym czasie.~
-@25 = ~Wygl¹da na to, ¿e uczony Zernan zagin¹³. Jego przyjaciel, Nandin, przeby³ drogê do Candlekeep, by prosiæ mnie o ratunek, a ja nie mogê odmówiæ mu pomocy. Kiedy spotkali siê ostatnim razem Zernan wybiera³ siê na spotkanie z nizio³kiem o imieniu Zhurlong, przebywaj¹cym w P³on¹cym Czarodzieju w Beregoœcie. S¹dzê, ¿e to tam nale¿y zacz¹æ poszukiwania. Nandin bêdzie mnie oczekiwa³ w gospodzie w Nashkel, gdyby uda³o mi siê dowiedzieæ czegoœ o jego przyjacielu.~
+@25 = ~Wygl¹da na to, ¿e uczony Zernan zagin¹³. Jego przyjaciel, Nandin, przeby³ drogê do Candlekeep, by prosiæ mnie o ratunek, a ja nie mogê odmówiæ mu pomocy. Kiedy spotkali siê ostatnim razem, Zernan wybiera³ siê na spotkanie z nizio³kiem o imieniu Zhurlong, przebywaj¹cym w P³on¹cym Czarodzieju w Beregoœcie. S¹dzê, ¿e to tam nale¿y zacz¹æ poszukiwania. Nandin bêdzie mnie oczekiwa³ w gospodzie w Nashkel, gdyby uda³o mi siê dowiedzieæ czegoœ o jego przyjacielu.~
 @26 = ~Co takiego? Zernan w Kopalniach Nashkel? Tylko wzglêdy naukowe mog³y go sk³oniæ do tego, by udaæ siê w to miejsce. Musisz tam natychmiast iœæ, <CHARNAME>. Obawiam siê, ¿e mojego kolegê spotka³o w tych kopalniach jakieœ nieszczêœcie.~
 @27 = ~Masz jakieœ wieœci, <CHARNAME>?~
-@28 = ~Znalaz³em ksiêgê, ale nieszêœliwie dla Zern...~ ~Znalaz³am ksiêgê, ale nieszêœliwie dla Zern...~
+@28 = ~Znalaz³em ksiêgê, ale nieszczêœliwie dla Zern...~ ~Znalaz³am ksiêgê, ale nieszczêœliwie dla Zern...~
 @29 = ~Póki co nie mam, ale nie obawiaj siê - nied³ugo wybiorê siê do kopalñ.~
 @30 = ~Gdzie ksiêga? Daj mi j¹, daj mi j¹!~
 @31 = ~Nandinie, jeœli chodzi o Zernana...~
 @32 = ~Zernan by³ g³upcem! Zostawi³ mnie i myœla³, ¿e mo¿e zaufaæ drowom! Teraz, gdy mam tê ksi¹¿kê, nie potrzebujê ani jego, ani ciebie!~
-@33 = ~Okazuje siê, ¿e zarówno Nandin jak i Zernan nie byli tymi, za kogo siê podawali. Wydaje siê, ¿e Zernan dobi³ targu z drowami, by odkryæ tajemnice ukryte w ksiêdze i zachowa³ to w sekrecie przed swoim wspólnikiem, Nandinem. Dlaczego ci ludzie zadali sobie tyle trudu z powodu tej ksi¹¿ki? Mo¿e rzeczywiœcie z t¹ ksiêg¹ zwi¹zane jest coœ, co jest warte wiêcej ni¿ z³oto. Jeœli znajdê trochê czasu, to mo¿e warto bêdzie bli¿ej siê jej przyjrzeæ.~
+@33 = ~Okazuje siê, ¿e zarówno Nandin, jak i Zernan nie byli tymi, za kogo siê podawali. Wydaje siê, ¿e Zernan dobi³ targu z drowami, by odkryæ tajemnice ukryte w ksiêdze i zachowa³ to w sekrecie przed swoim wspólnikiem, Nandinem. Dlaczego ci ludzie zadali sobie tyle trudu z powodu tej ksi¹¿ki? Mo¿e rzeczywiœcie z t¹ ksiêg¹ zwi¹zane jest coœ, co jest warte wiêcej ni¿ z³oto. Jeœli znajdê trochê czasu, to mo¿e warto bêdzie bli¿ej siê jej przyjrzeæ.~
