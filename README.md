@@ -4,9 +4,9 @@
 
 ==================================================================================
 
-* **Creator Name:** 	josh_clue
-* **Creator Email:** 	josh_clue@hotmail.com
-* **Mod Page:** 	www.angelfire.com
+* **Creator Name:**   josh_clue
+* **Creator Email:**  josh_clue@hotmail.com
+* **Mod Page:**       www.angelfire.com
 
 > What began as a small interest to "contribute" to an already fantastic CRPG set in
 > the most diverse and truly astounding of realms has become a substantial project,
@@ -129,7 +129,8 @@ This component tweaks the Holy Cloak from the Isle of Balduran quest, ensuring i
 
 ==================================================================================
 
-This component tweaks the Shandalars Cloak from the Ulgoth's Beard quest, ensuring it is no longer treated only as a quest item.
+This component tweaks the Shandalars Cloak from the Ulgoth's Beard quest, ensuring it is no longer treated only as a quest item.  
+The Mod Tweaks & Tricks also adds the same option — decide which one to choose (the cloak itself isn't the same in both mods).
 
 ==================================================================================
 
