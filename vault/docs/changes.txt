@@ -1,3 +1,7 @@
+v 9.1 (by Dziadek, The Vault "Back to Home" edition)
+
+  - TAEROM script improvement (SET_WEIGHT code elimination),
+
 v 9.0 (by Dziadek, The Vault "Back to Home" edition)
 ----------------------------------------------------
 
@@ -5,7 +9,7 @@ v 9.0 (by Dziadek, The Vault "Back to Home" edition)
   - XP modification was removed (mod still awards significant XP, but the amount has been reduced),
   - removed unused folders (2da) and .cre files,
   - created vault.d and vault-ee.d for separate game engines (BGT vs EE/EET) due to Thalantyr dialogue state differences,
-  - corrected .tp2 for better BGEE, EET, and BGT compatibility,
+  - corrected .tp2 for better BGEE, EET, (BGT) compatibility,
   - improved quest items: Shandalar's Cloak (clck22.itm) and Holy Cloak (clck21.itm) are now available as separate installable components,
   - corrected .tra file encoding,
   - added labels to .tp2 for Project Infinity support,

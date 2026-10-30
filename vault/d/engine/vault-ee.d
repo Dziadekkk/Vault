@@ -256,22 +256,18 @@ IF ~~ THEN BEGIN VLT41
 END
 
 
-SET_WEIGHT TAEROM 14 #8
-EXTEND_BOTTOM TAEROM 14
-  IF ~PartyHasItem("SW1HVAM") GlobalLT("TaeromTellsOfSword","GLOBAL",1)~ THEN REPLY @95 GOTO VLT45 END
-EXTEND_BOTTOM TAEROM 14
-  IF ~PartyHasItem("HELM04") Global("HelmDefenseTaerom","GLOBAL",0)~ THEN REPLY @96 GOTO VLT44 END
-EXTEND_BOTTOM TAEROM 14
-  IF ~PartyHasItem("HELM05") Global("HelmInfravisionTaerom","GLOBAL",0)~ THEN REPLY @97 GOTO VLT48 END
-EXTEND_BOTTOM TAEROM 14
-  IF ~PartyHasItem("HELM06") Global("HelmCharmTaerom","GLOBAL",0)~ THEN REPLY @98 GOTO VLT49 END
-EXTEND_BOTTOM TAEROM 14
-  IF ~PartyGoldGT(8999) PartyHasItem("MISC52") Global("TaeromTellsOfPlatWy","GLOBAL",1) Global("WyvernTaerom","GLOBAL",0)~ THEN REPLY @173 GOTO VLT43 END
+EXTEND_BOTTOM TAEROM 0 4 8 12 14
+  IF ~PartyHasItem("SW1HVAM") GlobalLT("TaeromTellsOfSword","GLOBAL",1)~ THEN REPLY @95 GOTO VLT45 
+  IF ~PartyHasItem("HELM04") Global("HelmDefenseTaerom","GLOBAL",0)~ THEN REPLY @96 GOTO VLT44 
+  IF ~PartyHasItem("HELM05") Global("HelmInfravisionTaerom","GLOBAL",0)~ THEN REPLY @97 GOTO VLT48 
+  IF ~PartyHasItem("HELM06") Global("HelmCharmTaerom","GLOBAL",0)~ THEN REPLY @98 GOTO VLT49 
+  IF ~PartyGoldGT(8999) PartyHasItem("MISC52") Global("TaeromTellsOfPlatWy","GLOBAL",1) Global("WyvernTaerom","GLOBAL",0)~ THEN REPLY @173 GOTO VLT43 
+END
 
 APPEND ~TAEROM~
 
-IF WEIGHT #7 ~PartyHasItem("MISC52") Global("TaeromTellsOfPlatWy","GLOBAL",0) Global("WyvernTaerom","GLOBAL",0)~ THEN BEGIN VLT42
-  SAY @99
+IF ~~ THEN BEGIN VLT42
+  SAY @99 
   IF ~PartyGoldGT(8999)~ THEN REPLY @100 DO ~SetGlobal("TaeromTellsOfPlatWy","GLOBAL",1)~ GOTO VLT43
   IF ~~ THEN REPLY @101 DO ~StartStore("Taerum",LastTalkedToBy()) SetGlobal("TaeromTellsOfPlatWy","GLOBAL",1)~ EXIT
   IF ~~ THEN REPLY @172 DO ~SetGlobal("TaeromTellsOfPlatWy","GLOBAL",1)~ GOTO VLT47 END
@@ -288,41 +284,34 @@ IF ~~ THEN BEGIN VLT44
   IF ~PartyGoldGT(4999) PartyHasItem("MISC39") PartyHasItem("RING25") PartyHasItem("HELM04")~ THEN REPLY @107 GOTO VLT44D
   IF ~~ THEN REPLY @108 GOTO VLT47 END
 
-IF ~~
-THEN BEGIN VLT44A
+IF ~~ THEN BEGIN VLT44A
   SAY @109
-  IF ~~ THEN DO ~TakePartyGold(5000) TakePartyItem("MISC38") TakePartyItem("RING06") TakePartyItem("HELM04") ForceSpell(Myself,WIZARD_ARMOR)	DestroyItem("MISC38") DestroyItem("RING06") DestroyItem("HELM04") GiveItemCreate("HELM04A",LastTalkedToBy,0,0,0) SetGlobal("HelmDefenseTaerom","GLOBAL",1)~ EXIT END
+  IF ~~ THEN DO ~TakePartyGold(5000) TakePartyItem("MISC38") TakePartyItem("RING06") TakePartyItem("HELM04") ForceSpell(Myself,WIZARD_ARMOR) DestroyItem("MISC38") DestroyItem("RING06") DestroyItem("HELM04") GiveItemCreate("HELM04A",LastTalkedToBy,0,0,0) SetGlobal("HelmDefenseTaerom","GLOBAL",1)~ EXIT END
 
-IF ~~
-THEN BEGIN VLT44B
+IF ~~ THEN BEGIN VLT44B
   SAY @109
-  IF ~~ THEN DO ~TakePartyGold(5000) TakePartyItem("MISC38") TakePartyItem("RING25") TakePartyItem("HELM04") ForceSpell(Myself,WIZARD_ARMOR)	DestroyItem("MISC38") DestroyItem("RING25") DestroyItem("HELM04") GiveItemCreate("HELM04A",LastTalkedToBy,0,0,0) SetGlobal("HelmDefenseTaerom","GLOBAL",1)~ EXIT END
+  IF ~~ THEN DO ~TakePartyGold(5000) TakePartyItem("MISC38") TakePartyItem("RING25") TakePartyItem("HELM04") ForceSpell(Myself,WIZARD_ARMOR) DestroyItem("MISC38") DestroyItem("RING25") DestroyItem("HELM04") GiveItemCreate("HELM04A",LastTalkedToBy,0,0,0) SetGlobal("HelmDefenseTaerom","GLOBAL",1)~ EXIT END
 
-IF ~~
-THEN BEGIN VLT44C
+IF ~~ THEN BEGIN VLT44C
   SAY @109
   IF ~~ THEN DO ~TakePartyGold(5000) TakePartyItem("MISC39") TakePartyItem("RING06") TakePartyItem("HELM04") ForceSpell(Myself,WIZARD_ARMOR) DestroyItem("MISC39") DestroyItem("RING06") DestroyItem("HELM04") GiveItemCreate("HELM04A",LastTalkedToBy,0,0,0) SetGlobal("HelmDefenseTaerom","GLOBAL",1)~ EXIT END
 
-IF ~~
-THEN BEGIN VLT44D
+IF ~~ THEN BEGIN VLT44D
   SAY @109
   IF ~~ THEN DO ~TakePartyGold(5000) TakePartyItem("MISC39") TakePartyItem("RING25") TakePartyItem("HELM04") ForceSpell(Myself,WIZARD_ARMOR) DestroyItem("MISC39") DestroyItem("RING25") DestroyItem("HELM04") GiveItemCreate("HELM04A",LastTalkedToBy,0,0,0) SetGlobal("HelmDefenseTaerom","GLOBAL",1)~ EXIT END
 
-IF ~~
-THEN BEGIN VLT45
+IF ~~ THEN BEGIN VLT45
   SAY @110
   IF ~~ THEN REPLY @111 DO ~SetGlobal("TaeromTellsOfSword","GLOBAL",1) StartStore("Taerum",LastTalkedToBy())~ EXIT
   IF ~~ THEN REPLY @112 DO ~SetGlobal("TaeromTellsOfSword","GLOBAL",1)~ GOTO VLT47
   IF ~~ THEN REPLY @113 DO ~SetGlobal("TaeromTellsOfSword","GLOBAL",1)~ GOTO VLT46 END
 
-IF ~~
-THEN BEGIN VLT46
+IF ~~ THEN BEGIN VLT46
   SAY @114
   IF ~Global("TheVault","GLOBAL",0)~ THEN DO ~AddexperienceParty(1000) SetGlobal("TheVault","GLOBAL",1)~ JOURNAL @115 EXIT
   IF ~Global("TheVault","GLOBAL",1)~ THEN EXIT END
 
-IF ~~
-THEN BEGIN VLT47
+IF ~~ THEN BEGIN VLT47
   SAY @116
   IF ~~ THEN REPLY @117 DO ~StartStore("Taerum",LastTalkedToBy())~ EXIT
   IF ~PartyHasItem("SW1HVAM") GlobalLT("TaeromTellsOfSword","GLOBAL",1)~ THEN REPLY @118 GOTO VLT45
@@ -332,8 +321,7 @@ THEN BEGIN VLT47
   IF ~PartyGoldGT(8999) PartyHasItem("MISC52") Global("TaeromTellsOfPlatWy","GLOBAL",1) Global("WyvernTaerom","GLOBAL",0)~ THEN REPLY @173 GOTO VLT43
   IF ~~ THEN REPLY @119 EXIT END
 
-IF ~~
-THEN BEGIN VLT48
+IF ~~ THEN BEGIN VLT48
   SAY @120
   IF ~PartyGoldGT(4999) PartyHasItem("MISC38") PartyHasItem("RING06") PartyHasItem("HELM05")~ THEN REPLY @104 GOTO VLT48A
   IF ~PartyGoldGT(4999) PartyHasItem("MISC38") PartyHasItem("RING25") PartyHasItem("HELM05")~ THEN REPLY @105 GOTO VLT48B
@@ -341,28 +329,23 @@ THEN BEGIN VLT48
   IF ~PartyGoldGT(4999) PartyHasItem("MISC39") PartyHasItem("RING25") PartyHasItem("HELM05")~ THEN REPLY @107 GOTO VLT48D
   IF ~~ THEN REPLY @108 GOTO VLT47 END
 
-IF ~~
-THEN BEGIN VLT48A
+IF ~~ THEN BEGIN VLT48A
   SAY @121
   IF ~~ THEN DO ~TakePartyGold(5000) TakePartyItem("MISC38") TakePartyItem("RING06") TakePartyItem("HELM05") ForceSpell(Myself,WIZARD_ARMOR) DestroyItem("MISC38") DestroyItem("RING06") DestroyItem("HELM05") GiveItemCreate("HELM05A",LastTalkedToBy,0,0,0) SetGlobal("HelmInfravisionTaerom","GLOBAL",1)~ EXIT END
 
-IF ~~
-THEN BEGIN VLT48B
+IF ~~ THEN BEGIN VLT48B
   SAY @121
   IF ~~ THEN DO ~TakePartyGold(5000) TakePartyItem("MISC38") TakePartyItem("RING25") TakePartyItem("HELM05") ForceSpell(Myself,WIZARD_ARMOR) DestroyItem("MISC38") DestroyItem("RING25") DestroyItem("HELM05") GiveItemCreate("HELM05A",LastTalkedToBy,0,0,0) SetGlobal("HelmInfravisionTaerom","GLOBAL",1)~ EXIT END
 
-IF ~~
-THEN BEGIN VLT48C
+IF ~~ THEN BEGIN VLT48C
   SAY @121
   IF ~~ THEN DO ~TakePartyGold(5000) TakePartyItem("MISC39") TakePartyItem("RING06") TakePartyItem("HELM05") ForceSpell(Myself,WIZARD_ARMOR) DestroyItem("MISC39") DestroyItem("RING06") DestroyItem("HELM05") GiveItemCreate("HELM05A",LastTalkedToBy,0,0,0) SetGlobal("HelmInfravisionTaerom","GLOBAL",1)~ EXIT END
 
-IF ~~
-THEN BEGIN VLT48D
+IF ~~ THEN BEGIN VLT48D
   SAY @121
   IF ~~ THEN DO ~TakePartyGold(5000) TakePartyItem("MISC39") TakePartyItem("RING25") TakePartyItem("HELM05") ForceSpell(Myself,WIZARD_ARMOR) DestroyItem("MISC39") DestroyItem("RING25") DestroyItem("HELM05") GiveItemCreate("HELM05A",LastTalkedToBy,0,0,0) SetGlobal("HelmInfravisionTaerom","GLOBAL",1)~ EXIT END
 
-IF ~~
-THEN BEGIN VLT49
+IF ~~ THEN BEGIN VLT49
   SAY @122
   IF ~PartyGoldGT(4999) PartyHasItem("MISC38") PartyHasItem("RING06") PartyHasItem("HELM06")~ THEN REPLY @104 GOTO VLT49A
   IF ~PartyGoldGT(4999) PartyHasItem("MISC38") PartyHasItem("RING25") PartyHasItem("HELM06")~ THEN REPLY @105 GOTO VLT49B
@@ -370,27 +353,22 @@ THEN BEGIN VLT49
   IF ~PartyGoldGT(4999) PartyHasItem("MISC39") PartyHasItem("RING25") PartyHasItem("HELM06")~ THEN REPLY @107 GOTO VLT49D
   IF ~~ THEN REPLY @108 GOTO VLT47 END
 
-IF ~~
-THEN BEGIN VLT49A
+IF ~~ THEN BEGIN VLT49A
   SAY @121
   IF ~~ THEN DO ~TakePartyGold(5000) TakePartyItem("MISC38") TakePartyItem("RING06") TakePartyItem("HELM06") ForceSpell(Myself,WIZARD_ARMOR) DestroyItem("MISC38") DestroyItem("RING06") DestroyItem("HELM06") GiveItemCreate("HELM06A",LastTalkedToBy,0,0,0) SetGlobal("HelmCharmTaerom","GLOBAL",1)~ EXIT END
 
-IF ~~
-THEN BEGIN VLT49B
+IF ~~ THEN BEGIN VLT49B
   SAY @121
   IF ~~ THEN DO ~TakePartyGold(5000) TakePartyItem("MISC38") TakePartyItem("RING25") TakePartyItem("HELM06") ForceSpell(Myself,WIZARD_ARMOR) DestroyItem("MISC38") DestroyItem("RING25") DestroyItem("HELM06") GiveItemCreate("HELM06A",LastTalkedToBy,0,0,0) SetGlobal("HelmCharmTaerom","GLOBAL",1)~ EXIT END
 
-IF ~~
-THEN BEGIN VLT49C
+IF ~~ THEN BEGIN VLT49C
   SAY @121
   IF ~~ THEN DO ~TakePartyGold(5000) TakePartyItem("MISC39") TakePartyItem("RING06") TakePartyItem("HELM06") ForceSpell(Myself,WIZARD_ARMOR) DestroyItem("MISC39") DestroyItem("RING06") DestroyItem("HELM06") GiveItemCreate("HELM06A",LastTalkedToBy,0,0,0) SetGlobal("HelmCharmTaerom","GLOBAL",1)~ EXIT END
 
-IF ~~
-THEN BEGIN VLT49D
+IF ~~ THEN BEGIN VLT49D
   SAY @121
   IF ~~ THEN DO ~TakePartyGold(5000) TakePartyItem("MISC39") TakePartyItem("RING25") TakePartyItem("HELM06") ForceSpell(Myself,WIZARD_ARMOR) DestroyItem("MISC39") DestroyItem("RING25") DestroyItem("HELM06") GiveItemCreate("HELM06A",LastTalkedToBy,0,0,0) SetGlobal("HelmCharmTaerom","GLOBAL",1)~ EXIT END
 END
-
 
 SET_WEIGHT KELDDA 0 #8
 APPEND ~KELDDA~
