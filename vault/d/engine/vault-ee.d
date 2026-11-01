@@ -261,16 +261,15 @@ EXTEND_BOTTOM TAEROM 0 4 8 12 14
   IF ~PartyHasItem("HELM04") Global("HelmDefenseTaerom","GLOBAL",0)~ THEN REPLY @96 GOTO VLT44 
   IF ~PartyHasItem("HELM05") Global("HelmInfravisionTaerom","GLOBAL",0)~ THEN REPLY @97 GOTO VLT48 
   IF ~PartyHasItem("HELM06") Global("HelmCharmTaerom","GLOBAL",0)~ THEN REPLY @98 GOTO VLT49 
-  IF ~PartyGoldGT(8999) PartyHasItem("MISC52") Global("TaeromTellsOfPlatWy","GLOBAL",1) Global("WyvernTaerom","GLOBAL",0)~ THEN REPLY @173 GOTO VLT43 
 END
 
 APPEND ~TAEROM~
 
-IF ~~ THEN BEGIN VLT42
+IF WEIGHT #-1 ~PartyHasItem("MISC52") Global("WyvernTaerom","GLOBAL",0)~ THEN BEGIN VLT42
   SAY @99 
-  IF ~PartyGoldGT(8999)~ THEN REPLY @100 DO ~SetGlobal("TaeromTellsOfPlatWy","GLOBAL",1)~ GOTO VLT43
-  IF ~~ THEN REPLY @101 DO ~StartStore("Taerum",LastTalkedToBy()) SetGlobal("TaeromTellsOfPlatWy","GLOBAL",1)~ EXIT
-  IF ~~ THEN REPLY @172 DO ~SetGlobal("TaeromTellsOfPlatWy","GLOBAL",1)~ GOTO VLT47 END
+  IF ~PartyGoldGT(8999)~ THEN REPLY @100 GOTO VLT43
+  IF ~~ THEN REPLY @101 DO ~StartStore("Taerum",LastTalkedToBy())~ EXIT
+  IF ~~ THEN REPLY @172 GOTO VLT47 END
 
 IF ~~ THEN BEGIN VLT43
   SAY @102
@@ -318,7 +317,6 @@ IF ~~ THEN BEGIN VLT47
   IF ~PartyHasItem("HELM04") Global("HelmDefenseTaerom","GLOBAL",0)~ THEN REPLY @96 GOTO VLT44
   IF ~PartyHasItem("HELM05") Global("HelmInfravisionTaerom","GLOBAL",0)~ THEN REPLY @97 GOTO VLT48
   IF ~PartyHasItem("HELM06") Global("HelmCharmTaerom","GLOBAL",0)~ THEN REPLY @98 GOTO VLT49
-  IF ~PartyGoldGT(8999) PartyHasItem("MISC52") Global("TaeromTellsOfPlatWy","GLOBAL",1) Global("WyvernTaerom","GLOBAL",0)~ THEN REPLY @173 GOTO VLT43
   IF ~~ THEN REPLY @119 EXIT END
 
 IF ~~ THEN BEGIN VLT48

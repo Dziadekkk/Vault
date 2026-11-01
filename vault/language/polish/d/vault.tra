@@ -77,9 +77,9 @@ Gandolar Szczêœliwa Stopa powiedzia³ nam, ¿e z jednego z domostw nizio³ków w Gul
 W ruinach Firewine s¹ koboldy.~
 @65  = ~Zbadaæ ruiny Mostu Firewine.
 
-Nizio³ek z Gullykin imieniem Gandolar spyta³, czy oczyœci³bym oczyœci³ ruiny mostu Firewine z koboldów. Powinienem uwa¿aæ, poniewa¿ ró¿ne rodzaje tajemniczych istot mog¹ obudziæ siê ze snu.~ ~Zbadaæ ruiny Mostu Firewine.
+Nizio³ek z Gullykin imieniem Gandolar spyta³, czy oczyœci³bym ruiny mostu Firewine z koboldów. Powinienem uwa¿aæ, poniewa¿ ró¿ne rodzaje tajemniczych istot mog¹ obudziæ siê ze snu.~ ~Zbadaæ ruiny Mostu Firewine.
 
-Nizio³ek z Gullykin imieniem Gandolar spyta³, czy oczyœci³abym oczyœci³ ruiny mostu Firewine z koboldów. Powinnam uwa¿aæ, poniewa¿ ró¿ne rodzaje tajemniczych istot mog¹ obudziæ siê ze snu.~
+Nizio³ek z Gullykin imieniem Gandolar spyta³, czy oczyœci³abym ruiny mostu Firewine z koboldów. Powinnam uwa¿aæ, poniewa¿ ró¿ne rodzaje tajemniczych istot mog¹ obudziæ siê ze snu.~
 @66  = ~Zbadaæ ruiny Mostu Firewine.
 
 Myœliwy, którego spotkaliœmy, poradzi³ nam przeszukaæ most Firewine, jeœli chcemy znaleŸæ przygodê.~
@@ -115,7 +115,7 @@ Myœliwy, którego spotkaliœmy, poradzi³ nam przeszukaæ most Firewine, jeœli chcem
 @96  = ~Czy móg³byœ obejrzeæ ten magiczny he³m, który posiadam? Zastanawia mnie, czy mo¿na jakoœ ulepszyæ ochronê, któr¹ on zapewnia.~
 @97  = ~Czy móg³byœ obejrzeæ ten He³m Infrawizji? Zastanawia mnie, czy mo¿na jakoœ ulepszyæ ochronê, któr¹ on zapewnia.~
 @98  = ~Czy móg³byœ obejrzeæ ten magiczny he³m, który posiadam? Chroni przed zaklêciami wp³ywaj¹cymi na umys³, ale mam nadziejê, ¿e móg³byœ jakoœ ulepszyæ ochronê, któr¹ on zapewnia.~
-@99  = ~Czy to nie g³owê wywerny masz ze sob¹? Tak... TAK, œwietna jakoœæ i odpowiednia wielkoœæ. S¹dzê, ¿e mogê z niej dla ciebie zrobiæ bardzo u¿yteczn¹ zbrojê - tak¹, która zapewni ochronê przed œmierteln¹ magi¹, jak równie¿ odpornoœæ na pewne trucizny... 9000 sztuk z³ota powinno pokryæ koszty pozosta³ych materia³ów oraz robocizny. Co ty na to?~
+@99  = ~Czy to nie g³owê wiwerny masz ze sob¹? Tak... TAK, œwietna jakoœæ i odpowiednia wielkoœæ. S¹dzê, ¿e mogê z niej dla ciebie zrobiæ bardzo u¿yteczn¹ zbrojê - tak¹, która zapewni ochronê przed œmierteln¹ magi¹, jak równie¿ odpornoœæ na pewne trucizny... 9000 sztuk z³ota powinno pokryæ koszty pozosta³ych materia³ów oraz robocizny. Co ty na to?~
 @100 = ~Twoja propozycja wydaje siê korzystna.~
 @101 = ~Potrzeba mi nieco czasu, ¿eby przemyœleæ twoj¹ szczodr¹ ofertê. Czy mogê w miêdzyczasie obejrzeæ twoje towary?~
 @102 = ~W takim razie uwa¿aj to za zrobione. To nie potrwa d³ugo... Mam ju¿ formê zbroi, która tylko potrzebuje specjalnego materia³u na spodni¹ warstwê... No i ju¿, gotowe!~
@@ -148,7 +148,7 @@ Myœliwy, którego spotkaliœmy, poradzi³ nam przeszukaæ most Firewine, jeœli chcem
 @129 = ~Có¿, nag³a potrzeba jest wa¿niejsza od wyjaœnieñ. Wiem, ¿e jesteœ cz³owiekiem, który kieruje siê szlachetnymi pobudkami. Powiedz mi, co nale¿y zrobiæ.~
 @130 = ~Có¿ to za stworzenie, z którym przysz³o mi walczyæ w Westybulu?~
 @131 = ~Dziêki mojej magii poznania ujrza³em kolejny o wiele wiêkszy portal otwierany w³aœnie w opuszczonych ruinach na wschód od Beregostu. Przypuszczam, ¿e to sam demon Lestraubimat przybywa tu przez bramê, któr¹ otwieraj¹ dla niego czerwoni magowie z Thay...~
-@132 = ~Trzeba siê spieszyæ. I jeszcze jedno ostrze¿enie: Lestraubimat nigdy nie podró¿uje samotnie. Bêdzie mia³ eskortê z³o¿on¹ z jego licznych s³ug... ogniste wywerny, bazyliszki. Proszê, weŸ to. Mo¿e ci pomóc w twojej misji.~
+@132 = ~Trzeba siê spieszyæ. I jeszcze jedno ostrze¿enie: Lestraubimat nigdy nie podró¿uje samotnie. Bêdzie mia³ eskortê z³o¿on¹ z jego licznych s³ug... ogniste wiwerny, bazyliszki. Proszê, weŸ to. Mo¿e ci pomóc w twojej misji.~
 @133 = ~Keldath Ormlyr wys³a³ mnie z misj¹ zniszczenia pomniejszego demona Lestraubimata i wyjaœni³ jednoczeœnie, ¿e pokonany przeze mnie demoniczny rycerz Ranthis by³ jedynie jego pos³añcem. Nie wiem, czy posiadam wystarczaj¹co du¿o doœwiadczenia w polowaniu na demony, ale wydaje siê, ¿e nie mam wielkiego wyboru.~
 @134 = ~Demoniczny rycerz Ranthis, z którym siê zmierzy³eœ, by³ wys³annikiem pomniejszego demona Lestraubimata, odra¿aj¹cego potwora z negatywnej sfery, któremu zale¿y wy³¹cznie na zaspokojeniu w³asnej ¿¹dzy krwi.~ ~Demoniczny rycerz Ranthis, z którym siê zmierzy³aœ, by³ wys³annikiem pomniejszego demona Lestraubimata, odra¿aj¹cego potwora z negatywnej sfery, któremu zale¿y wy³¹cznie na zaspokojeniu w³asnej ¿¹dzy krwi.~
 @135 = ~Staro¿ytne kroniki mówi¹, ¿e Lestraubimat potrafi skusiæ ludzi, by otworzyli dla niego przejœcie w zamian za spe³nienie jednego ¿yczenia. To musi byæ powód, dla którego ci czerwoni magowie podjêli próbê sprowadzenia go do naszego œwiata. Skutki tego mog¹ byæ katastrofalne.~
@@ -190,4 +190,4 @@ Wygl¹da na to, ¿e moje przeczucia odnoœnie zapisów w ksiêdze, któr¹ da³ mi Ksi¹¿
 @170 = ~Zhurlong potwierdzi³, ¿e widzia³ siê z Zernanem i powiedzia³, ¿e skierowa³ badacza do Kopalñ Nashkel. Jednak¿e, co wydaje mi siê dziwne, da³ do zrozumienia, ¿e Zernan jest kimœ wiêcej ni¿ naukowcem. Stwierdzi³, ¿e aby schwytaæ z³odzieja, trzeba samemu byæ z³odziejem. Naprawdê dziwne.~
 @171 = ~...zemsta... jest... kluczem... do... krypty...~
 @172 = ~Dziêkujê za propozycjê, ale na razie zrezygnujê. Mogê jeszcze o coœ zapytaæ?~
-@173 = ~Interesuje mnie ta zbroja z wywerny, o której rozmawialiœmy. Tu jest g³owa wywerny i 9000 z³otych monet, o które prosi³eœ.~
+@173 = ~Interesuje mnie ta zbroja z wiwerny, o której rozmawialiœmy. Tu jest g³owa wiwerny i 9000 z³otych monet, o które prosi³eœ.~
