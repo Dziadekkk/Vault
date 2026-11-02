@@ -137,13 +137,30 @@ END
 ALTER_TRANS DELTAN BEGIN 10 11 END BEGIN 0 END BEGIN ~ACTION~ ~GiveGoldForce(2000) SetGlobal("HelpEltan","GLOBAL",2) GiveItem("BOOK68",LastTalkedToBy) AddexperienceParty(4000) IncrementChapter("%CHPTXT6%") AddJournalEntry(@38,INFO) ActionOverride(Player1,LeaveAreaLUAPanic("%WyrmsCrossing%","",[4295.3415],0)) ActionOverride(Player1,LeaveAreaLUA("%WyrmsCrossing%","",[4295.3415],0)) ActionOverride(Player2,LeaveAreaLUA("%WyrmsCrossing%","",[4295.3415],0)) ActionOverride(Player3,LeaveAreaLUA("%WyrmsCrossing%","",[4295.3415],0)) ActionOverride(Player4,LeaveAreaLUA("%WyrmsCrossing%","",[4295.3415],0)) ActionOverride(Player5,LeaveAreaLUA("%WyrmsCrossing%","",[4295.3415],0)) ActionOverride(Player6,LeaveAreaLUA("%WyrmsCrossing%","",[4295.3415],0)) DestroySelf()~ END
 
 
+ADD_STATE_TRIGGER GANDOL 22 ~!Dead("JC_OGR01") !GlobalTimerExpired("GullyOgreTimer","GLOBAL") Global("GullyKoboldReward","GLOBAL",1) Global("GullyOgreHead","GLOBAL",0)~
+REPLACE_SAY GANDOL 22 @59
+ADD_STATE_TRIGGER GANDOL 23 ~Global("GullyKoboldReward","GLOBAL",0)~
+ALTER_TRANS GANDOL BEGIN 23 END BEGIN 0 END BEGIN ~ACTION~ ~GiveGoldForce(250) EraseJournalEntry(@60) EraseJournalEntry(@61) EraseJournalEntry(@62) EraseJournalEntry(@63) EraseJournalEntry(@64) EraseJournalEntry(@65) EraseJournalEntry(@66) SetGlobal("GullyKoboldReward","GLOBAL",1) RandomWalk()~ END
+REPLACE_TRANS_ACTION GANDOL BEGIN 4 END BEGIN 0 END ~EscapeAreaDestroy(90)~ ~RandomWalk()~
+
 APPEND ~GANDOL~
 
-IF ~Dead("DICK") !Dead("JC_OGR01") GlobalTimerExpired("GullyOgreTimer","GLOBAL") GlobalGT("GullyOgre","GLOBAL",1) Global("GullyOgreHead","GLOBAL",0)~ THEN BEGIN VLT25
+IF WEIGHT #-3 ~Dead("JC_OGR01") Global("GullyOgre","GLOBAL",4) Global("GullyOgreReward","GLOBAL",0)~ THEN BEGIN VLT29
+  SAY @56
+  IF ~~ THEN DO ~
+  EraseJournalEntry(@41)
+  EraseJournalEntry(@55)
+  GiveGoldForce(1500)
+  GiveItemCreate("POTN52",LastTalkedToBy,3,0,0)
+  SetGlobal("GullyOgreReward","GLOBAL",1)
+  EscapeAreaDestroy(90)~ JOURNAL @57 EXIT
+END
+
+IF WEIGHT #-2 ~Dead("DICK") !Dead("JC_OGR01") GlobalTimerExpired("GullyOgreTimer","GLOBAL") GlobalGT("GullyOgre","GLOBAL",1) Global("GullyOgreHead","GLOBAL",0)~ THEN BEGIN VLT25
   SAY @39
   IF ~~ THEN REPLY @40 DO ~SetGlobal("GullyOgreHead","GLOBAL",1)~ JOURNAL @41 EXIT END
 
-IF ~!Dead("JC_OGR01") GlobalGT("GullyOgre","GLOBAL",1) Global("GullyOgreHead","GLOBAL",1)~ THEN BEGIN VLT26
+IF WEIGHT #-1 ~!Dead("JC_OGR01") GlobalGT("GullyOgre","GLOBAL",1) Global("GullyOgreHead","GLOBAL",1)~ THEN BEGIN VLT26
   SAY @42
   IF ~~ THEN REPLY @43 EXIT
   IF ~~ THEN REPLY @44 EXIT
@@ -163,30 +180,11 @@ IF ~~ THEN BEGIN VLT28
   IF ~~ THEN REPLY @43 EXIT
   IF ~~ THEN REPLY @54 DO ~SetGlobal("GullyOgreHead","GLOBAL",2)~ JOURNAL @55 EXIT END
 
-IF ~Dead("JC_OGR01") Global("GullyOgre","GLOBAL",4) Global("GullyOgreReward","GLOBAL",0)~ THEN BEGIN VLT29
-  SAY @56
-  IF ~~ THEN DO ~
-  EraseJournalEntry(@41) //additional journal entry erase, addad by Vault
-  EraseJournalEntry(@55) //additional journal entry erase, addad by Vault
-  GiveGoldForce(1500)
-  GiveItemCreate("POTN52",LastTalkedToBy,3,0,0)
-  SetGlobal("GullyOgreReward","GLOBAL",1)
-  EscapeAreaDestroy(90)~
-  JOURNAL @57 EXIT
-END
-
-IF WEIGHT #4 ~Global("GullyOgreReward","GLOBAL",1) Global("GullyKoboldReward","GLOBAL",1)~ THEN BEGIN VLT30
+IF WEIGHT #10 ~Global("GullyOgreReward","GLOBAL",1) Global("GullyKoboldReward","GLOBAL",1)~ THEN BEGIN VLT30
   SAY @58
   IF ~~ THEN EXIT END
+
 END
-
-SET_WEIGHT GANDOL 22 #5
-REPLACE_SAY GANDOL 22 @59
-ADD_STATE_TRIGGER GANDOL 22 ~!Dead("JC_OGR01") !GlobalTimerExpired("GullyOgreTimer","GLOBAL") Global("GullyKoboldReward","GLOBAL",1)~
-ADD_STATE_TRIGGER GANDOL 23 ~Global("GullyKoboldReward","GLOBAL",0)~
-ALTER_TRANS GANDOL BEGIN 23 END BEGIN 0 END BEGIN ~ACTION~ ~GiveGoldForce(250) EraseJournalEntry(@60) EraseJournalEntry(@61) EraseJournalEntry(@62) EraseJournalEntry(@63) EraseJournalEntry(@64) EraseJournalEntry(@65) EraseJournalEntry(@66) SetGlobal("GullyKoboldReward","GLOBAL",1) RandomWalk()~ END
-REPLACE_TRANS_ACTION GANDOL BEGIN 4 END BEGIN 0 END ~EscapeAreaDestroy(90)~ ~RandomWalk()~
-
 
 REPLACE_SAY MELICA 26 @67
 
@@ -368,14 +366,13 @@ IF ~~ THEN BEGIN VLT49D
   IF ~~ THEN DO ~TakePartyGold(5000) TakePartyItem("MISC39") TakePartyItem("RING25") TakePartyItem("HELM06") ForceSpell(Myself,WIZARD_ARMOR) DestroyItem("MISC39") DestroyItem("RING25") DestroyItem("HELM06") GiveItemCreate("HELM06A",LastTalkedToBy,0,0,0) SetGlobal("HelmCharmTaerom","GLOBAL",1)~ EXIT END
 END
 
-SET_WEIGHT KELDDA 0 #8
 APPEND ~KELDDA~
 
-IF WEIGHT #5 ~!Dead("Blane") !Dead("Bran") Global("VestibuleQuest","GLOBAL",3) Global("VestibuleKeld","GLOBAL",0)~ THEN BEGIN  VLT50
+IF WEIGHT #-1 ~!Dead("Blane") !Dead("Bran") Global("VestibuleQuest","GLOBAL",3) Global("VestibuleKeld","GLOBAL",0)~ THEN BEGIN  VLT50
   SAY @123
   IF ~~ THEN REPLY @124 GOTO VLT51
   IF ~~ THEN REPLY @125 GOTO VLT52
-  IF ~!Dead("JC_DEM02")~ THEN REPLY @126 GOTO 8
+  IF ~!Dead("JC_DEM02")~ THEN REPLY @126 DO ~StartStore("tem3402",LastTalkedToBy())~ EXIT
   IF ~Dead("JC_DEM02")~ THEN REPLY @126 EXIT
   IF ~~ THEN REPLY @127 DO ~StartStore("tem3402",LastTalkedToBy())~ EXIT END
 
@@ -400,11 +397,11 @@ IF ~~ THEN BEGIN VLT55
 SAY @135
  IF ~~ THEN REPLY @136 GOTO VLT52 END
 
-IF WEIGHT #6 ~InParty("EDWIN") Dead("Blane") Dead("Bran") Global("VestibuleQuest","GLOBAL",3) Global("VestibuleKeld","GLOBAL",0)~ THEN BEGIN VLT56
+IF WEIGHT #-2 ~InParty("EDWIN") Dead("Blane") Dead("Bran") Global("VestibuleQuest","GLOBAL",3) Global("VestibuleKeld","GLOBAL",0)~ THEN BEGIN VLT56
 SAY @137
 IF ~~ THEN DO ~Enemy()~ EXIT END
 
-IF WEIGHT #7 ~Global("VestibuleQuest","GLOBAL",5) Global("VestibuleKeld","GLOBAL",1)~ THEN BEGIN VLT57
+IF WEIGHT #-3 ~Global("VestibuleQuest","GLOBAL",5) Global("VestibuleKeld","GLOBAL",1)~ THEN BEGIN VLT57
 SAY @138
 IF ~~ THEN DO ~GiveGoldForce(5000) AddexperienceParty(3000) SetGlobal("VestibuleKeld","GLOBAL",2)~ EXIT END
 END
